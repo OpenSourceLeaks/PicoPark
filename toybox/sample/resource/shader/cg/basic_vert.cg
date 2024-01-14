@@ -1,0 +1,15 @@
+struct Output{
+  float4 position : POSITION;
+  float4 color    : COLOR;
+};
+
+Output main( float3 position : POSITION ,
+             float4 color : COLOR )
+{
+  Output OUT;
+  OUT.position = float4(position,1);
+//  OUT.position = position;
+//  OUT.color = color;
+  OUT.color = float4( 0 , 1 , 0 , 1 );
+  return OUT;	
+}

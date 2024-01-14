@@ -1,0 +1,6 @@
+#include "basic_tex.h"
+
+float4 main( VsOut input ) : COLOR
+{
+    return tex2D( g_Texture , input.texcoord ) * input.color;
+}

@@ -1,0 +1,35 @@
+include ../../../../common/flash/Makefile.setting
+
+root:
+	$(AS3COMPILERARGS) \
+		-AS3 -strict \
+		-import $(call nativepath,$(FLASCC)/usr/lib/builtin.abc) \
+		-import $(call nativepath,$(FLASCC)/usr/lib/playerglobal.abc) \
+		AGALAssembler/*.as AGALAssembler/macro/*.as -outdir . -out AGAL
+	java -jar $(call nativepath, $(FLASCC)/usr/lib/as3wig.jar) -i AGAL.abc -o AGAL
+	"$(FLASCC)/usr/bin/g++"  -emit-llvm AGAL.cpp -c &> AGAL.txt
+	
+	
+	$(FLASCC)/usr/bin/genfs ../../../../resource/tex tex	
+	echo $(FLASCC)/usr/lib/playerglobal.abc;
+	$(AS3COMPILERARGS)	-import $(call nativepath,$(FLASCC)/usr/lib/builtin.abc) \
+		-import $(call nativepath,$(FLASCC)/usr/lib/playerglobal.abc) \
+		-import $(call nativepath,$(FLASCC)/usr/lib/BinaryData.abc) \
+		-import $(call nativepath,$(FLASCC)/usr/lib/ISpecialFile.abc) \
+		-import $(call nativepath,$(FLASCC)/usr/lib/IBackingStore.abc) \
+		-import $(call nativepath,$(FLASCC)/usr/lib/IVFS.abc) \
+		-import $(call nativepath,$(FLASCC)/usr/lib/InMemoryBackingStore.abc) \
+		-import $(call nativepath,$(FLASCC)/usr/lib/PlayerKernel.abc) \
+		texRootFSBackingStore.as -outdir . -out VFS
+	
+	$(AS3COMPILERARGS)	\
+		-import $(call nativepath,$(FLASCC)/usr/lib/builtin.abc) \
+		-import $(call nativepath,$(FLASCC)/usr/lib/playerglobal.abc) \
+		-import $(call nativepath,$(FLASCC)/usr/lib/BinaryData.abc) \
+		-import $(call nativepath,$(FLASCC)/usr/lib/ISpecialFile.abc) \
+		-import $(call nativepath,$(FLASCC)/usr/lib/IBackingStore.abc) \
+		-import $(call nativepath,$(FLASCC)/usr/lib/IVFS.abc) \
+		-import $(call nativepath,$(FLASCC)/usr/lib/InMemoryBackingStore.abc) \
+		-import $(call nativepath,$(FLASCC)/usr/lib/PlayerKernel.abc) \
+		-import VFS.abc \
+		Console.as -outdir . -out Console

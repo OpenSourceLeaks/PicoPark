@@ -1,0 +1,7 @@
+【Windows版】
+1. tb_env.wsfの実行　
+　→　環境変数の設定をします。
+2. DirectX9をインストール
+　→　DXSDK_DIRの環境変数を設定
+3. build/all/vs2010/tb_all.slnを開いてビルド
+4. sample以下のプロジェクトをビルド実行

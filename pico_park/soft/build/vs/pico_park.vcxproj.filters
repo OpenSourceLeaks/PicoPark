@@ -1,0 +1,1116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{0579696b-06d5-4b3b-9da8-670cc096f14d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\seq">
+      <UniqueIdentifier>{2362f660-d806-401a-9c12-44e0141080be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\system">
+      <UniqueIdentifier>{ba1cebec-1ba2-456b-93a9-b5b3ce82a528}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\puzzle">
+      <UniqueIdentifier>{9bfe9b02-6c77-466f-85fd-283fecac1288}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common">
+      <UniqueIdentifier>{3a04efe0-3b47-4241-a43d-84639b90cb80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\puzzle\actor">
+      <UniqueIdentifier>{066cf87e-f643-46fa-b341-5c0b11fe2817}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\puzzle\map">
+      <UniqueIdentifier>{fce696c9-5a3f-4b76-8fc4-d11423b8481e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\puzzle\stage">
+      <UniqueIdentifier>{74b0ab2c-d22b-4e32-8db0-a775d8db94c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\breakout">
+      <UniqueIdentifier>{c194fb8a-7239-4ed2-b1b0-98c2b134847e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\breakout\stage">
+      <UniqueIdentifier>{da096634-bdc7-46c9-9eb3-975e6776fcde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\side_action">
+      <UniqueIdentifier>{13a4000f-52b6-4ab5-b2bd-eed113beb41d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\side_action\actor">
+      <UniqueIdentifier>{c44a8e9c-2436-4d83-850b-9456b6b377b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\side_action\actor\state">
+      <UniqueIdentifier>{b789c880-6e94-400e-836c-3b4cb339af03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\side_action\stage">
+      <UniqueIdentifier>{44948376-e4b0-44a2-8680-9973908ef068}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\side_action\collision">
+      <UniqueIdentifier>{c4079044-1bdd-4445-a450-80c7f1cdc491}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\breakout\actor">
+      <UniqueIdentifier>{5f71734f-166d-43fa-bbd8-a6bc1abfc23c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\side_action\actor\state\test">
+      <UniqueIdentifier>{553fd488-7e74-441c-b7ac-45c6b9e3d32d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\ui">
+      <UniqueIdentifier>{ba7a7189-923e-4fb4-9972-d229c9d9c4b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\stage_select">
+      <UniqueIdentifier>{7cca40f6-e4f8-41de-8ed1-f3e6599ff41f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\parameter">
+      <UniqueIdentifier>{db260790-6e9c-4102-a02c-7c35748029ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\title">
+      <UniqueIdentifier>{0a7e3a60-fb42-4d72-84e5-d199efb9953d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common\ui">
+      <UniqueIdentifier>{d53cc72a-084f-4d49-b4a9-05870e21ea31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\title\ui">
+      <UniqueIdentifier>{fa543e46-30ea-40f6-a2ce-6510e931da0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="icon">
+      <UniqueIdentifier>{b8a8a9a9-768d-42e8-b2b1-5b26e3fc3321}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common\material">
+      <UniqueIdentifier>{e3ac26d8-2467-4303-b49d-45aa844251e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\system\shader">
+      <UniqueIdentifier>{5dd735b9-93ef-4fc2-86ef-7342de025535}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\world_select">
+      <UniqueIdentifier>{2387ebfd-6200-4b56-adf5-fe8e126f8889}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common\slide">
+      <UniqueIdentifier>{b272a14e-4848-4391-828a-3eb547a1af05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\main_menu">
+      <UniqueIdentifier>{aecad846-7f62-481c-9b5b-798cef09c151}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\edit">
+      <UniqueIdentifier>{2c60107f-1874-4834-b7f5-5338302acc32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\save">
+      <UniqueIdentifier>{52029cc6-9ea0-4897-b9c7-267fe26451c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\battle">
+      <UniqueIdentifier>{792f70ca-bb7e-4fe3-82ee-da93cda41fae}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\fwd.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\root.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sequence\seq_manager.cpp">
+      <Filter>src\seq</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sequence\seq_ending.cpp">
+      <Filter>src\seq</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sequence\seq_stage.cpp">
+      <Filter>src\seq</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sequence\seq_title.cpp">
+      <Filter>src\seq</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\common\cmn_util.cpp">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\system\sys_majority_input.cpp">
+      <Filter>src\system</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\stage\side_action_stage.cpp">
+      <Filter>src\side_action\stage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_key.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_player.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_updown_enemy.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_updown_lift.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_anim_data.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_big_box.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_check_point.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_goal.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\test\side_action_shoot_enemy.cpp">
+      <Filter>src\side_action\actor\state\test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\test\side_action_skipping_rope.cpp">
+      <Filter>src\side_action\actor\state\test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\test\side_action_iron_ball.cpp">
+      <Filter>src\side_action\actor\state\test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\test\side_action_rhythm_ball.cpp">
+      <Filter>src\side_action\actor\state\test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\state\side_action_player_state_clear.cpp">
+      <Filter>src\side_action\actor\state</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\state\side_action_player_state_dead.cpp">
+      <Filter>src\side_action\actor\state</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\state\side_action_player_state_default.cpp">
+      <Filter>src\side_action\actor\state</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_step_enemy.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\collision\side_action_collision_scene.cpp">
+      <Filter>src\side_action\collision</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\breakout\stage\breakout_stage.cpp">
+      <Filter>src\breakout\stage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\breakout\actor\breakout_bar.cpp">
+      <Filter>src\breakout\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\breakout\actor\breakout_ball.cpp">
+      <Filter>src\breakout\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_majority_controller.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_move_wall.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_jump_stand.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_weighted_lift.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sequence\seq_stage_select.cpp">
+      <Filter>src\seq</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ui\ui_message_window.cpp">
+      <Filter>src\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\stage_select\stage_select_menu.cpp">
+      <Filter>src\stage_select</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ui\ui_select_box.cpp">
+      <Filter>src\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ui\ui_select_window.cpp">
+      <Filter>src\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ui\ui_player_window.cpp">
+      <Filter>src\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_bound_ball.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_switch.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_key_box.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_warp.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_physics_ball.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_seesaw.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_coin.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_timer.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_marker.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_ball_pitcher.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_text.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\common\ui\ui_pause_window.cpp">
+      <Filter>src\common\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\title\ui\ui_title_select_window.cpp">
+      <Filter>src\title\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_title.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_balance.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\puzzle\actor\puzzle_block_base.cpp">
+      <Filter>src\puzzle\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\puzzle\actor\puzzle_block_tetris.cpp">
+      <Filter>src\puzzle\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\puzzle\actor\puzzle_block_dr.cpp">
+      <Filter>src\puzzle\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ui\ui_manager.cpp">
+      <Filter>src\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ui\ui_input.cpp">
+      <Filter>src\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ui\ui_button.cpp">
+      <Filter>src\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ui\ui_arrow_button.cpp">
+      <Filter>src\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_watch.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_ghost.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_blink_block.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_lift.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_link.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_collision_switch.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_wind.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\puzzle\map\puzzle_tetris_map.cpp">
+      <Filter>src\puzzle\map</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\puzzle\map\puzzle_dr_map.cpp">
+      <Filter>src\puzzle\map</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\puzzle\stage\puzzle_dr_stage.cpp">
+      <Filter>src\puzzle\stage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\puzzle\stage\puzzle_tetris_stage.cpp">
+      <Filter>src\puzzle\stage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\puzzle\stage\puzzle_vs_dr_stage.cpp">
+      <Filter>src\puzzle\stage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\puzzle\actor\puzzle_timer.cpp">
+      <Filter>src\puzzle\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\puzzle\stage\puzzle_vs_tetris_stage.cpp">
+      <Filter>src\puzzle\stage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_stop_watch.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_coop_stop_watch.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_laser_ball.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_distance_constraint.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_tetris.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_player_input.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_player_dress.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_key_proxy_goal.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_physics_object.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_roulette.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_traffic_light.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_dead_switch.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\puzzle\map\puzzle_map.cpp">
+      <Filter>src\puzzle\map</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\common\ui\ui_gamepad_config_window.cpp">
+      <Filter>src\common\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\common\ui\ui_keyboard_config_window.cpp">
+      <Filter>src\common\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ui\ui_select_image_box.cpp">
+      <Filter>src\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_judge_territory.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_judge_height.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_judge_base.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_judge_breakout.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_breakout_battle_ball.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\common\material\cmn_sprite_player_material.cpp">
+      <Filter>src\common\material</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\system\shader\sys_shader_manager.cpp">
+      <Filter>src\system\shader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sequence\seq_world_select.cpp">
+      <Filter>src\seq</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sequence\seq_main_menu.cpp">
+      <Filter>src\seq</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sequence\seq_base.cpp">
+      <Filter>src\seq</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\common\slide\cmn_slide.cpp">
+      <Filter>src\common\slide</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\main_menu\main_menu_slide.cpp">
+      <Filter>src\main_menu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\world_select\world_select_slide.cpp">
+      <Filter>src\world_select</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_rect.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_color_box.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\common\cmn_fade.cpp">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\common\cmn_simple_sprite.cpp">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_scroll_range.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_color_block.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_player_gun.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\puzzle\actor\puzzle_block_dr_free.cpp">
+      <Filter>src\puzzle\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\state\side_action_player_state_null.cpp">
+      <Filter>src\side_action\actor\state</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_fall_box.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\world_manager.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_jump_area.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_player_magnet.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_bowwow_enemy.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_player_guard.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_thunder.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_variable_weighted_lift.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_move_energy.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\state\side_action_player_state_plane.cpp">
+      <Filter>src\side_action\actor\state</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sequence\seq_stage_edit.cpp">
+      <Filter>src\seq</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\stage\side_action_actor_manager.cpp">
+      <Filter>src\side_action\stage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\edit\edit_mode_manager.cpp">
+      <Filter>src\edit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\edit\edit_mode_setting.cpp">
+      <Filter>src\edit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\edit\edit_mode_map.cpp">
+      <Filter>src\edit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\edit\edit_mode_actor.cpp">
+      <Filter>src\edit</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_player_plane.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sequence\seq_battle_select.cpp">
+      <Filter>src\seq</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\world_select\battle_stage_select_slide.cpp">
+      <Filter>src\world_select</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\save\save_file.cpp">
+      <Filter>src\save</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sequence\seq_battle_result .cpp">
+      <Filter>src\seq</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\battle\battle_manager.cpp">
+      <Filter>src\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\battle\battle_result_slide.cpp">
+      <Filter>src\battle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\save\save_data_struct .cpp">
+      <Filter>src\save</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\world_select\endless_stage_select_slide.cpp">
+      <Filter>src\world_select</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sequence\seq_endless_select.cpp">
+      <Filter>src\seq</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_endless_jump_score.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_score_base.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_ball_receiver.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_tetris_base.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_endless_tetris.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_judge_stop_watch.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_score_stop_watch.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_ball_pitcher_manager.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_judge_battle_jump.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_endless_scroll_score.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_endless_obstacle.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_obstacle.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_plane_obstacle.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_endless_plane_obstacle.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\common\ui\ui_option_window_old.cpp">
+      <Filter>src\common\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\common\ui\ui_option_window.cpp">
+      <Filter>src\common\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_ball_speed_controller.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_warp_switch.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_endless_thunder.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\common\ui\ui_player_select_window.cpp">
+      <Filter>src\common\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sequence\seq_ending_trial.cpp">
+      <Filter>src\seq</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_best_score.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_logo .cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_map_rect.cpp">
+      <Filter>src\side_action\actor</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\fwd.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\sequence\seq_manager.h">
+      <Filter>src\seq</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\sequence\seq_ending.h">
+      <Filter>src\seq</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\sequence\seq_stage.h">
+      <Filter>src\seq</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\sequence\seq_title.h">
+      <Filter>src\seq</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\sequence\seq_base.h">
+      <Filter>src\seq</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\puzzle\map\puzzle_map.h">
+      <Filter>src\puzzle\map</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\common\cmn_def.h">
+      <Filter>src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\common\cmn_util.h">
+      <Filter>src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\system\sys_majority_input.h">
+      <Filter>src\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\common\cmn_global_data.h">
+      <Filter>src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\side_action_types.h">
+      <Filter>src\side_action</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\stage\side_action_stage.h">
+      <Filter>src\side_action\stage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_goal.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_key.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_player.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_step_enemy.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_updown_enemy.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_updown_lift.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_anim_data.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_check_point.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\test\side_action_shoot_enemy.h">
+      <Filter>src\side_action\actor\state\test</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\test\side_action_skipping_rope.h">
+      <Filter>src\side_action\actor\state\test</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\test\side_action_iron_ball.h">
+      <Filter>src\side_action\actor\state\test</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\test\side_action_rhythm_ball.h">
+      <Filter>src\side_action\actor\state\test</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\state\side_action_player_state_default.h">
+      <Filter>src\side_action\actor\state</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\state\side_action_player_state.h">
+      <Filter>src\side_action\actor\state</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\state\side_action_player_state_dead.h">
+      <Filter>src\side_action\actor\state</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\collision\side_action_collision_scene.h">
+      <Filter>src\side_action\collision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\breakout\stage\breakout_stage.h">
+      <Filter>src\breakout\stage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\breakout\actor\breakout_bar.h">
+      <Filter>src\breakout\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\breakout\actor\breakout_ball.h">
+      <Filter>src\breakout\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_majority_controller.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_move_wall.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_jump_stand.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_weighted_lift.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\sequence\seq_stage_select.h">
+      <Filter>src\seq</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_big_box.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ui\ui_message_window.h">
+      <Filter>src\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\stage_select\stage_select_menu.h">
+      <Filter>src\stage_select</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ui\ui_select_box.h">
+      <Filter>src\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ui\ui_select_window.h">
+      <Filter>src\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ui\ui_player_window.h">
+      <Filter>src\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_bound_ball.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_switch.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_key_box.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_warp.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_physics_ball.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_physics_object.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_seesaw.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_coin.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_timer.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_marker.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_ball_pitcher.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_text.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\common\ui\ui_pause_window.h">
+      <Filter>src\common\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\title\ui\ui_title_select_window.h">
+      <Filter>src\title\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_title.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_balance.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\puzzle\actor\puzzle_block_tetris.h">
+      <Filter>src\puzzle\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\puzzle\actor\puzzle_block_base.h">
+      <Filter>src\puzzle\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\puzzle\actor\puzzle_block_dr.h">
+      <Filter>src\puzzle\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ui\ui_manager.h">
+      <Filter>src\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ui\ui_input.h">
+      <Filter>src\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ui\ui_button.h">
+      <Filter>src\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ui\ui_arrow_button.h">
+      <Filter>src\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_watch.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_ghost.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_blink_block.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_lift.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_link.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_collision_switch.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_wind.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\state\side_action_player_state_clear.h">
+      <Filter>src\side_action\actor\state</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\puzzle\map\puzzle_tetris_map.h">
+      <Filter>src\puzzle\map</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\puzzle\map\puzzle_dr_map.h">
+      <Filter>src\puzzle\map</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\puzzle\stage\puzzle_dr_stage.h">
+      <Filter>src\puzzle\stage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\puzzle\stage\puzzle_tetris_stage.h">
+      <Filter>src\puzzle\stage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\puzzle\stage\puzzle_vs_dr_stage.h">
+      <Filter>src\puzzle\stage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\puzzle\actor\puzzle_timer.h">
+      <Filter>src\puzzle\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\puzzle\stage\puzzle_vs_tetris_stage.h">
+      <Filter>src\puzzle\stage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_stop_watch.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_coop_stop_watch.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_laser_ball.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_distance_constraint.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_tetris.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_player_input.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_player_dress.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_key_proxy_goal.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_roulette.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_traffic_light.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_dead_switch.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\common\ui\ui_gamepad_config_window.h">
+      <Filter>src\common\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\common\ui\ui_keyboard_config_window.h">
+      <Filter>src\common\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ui\ui_select_image_box.h">
+      <Filter>src\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_judge_territory.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_judge_height.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_judge_base.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_judge_breakout.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_breakout_battle_ball.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\common\material\cmn_sprite_player_material.h">
+      <Filter>src\common\material</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\system\shader\sys_shader_manager.h">
+      <Filter>src\system\shader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\sequence\seq_world_select.h">
+      <Filter>src\seq</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\sequence\seq_main_menu.h">
+      <Filter>src\seq</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\common\cmn_simple_sprite.h">
+      <Filter>src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\common\slide\cmn_slide.h">
+      <Filter>src\common\slide</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\world_select\world_select_slide.h">
+      <Filter>src\world_select</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_rect.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_color_box.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\common\cmn_fade.h">
+      <Filter>src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_scroll_range.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_color_block.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_player_gun.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\puzzle\actor\puzzle_block_dr_free.h">
+      <Filter>src\puzzle\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\state\side_action_player_state_null.h">
+      <Filter>src\side_action\actor\state</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_fall_box.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\world_manager.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_warp_object.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_jump_area.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_player_magnet.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_bowwow_enemy.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_player_guard.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_thunder.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_variable_weighted_lift.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_move_energy.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\state\side_action_player_state_plane.h">
+      <Filter>src\side_action\actor\state</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\sequence\seq_stage_edit.h">
+      <Filter>src\seq</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\stage\side_action_actor_manager.h">
+      <Filter>src\side_action\stage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\edit\edit_mode_manager.h">
+      <Filter>src\edit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\edit\edit_mode_base.h">
+      <Filter>src\edit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\edit\edit_mode_setting.h">
+      <Filter>src\edit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\edit\edit_mode_map.h">
+      <Filter>src\edit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\edit\edit_mode_actor.h">
+      <Filter>src\edit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\edit\edit_types.h">
+      <Filter>src\edit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\edit\edit_util.h">
+      <Filter>src\edit</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_player_plane.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\sequence\seq_battle_select.h">
+      <Filter>src\seq</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\world_select\battle_stage_select_slide.h">
+      <Filter>src\world_select</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\save\save_data_struct.h">
+      <Filter>src\save</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\save\save_file.h">
+      <Filter>src\save</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\sequence\seq_battle_result.h">
+      <Filter>src\seq</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\battle\battle_manager.h">
+      <Filter>src\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\battle\battle_result_slide.h">
+      <Filter>src\battle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\world_select\endless_stage_select_slide.h">
+      <Filter>src\world_select</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\sequence\seq_endless_select.h">
+      <Filter>src\seq</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_endless_jump_score.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_score_base.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_ball_receiver.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_tetris_base.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_endless_tetris.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_judge_stop_watch.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_score_stop_watch.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_ball_pitcher_manager.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_judge_battle_jump.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_endless_scroll_score.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_endless_obstacle.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_obstacle.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_plane_obstacle.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_endless_plane_obstacle.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\common\ui\ui_option_window_old.h">
+      <Filter>src\common\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\common\ui\ui_option_window.h">
+      <Filter>src\common\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_ball_speed_controller.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_warp_switch.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_endless_thunder.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\common\ui\ui_player_select_window.h">
+      <Filter>src\common\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\root.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\sequence\seq_ending_trial.h">
+      <Filter>src\seq</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\sequence\seq_types.h">
+      <Filter>src\seq</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_best_score.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_logo.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\side_action\actor\side_action_map_rect.h">
+      <Filter>src\side_action\actor</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\icon\icon.rc">
+      <Filter>icon</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\src\main_menu\main_menu_slide.h">
+      <Filter>src\main_menu</Filter>
+    </None>
+  </ItemGroup>
+</Project>

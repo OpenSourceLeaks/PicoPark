@@ -1,0 +1,2 @@
+rem ÉxÅ[ÉX
+call .\..\..\common/android/build_module.bat

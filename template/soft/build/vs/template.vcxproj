@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugDX9|Win32">
+      <Configuration>DebugDX9</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugGL|Win32">
+      <Configuration>DebugGL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="OptimizeDX9|Win32">
+      <Configuration>OptimizeDX9</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseDX9|Win32">
+      <Configuration>ReleaseDX9</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\common\cmn_util.cpp" />
+    <ClCompile Include="..\..\src\common\ui\ui_pause_window.cpp" />
+    <ClCompile Include="..\..\src\main.cpp" />
+    <ClCompile Include="..\..\src\fwd.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DebugGL|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='DebugGL|Win32'">fwd.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DebugDX9|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='OptimizeDX9|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseDX9|Win32'">Create</PrecompiledHeader>
+      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='ReleaseDX9|Win32'">$(TBSDK_DIR)/include;$(DXSDK_DIR)\Include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="..\..\src\root.cpp" />
+    <ClCompile Include="..\..\src\sequence\seq_manager.cpp" />
+    <ClCompile Include="..\..\src\sequence\seq_main.cpp" />
+    <ClCompile Include="..\..\src\ui\ui_arrow_button.cpp" />
+    <ClCompile Include="..\..\src\ui\ui_button.cpp" />
+    <ClCompile Include="..\..\src\ui\ui_input.cpp" />
+    <ClCompile Include="..\..\src\ui\ui_manager.cpp" />
+    <ClCompile Include="..\..\src\ui\ui_message_window.cpp" />
+    <ClCompile Include="..\..\src\ui\ui_player_window.cpp" />
+    <ClCompile Include="..\..\src\ui\ui_select_box.cpp" />
+    <ClCompile Include="..\..\src\ui\ui_select_window.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\common\cmn_def.h" />
+    <ClInclude Include="..\..\src\common\cmn_global_data.h" />
+    <ClInclude Include="..\..\src\common\cmn_util.h" />
+    <ClInclude Include="..\..\src\common\ui\ui_pause_window.h" />
+    <ClInclude Include="..\..\src\common\util\cmn_sprite_util.h" />
+    <ClInclude Include="..\..\src\fwd.h" />
+    <ClInclude Include="..\..\src\root.h" />
+    <ClInclude Include="..\..\src\sequence\seq_base.h" />
+    <ClInclude Include="..\..\src\sequence\seq_manager.h" />
+    <ClInclude Include="..\..\src\sequence\seq_main.h" />
+    <ClInclude Include="..\..\src\sequence\seq_types.h" />
+    <ClInclude Include="..\..\src\ui\ui_arrow_button.h" />
+    <ClInclude Include="..\..\src\ui\ui_button.h" />
+    <ClInclude Include="..\..\src\ui\ui_input.h" />
+    <ClInclude Include="..\..\src\ui\ui_manager.h" />
+    <ClInclude Include="..\..\src\ui\ui_message_window.h" />
+    <ClInclude Include="..\..\src\ui\ui_player_window.h" />
+    <ClInclude Include="..\..\src\ui\ui_select_box.h" />
+    <ClInclude Include="..\..\src\ui\ui_select_window.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9825C546-2726-441F-92C1-7C26718D0F2B}</ProjectGuid>
+    <RootNamespace>template</RootNamespace>
+    <ProjectName>template</ProjectName>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDX9|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='OptimizeDX9|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDX9|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGL|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugDX9|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='OptimizeDX9|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDX9|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugGL|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDX9|Win32'">
+    <TargetName>$(ProjectName)_dx9o</TargetName>
+    <OutDir>../../../bin/</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='OptimizeDX9|Win32'">
+    <TargetName>$(ProjectName)_dx9d</TargetName>
+    <OutDir>../../../bin/</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDX9|Win32'">
+    <TargetName>$(ProjectName)_dx9</TargetName>
+    <OutDir>$(SolutionDir)\..\..\..\bin\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGL|Win32'">
+    <TargetName>$(ProjectName)_gld</TargetName>
+    <OutDir>$(SolutionDir)\..\..\..\bin\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDX9|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../../src;$(TBSDK_DIR)/include;$(DXSDK_DIR)/Include;$(TBSDK_DIR)/sdk/lua/5.3.1/include;$(TBSDK_DIR)/sdk/tolua++/include;$(TBSDK_DIR)/sdk/al/include;$(TBSDK_DIR)/sdk/Box2D</AdditionalIncludeDirectories>
+      <UndefinePreprocessorDefinitions>
+      </UndefinePreprocessorDefinitions>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions);_WINDOWS;_DEBUG;TB_3DAPI_DX9</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>fwd.h</PrecompiledHeaderFile>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(TBSDK_DIR)/lib/vs/win32;$(DXSDK_DIR)\Lib\x86;$(TBSDK_DIR)/sdk/lua/5.3.1/lib/win32;$(TBSDK_DIR)/sdk/al/libs/win32;$(TBSDK_DIR)/sdk/Box2D/lib/Win32;$(TBSDK_DIR)/sdk/libogg/lib/win32;$(TBSDK_DIR)/sdk/libvorbis/libs/win32;$(TBSDK_DIR)/sdk/brofiler</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies);tb_base_d.lib;tb_graphics_dx9d.lib;tb_framework_dx9d.lib;tb_input_d.lib;tb_script_lua_d.lib;tb_sound_d.lib;tb_physics2d_d.lib;tb_network_d.lib;tb_ui_dx9d.lib;lua_d.lib;Box2D_d.lib;xinput.lib;crayon_dx9d.lib;legacy_stdio_definitions.lib</AdditionalDependencies>
+    </Link>
+    <Lib>
+      <OutputFile>../../../lib/vs2010/win32/$(TargetName)$(TargetExt)</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='OptimizeDX9|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../../src;$(TBSDK_DIR)/include;$(DXSDK_DIR)/Include;$(TBSDK_DIR)/sdk/lua/5.3.1/include;$(TBSDK_DIR)/sdk/tolua++/include;$(TBSDK_DIR)/sdk/al/include;$(TBSDK_DIR)/sdk/Box2D</AdditionalIncludeDirectories>
+      <UndefinePreprocessorDefinitions>
+      </UndefinePreprocessorDefinitions>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions);_WINDOWS;_DEBUG;TB_3DAPI_DX9</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>fwd.h</PrecompiledHeaderFile>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(TBSDK_DIR)/lib/vs/win32;$(DXSDK_DIR)\Lib\x86;$(TBSDK_DIR)/sdk/lua/5.3.1/lib/win32;$(TBSDK_DIR)/sdk/al/libs/win32;$(TBSDK_DIR)/sdk/Box2D/lib;$(TBSDK_DIR)/sdk/libogg/lib/win32;$(TBSDK_DIR)/sdk/libvorbis/libs/win32</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies);tb_base_d.lib;tb_graphics_dx9d.lib;tb_framework_dx9d.lib;tb_input_d.lib;tb_script_lua_d.lib;tb_sound_d.lib;tb_physics_2d_d.lib;tb_network_d.lib;tb_ui_dx9d.lib;lua_d.lib;Box2D_d.lib;xinput.lib;crayon_dx9d.lib</AdditionalDependencies>
+    </Link>
+    <Lib>
+      <OutputFile>../../../lib/vs2010/win32/$(TargetName)$(TargetExt)</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDX9|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Full</Optimization>
+      <AdditionalIncludeDirectories>../../src;$(TBSDK_DIR)/include;$(DXSDK_DIR)/Include;$(TBSDK_DIR)/sdk/lua/5.3.1/include;$(TBSDK_DIR)/sdk/tolua++/include;$(TBSDK_DIR)/sdk/al/include;$(TBSDK_DIR)/sdk/Box2D;../../../../virtual_controller/soft/include</AdditionalIncludeDirectories>
+      <UndefinePreprocessorDefinitions>
+      </UndefinePreprocessorDefinitions>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions);_WINDOWS;NDEBUG;TB_3DAPI_DX9</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>fwd.h</PrecompiledHeaderFile>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <ExceptionHandling>false</ExceptionHandling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <MinimalRebuild>false</MinimalRebuild>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(TBSDK_DIR)/lib/vs/win32;$(DXSDK_DIR)\Lib\x86;$(TBSDK_DIR)/sdk/lua/5.3.1/lib/win32;$(TBSDK_DIR)/sdk/al/libs/win32;$(TBSDK_DIR)/sdk/Box2D/lib/Win32;$(TBSDK_DIR)/sdk/libogg/lib/win32;$(TBSDK_DIR)/sdk/libvorbis/libs/win32</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies);tb_base.lib;tb_graphics_dx9.lib;tb_framework_dx9.lib;tb_input.lib;tb_script_lua.lib;tb_sound.lib;tb_physics2d.lib;tb_ui_dx9.lib;lua.lib;Box2D.lib;crayon_dx9.lib;legacy_stdio_definitions.lib</AdditionalDependencies>
+    </Link>
+    <Lib>
+      <OutputFile>../../../lib/vs2010/win32/$(TargetName)$(TargetExt)</OutputFile>
+    </Lib>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugGL|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../../src;$(TBSDK_DIR)/include;$(DXSDK_DIR)/Include;$(TBSDK_DIR)/sdk/lua/5.3.1/include;$(TBSDK_DIR)/sdk/tolua++/include;$(TBSDK_DIR)/sdk/GL/include;$(TBSDK_DIR)/sdk/al/include;$(TBSDK_DIR)/sdk/Box2D;../../../../virtual_controller/soft/include</AdditionalIncludeDirectories>
+      <UndefinePreprocessorDefinitions>
+      </UndefinePreprocessorDefinitions>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions);_WINDOWS;_DEBUG;TB_USE_GL</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>fwd.h</PrecompiledHeaderFile>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(TBSDK_DIR)/lib/vs/win32;$(TBSDK_DIR)/sdk/GL/lib;$(DXSDK_DIR)\Lib\x86;$(TBSDK_DIR)/sdk/lua/5.3.1/lib/win32;$(TBSDK_DIR)/sdk/al/libs/win32;$(TBSDK_DIR)/sdk/Box2D/lib;$(TBSDK_DIR)/sdk/libogg/lib/win32;$(TBSDK_DIR)/sdk/libvorbis/libs/win32</AdditionalLibraryDirectories>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies);tb_base_d.lib;tb_graphics_gld.lib;tb_framework_gld.lib;tb_input_d.lib;tb_script_lua_d.lib;tb_sound_d.lib;tb_physics_2d_d.lib;tb_network_d.lib;tb_ui_gld.lib;lua_d.lib;Box2D_d.lib;xinput.lib;crayon_gld.lib</AdditionalDependencies>
+    </Link>
+    <Lib>
+      <OutputFile>../../../lib/vs2010/win32/$(TargetName)$(TargetExt)</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2673F07E1C455F5300BB58D3 /* tb_allocator_viewer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2673F07B1C455F5300BB58D3 /* tb_allocator_viewer.cpp */; };
+		2673F07F1C455F5300BB58D3 /* tb_fixed_allocator_view.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2673F07C1C455F5300BB58D3 /* tb_fixed_allocator_view.cpp */; };
+		2673F0801C455F5300BB58D3 /* tb_heap_allocator_view.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2673F07D1C455F5300BB58D3 /* tb_heap_allocator_view.cpp */; };
+		26A456E51C49ED8600B19A71 /* tb_framework_view_controller.mm in Sources */ = {isa = PBXBuildFile; fileRef = 26A456E41C49ED8600B19A71 /* tb_framework_view_controller.mm */; };
+		26A456FA1C49F46F00B19A71 /* tb_debug_menu_item_alias.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26A456F11C49F46F00B19A71 /* tb_debug_menu_item_alias.cpp */; };
+		26A456FB1C49F46F00B19A71 /* tb_debug_menu_item_bool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26A456F21C49F46F00B19A71 /* tb_debug_menu_item_bool.cpp */; };
+		26A456FC1C49F46F00B19A71 /* tb_debug_menu_item_button.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26A456F31C49F46F00B19A71 /* tb_debug_menu_item_button.cpp */; };
+		26A456FD1C49F46F00B19A71 /* tb_debug_menu_item_color.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26A456F41C49F46F00B19A71 /* tb_debug_menu_item_color.cpp */; };
+		26A456FE1C49F46F00B19A71 /* tb_debug_menu_item_float.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26A456F51C49F46F00B19A71 /* tb_debug_menu_item_float.cpp */; };
+		26A456FF1C49F46F00B19A71 /* tb_debug_menu_item_vec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26A456F61C49F46F00B19A71 /* tb_debug_menu_item_vec.cpp */; };
+		26A457001C49F46F00B19A71 /* tb_debug_menu_item.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26A456F71C49F46F00B19A71 /* tb_debug_menu_item.cpp */; };
+		26A457011C49F46F00B19A71 /* tb_debug_menu_manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26A456F81C49F46F00B19A71 /* tb_debug_menu_manager.cpp */; };
+		26A457021C49F46F00B19A71 /* tb_debug_menu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26A456F91C49F46F00B19A71 /* tb_debug_menu.cpp */; };
+		26EF72101C414DE9008D4E6E /* tb_framework.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26EF720F1C414DE9008D4E6E /* tb_framework.cpp */; };
+		26EF72161C414E15008D4E6E /* tb_framework_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26EF72151C414E15008D4E6E /* tb_framework_impl.cpp */; };
+		26EF72181C414E1C008D4E6E /* tb_framework_simple.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26EF72171C414E1C008D4E6E /* tb_framework_simple.cpp */; };
+		26EF721C1C414E2D008D4E6E /* tb_framework_main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 26EF721A1C414E2D008D4E6E /* tb_framework_main.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		26F0316F1C3EB6F700C27D95 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2673F07B1C455F5300BB58D3 /* tb_allocator_viewer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tb_allocator_viewer.cpp; path = ../../../../../src/framework/debug/viewer/tb_allocator_viewer.cpp; sourceTree = "<group>"; };
+		2673F07C1C455F5300BB58D3 /* tb_fixed_allocator_view.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tb_fixed_allocator_view.cpp; path = ../../../../../src/framework/debug/viewer/tb_fixed_allocator_view.cpp; sourceTree = "<group>"; };
+		2673F07D1C455F5300BB58D3 /* tb_heap_allocator_view.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tb_heap_allocator_view.cpp; path = ../../../../../src/framework/debug/viewer/tb_heap_allocator_view.cpp; sourceTree = "<group>"; };
+		26A456E41C49ED8600B19A71 /* tb_framework_view_controller.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = tb_framework_view_controller.mm; path = ../../../../../src/framework/depend/ios/tb_framework_view_controller.mm; sourceTree = "<group>"; };
+		26A456F11C49F46F00B19A71 /* tb_debug_menu_item_alias.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tb_debug_menu_item_alias.cpp; path = ../../../../../src/framework/debug/menu/tb_debug_menu_item_alias.cpp; sourceTree = "<group>"; };
+		26A456F21C49F46F00B19A71 /* tb_debug_menu_item_bool.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tb_debug_menu_item_bool.cpp; path = ../../../../../src/framework/debug/menu/tb_debug_menu_item_bool.cpp; sourceTree = "<group>"; };
+		26A456F31C49F46F00B19A71 /* tb_debug_menu_item_button.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tb_debug_menu_item_button.cpp; path = ../../../../../src/framework/debug/menu/tb_debug_menu_item_button.cpp; sourceTree = "<group>"; };
+		26A456F41C49F46F00B19A71 /* tb_debug_menu_item_color.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tb_debug_menu_item_color.cpp; path = ../../../../../src/framework/debug/menu/tb_debug_menu_item_color.cpp; sourceTree = "<group>"; };
+		26A456F51C49F46F00B19A71 /* tb_debug_menu_item_float.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tb_debug_menu_item_float.cpp; path = ../../../../../src/framework/debug/menu/tb_debug_menu_item_float.cpp; sourceTree = "<group>"; };
+		26A456F61C49F46F00B19A71 /* tb_debug_menu_item_vec.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tb_debug_menu_item_vec.cpp; path = ../../../../../src/framework/debug/menu/tb_debug_menu_item_vec.cpp; sourceTree = "<group>"; };
+		26A456F71C49F46F00B19A71 /* tb_debug_menu_item.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tb_debug_menu_item.cpp; path = ../../../../../src/framework/debug/menu/tb_debug_menu_item.cpp; sourceTree = "<group>"; };
+		26A456F81C49F46F00B19A71 /* tb_debug_menu_manager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tb_debug_menu_manager.cpp; path = ../../../../../src/framework/debug/menu/tb_debug_menu_manager.cpp; sourceTree = "<group>"; };
+		26A456F91C49F46F00B19A71 /* tb_debug_menu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tb_debug_menu.cpp; path = ../../../../../src/framework/debug/menu/tb_debug_menu.cpp; sourceTree = "<group>"; };
+		26EF720F1C414DE9008D4E6E /* tb_framework.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tb_framework.cpp; path = ../../../../../src/framework/tb_framework.cpp; sourceTree = "<group>"; };
+		26EF72151C414E15008D4E6E /* tb_framework_impl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tb_framework_impl.cpp; path = ../../../../../src/framework/impl/tb_framework_impl.cpp; sourceTree = "<group>"; };
+		26EF72171C414E1C008D4E6E /* tb_framework_simple.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tb_framework_simple.cpp; path = ../../../../../src/framework/sub/tb_framework_simple.cpp; sourceTree = "<group>"; };
+		26EF721A1C414E2D008D4E6E /* tb_framework_main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = tb_framework_main.mm; path = ../../../../../src/framework/depend/ios/tb_framework_main.mm; sourceTree = "<group>"; };
+		26F031711C3EB6F700C27D95 /* libtb_framework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libtb_framework.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		26F0318E1C3EB7DC00C27D95 /* tb_framework-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "tb_framework-Prefix.pch"; sourceTree = "<group>"; };
+		26F0318F1C3EB84D00C27D95 /* framework */ = {isa = PBXFileReference; lastKnownFileType = folder; name = framework; path = ../../../../../include/framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		26F0316E1C3EB6F700C27D95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2673F07A1C455F4900BB58D3 /* viewer */ = {
+			isa = PBXGroup;
+			children = (
+				2673F07B1C455F5300BB58D3 /* tb_allocator_viewer.cpp */,
+				2673F07C1C455F5300BB58D3 /* tb_fixed_allocator_view.cpp */,
+				2673F07D1C455F5300BB58D3 /* tb_heap_allocator_view.cpp */,
+			);
+			name = viewer;
+			sourceTree = "<group>";
+		};
+		26A456F01C49F46500B19A71 /* menu */ = {
+			isa = PBXGroup;
+			children = (
+				26A456F11C49F46F00B19A71 /* tb_debug_menu_item_alias.cpp */,
+				26A456F21C49F46F00B19A71 /* tb_debug_menu_item_bool.cpp */,
+				26A456F31C49F46F00B19A71 /* tb_debug_menu_item_button.cpp */,
+				26A456F41C49F46F00B19A71 /* tb_debug_menu_item_color.cpp */,
+				26A456F51C49F46F00B19A71 /* tb_debug_menu_item_float.cpp */,
+				26A456F61C49F46F00B19A71 /* tb_debug_menu_item_vec.cpp */,
+				26A456F71C49F46F00B19A71 /* tb_debug_menu_item.cpp */,
+				26A456F81C49F46F00B19A71 /* tb_debug_menu_manager.cpp */,
+				26A456F91C49F46F00B19A71 /* tb_debug_menu.cpp */,
+			);
+			name = menu;
+			sourceTree = "<group>";
+		};
+		26EF720E1C414DDD008D4E6E /* framework */ = {
+			isa = PBXGroup;
+			children = (
+				26EF72141C414E0A008D4E6E /* impl */,
+				26EF72131C414E00008D4E6E /* depend */,
+				26EF72121C414DF4008D4E6E /* debug */,
+				26EF72111C414DEE008D4E6E /* sub */,
+				26EF720F1C414DE9008D4E6E /* tb_framework.cpp */,
+			);
+			name = framework;
+			sourceTree = "<group>";
+		};
+		26EF72111C414DEE008D4E6E /* sub */ = {
+			isa = PBXGroup;
+			children = (
+				26EF72171C414E1C008D4E6E /* tb_framework_simple.cpp */,
+			);
+			name = sub;
+			sourceTree = "<group>";
+		};
+		26EF72121C414DF4008D4E6E /* debug */ = {
+			isa = PBXGroup;
+			children = (
+				26A456F01C49F46500B19A71 /* menu */,
+				2673F07A1C455F4900BB58D3 /* viewer */,
+			);
+			name = debug;
+			sourceTree = "<group>";
+		};
+		26EF72131C414E00008D4E6E /* depend */ = {
+			isa = PBXGroup;
+			children = (
+				26EF72191C414E22008D4E6E /* ios */,
+			);
+			name = depend;
+			sourceTree = "<group>";
+		};
+		26EF72141C414E0A008D4E6E /* impl */ = {
+			isa = PBXGroup;
+			children = (
+				26EF72151C414E15008D4E6E /* tb_framework_impl.cpp */,
+			);
+			name = impl;
+			sourceTree = "<group>";
+		};
+		26EF72191C414E22008D4E6E /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				26A456E41C49ED8600B19A71 /* tb_framework_view_controller.mm */,
+				26EF721A1C414E2D008D4E6E /* tb_framework_main.mm */,
+			);
+			name = ios;
+			sourceTree = "<group>";
+		};
+		26F031681C3EB6F700C27D95 = {
+			isa = PBXGroup;
+			children = (
+				26F031731C3EB6F700C27D95 /* tb_framework */,
+				26F031721C3EB6F700C27D95 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		26F031721C3EB6F700C27D95 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				26F031711C3EB6F700C27D95 /* libtb_framework.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		26F031731C3EB6F700C27D95 /* tb_framework */ = {
+			isa = PBXGroup;
+			children = (
+				26F0318D1C3EB79400C27D95 /* src */,
+				26F0318C1C3EB78E00C27D95 /* include */,
+				26F0318B1C3EB78400C27D95 /* pch */,
+			);
+			path = tb_framework;
+			sourceTree = "<group>";
+		};
+		26F0318B1C3EB78400C27D95 /* pch */ = {
+			isa = PBXGroup;
+			children = (
+				26F0318E1C3EB7DC00C27D95 /* tb_framework-Prefix.pch */,
+			);
+			name = pch;
+			sourceTree = "<group>";
+		};
+		26F0318C1C3EB78E00C27D95 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				26F0318F1C3EB84D00C27D95 /* framework */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+		26F0318D1C3EB79400C27D95 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				26EF720E1C414DDD008D4E6E /* framework */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		26F031701C3EB6F700C27D95 /* tb_framework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26F031851C3EB6F700C27D95 /* Build configuration list for PBXNativeTarget "tb_framework" */;
+			buildPhases = (
+				26F0316D1C3EB6F700C27D95 /* Sources */,
+				26F0316E1C3EB6F700C27D95 /* Frameworks */,
+				26F0316F1C3EB6F700C27D95 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tb_framework;
+			productName = tb_framework;
+			productReference = 26F031711C3EB6F700C27D95 /* libtb_framework.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		26F031691C3EB6F700C27D95 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = tecopark;
+				TargetAttributes = {
+					26F031701C3EB6F700C27D95 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = 26F0316C1C3EB6F700C27D95 /* Build configuration list for PBXProject "tb_framework" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 26F031681C3EB6F700C27D95;
+			productRefGroup = 26F031721C3EB6F700C27D95 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				26F031701C3EB6F700C27D95 /* tb_framework */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		26F0316D1C3EB6F700C27D95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26A456FA1C49F46F00B19A71 /* tb_debug_menu_item_alias.cpp in Sources */,
+				26A456FE1C49F46F00B19A71 /* tb_debug_menu_item_float.cpp in Sources */,
+				26A457001C49F46F00B19A71 /* tb_debug_menu_item.cpp in Sources */,
+				26A456FD1C49F46F00B19A71 /* tb_debug_menu_item_color.cpp in Sources */,
+				26A457011C49F46F00B19A71 /* tb_debug_menu_manager.cpp in Sources */,
+				26A456FC1C49F46F00B19A71 /* tb_debug_menu_item_button.cpp in Sources */,
+				2673F0801C455F5300BB58D3 /* tb_heap_allocator_view.cpp in Sources */,
+				26EF72161C414E15008D4E6E /* tb_framework_impl.cpp in Sources */,
+				26A456FB1C49F46F00B19A71 /* tb_debug_menu_item_bool.cpp in Sources */,
+				2673F07F1C455F5300BB58D3 /* tb_fixed_allocator_view.cpp in Sources */,
+				26EF72101C414DE9008D4E6E /* tb_framework.cpp in Sources */,
+				26EF72181C414E1C008D4E6E /* tb_framework_simple.cpp in Sources */,
+				26A457021C49F46F00B19A71 /* tb_debug_menu.cpp in Sources */,
+				26A456FF1C49F46F00B19A71 /* tb_debug_menu_item_vec.cpp in Sources */,
+				2673F07E1C455F5300BB58D3 /* tb_allocator_viewer.cpp in Sources */,
+				26EF721C1C414E2D008D4E6E /* tb_framework_main.mm in Sources */,
+				26A456E51C49ED8600B19A71 /* tb_framework_view_controller.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		26F031831C3EB6F700C27D95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		26F031841C3EB6F700C27D95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		26F031861C3EB6F700C27D95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "tb_framework/tb_framework-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/Users/miyakeshunsuke/Desktop/Portal/Dev/workspace/base/toybox/include,
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-fembed-bitcode",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		26F031871C3EB6F700C27D95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "tb_framework/tb_framework-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/Users/miyakeshunsuke/Desktop/Portal/Dev/workspace/base/toybox/include,
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-fembed-bitcode",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		26F0316C1C3EB6F700C27D95 /* Build configuration list for PBXProject "tb_framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26F031831C3EB6F700C27D95 /* Debug */,
+				26F031841C3EB6F700C27D95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26F031851C3EB6F700C27D95 /* Build configuration list for PBXNativeTarget "tb_framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26F031861C3EB6F700C27D95 /* Debug */,
+				26F031871C3EB6F700C27D95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 26F031691C3EB6F700C27D95 /* Project object */;
+}

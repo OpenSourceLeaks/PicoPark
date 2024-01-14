@@ -1,0 +1,49 @@
+=======================================================
+Title:PICO pARK
+
+=======================================================
+AWARD
+
+SENSE OF WONDER NIGHT 2014 Best Presentation Award
+9/19
+http://expo.nikkeibp.co.jp/tgs/2014/en/business/sown/presentation.html
+=======================================================
+
+=======================================================
+PICO PARKは2人から最大10人で遊べる協力型アクションパズルゲームです。
+
+PICO PARKの全てのステージは、鍵を手に入れて扉を開けてプレイヤー全員がその扉に入ることでクリアできます。
+しかし、クリアするためには必ず協力が必要です。
+
+求められる協力の仕方はステージによって異なります。
+例えば、１人では届かない場所も、他のプレイヤーの頭上に乗って階段を作ることで到達できます。
+1人では動かせないブロックも、みんなで押すことで動かすことができます。
+
+また全てのステージはプレイ人数によって自動調整されます。
+つまり、あなたが遊びたい人数で全てのステージを遊ぶことができます。
+
+PICO PARKを遊ぶプレイヤーは、大人の子供も心を一つにして挑んでみてください。
+是非、お好きな人数で「大人数で協力する楽しさ」を味わってみてください。
+
+現在、新宿8bit cafeにて常設稼働しており、その場にたまたま居合わせたお客様同士でよく遊んでもらっています。
+またデザインフェスタ、東京インディーフェスタ、BitSummit等の国内アートイベント、インディーゲームイベントにて展示しました。
+店頭、イベント用とは別に、スマートフォンをコントローラに利用可能な個人向けバージョンも制作中です。
+
+現在、新宿8bit cafeに常設している他、
+=======================================================
+
+=======================================================
+PICO PARK is a cooperative local multiplay action puzzle game for 2-10 players.
+
+Each level of PICO PARK can be cleared when players get the key, unlock the door and all players reach it.
+But, every level requires cooperation to complete..
+For example, players can climb on top of each other to reach new heights, or they can combine their strength to push large blocks.
+
+And PICO PARK is very flexible because every level adjusts to the total number of players.
+So you can play with as many friends as your like..
+
+Let's have fun playing PICO PARK together!
+=======================================================
+
+・Game Playable ROM
+・Game Trailer Movie

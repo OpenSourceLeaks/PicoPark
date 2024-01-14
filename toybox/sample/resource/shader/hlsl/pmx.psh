@@ -1,0 +1,9 @@
+#include "pmx.h"
+
+sampler g_Texture : register(s0);
+
+float4 main( VsOut input ) : COLOR
+{
+    return tex2D( g_Texture , input.texcoord );
+//    return float4(1.0,1.0,1.0,1.0);
+}

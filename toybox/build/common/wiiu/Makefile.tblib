@@ -1,0 +1,8 @@
+ifeq ($(TBSDK_DIR_CYG), )
+    TBSDK_DIR_CYG=$(shell cygpath -u $(TBSDK_DIR))
+endif
+
+LIB_DIR=$(TBSDK_DIR_CYG)/lib/wiiu
+LOCAL_INCLUDES=$(TBSDK_DIR_CYG)/include
+
+include $(TBSDK_DIR_CYG)/build/common/wiiu/Makefile.lib

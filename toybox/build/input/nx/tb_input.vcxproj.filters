@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ビルド">
+      <UniqueIdentifier>{F1DF9757-14C3-43FA-8525-6665FEDE7BA5}</UniqueIdentifier>
+      <Extensions>props</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\input">
+      <UniqueIdentifier>{f506460c-661a-4c12-95ff-c647ba54ea57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\input">
+      <UniqueIdentifier>{83e63967-1d25-4752-a8d0-0ea361c92014}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\input\depend">
+      <UniqueIdentifier>{667597af-f658-4170-b9db-503baa1fa7bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\input\depend\manual">
+      <UniqueIdentifier>{61f9c93b-f105-49c0-875e-48b56455b4a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\input\depend">
+      <UniqueIdentifier>{d0647c39-cac3-44b1-ac95-f0ca244d24aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\input\depend\manual">
+      <UniqueIdentifier>{d12c82de-dcd1-4dfb-ae56-03553704d43c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\input\depend\nx">
+      <UniqueIdentifier>{b9cd34aa-52e8-4b21-aa09-7238fea6b01e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\input\depend\nx">
+      <UniqueIdentifier>{5fc7abe9-94d5-4c20-9ff2-a1974ce97f5f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\include\input\tb_bit_input.h">
+      <Filter>ヘッダー ファイル\input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\input\tb_input_setting.h">
+      <Filter>ヘッダー ファイル\input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\input\tb_keyboard.h">
+      <Filter>ヘッダー ファイル\input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\input\tb_mouse.h">
+      <Filter>ヘッダー ファイル\input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\input\tb_pad.h">
+      <Filter>ヘッダー ファイル\input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\input\tb_pad_types.h">
+      <Filter>ヘッダー ファイル\input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\input\tb_touch.h">
+      <Filter>ヘッダー ファイル\input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\input\tb_virtual_input.h">
+      <Filter>ヘッダー ファイル\input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\input\tb_virtual_input_manager.h">
+      <Filter>ヘッダー ファイル\input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\input\depend\tb_keyboard_depend.h">
+      <Filter>ヘッダー ファイル\input\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\input\depend\tb_mouse_depend.h">
+      <Filter>ヘッダー ファイル\input\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\input\depend\tb_pad_depend.h">
+      <Filter>ヘッダー ファイル\input\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\input\depend\tb_touch_depend.h">
+      <Filter>ヘッダー ファイル\input\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\input\depend\manual\tb_mouse_manual.h">
+      <Filter>ヘッダー ファイル\input\depend\manual</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\input\depend\manual\tb_touch_manual.h">
+      <Filter>ヘッダー ファイル\input\depend\manual</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\input\depend\manual\tb_keyboard_manual.h">
+      <Filter>ヘッダー ファイル\input\depend\manual</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\tb_fwd.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\tb_pch.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\input\depend\nx\tb_pad_nx.h">
+      <Filter>ヘッダー ファイル\input\depend\nx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\input\depend\nx\tb_keyboard_nx.h">
+      <Filter>ヘッダー ファイル\input\depend\nx</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\input\tb_keyboard_common.cpp">
+      <Filter>ソース ファイル\input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\input\tb_virtual_input_manager.cpp">
+      <Filter>ソース ファイル\input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\input\tb_input_setting.cpp">
+      <Filter>ソース ファイル\input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\input\depend\manual\tb_mouse_manual.cpp">
+      <Filter>ソース ファイル\input\depend\manual</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\input\depend\manual\tb_touch_manual.cpp">
+      <Filter>ソース ファイル\input\depend\manual</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\tb_fwd.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\input\depend\nx\tb_pad_nx.cpp">
+      <Filter>ソース ファイル\input\depend\nx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\input\depend\nx\tb_keyboard_nx.cpp">
+      <Filter>ソース ファイル\input\depend\nx</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

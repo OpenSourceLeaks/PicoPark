@@ -1,0 +1,10 @@
+[FILE] Open Failed : ../resource\system/font/font_ascii.tga
+[FILE] Open Failed : ../resource\tex/tex_picolecitta.tga
+[FILE] Open Failed : ../resource\font/font_famania.tga
+[FILE] Open Failed : ../resource\font/font.tga
+[FILE] Open Failed : ../resource\seq_setting.lua
+[ASSERT]--
+file:..\..\src\sequence\seq_manager.cpp
+line:68
+func:SeqManager::Initialize
+message:res == TbScriptLuaNode::RESULT_OK

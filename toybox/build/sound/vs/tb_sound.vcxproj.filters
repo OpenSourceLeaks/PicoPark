@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\sound\depend\al\tb_sound_listener_al.cpp">
+      <Filter>src\sound\depend\al</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\sound\depend\al\tb_sound_manager_al.cpp">
+      <Filter>src\sound\depend\al</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\sound\depend\al\tb_sound_source_al.cpp">
+      <Filter>src\sound\depend\al</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\sound\tb_sound_manager_common.cpp">
+      <Filter>src\sound</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\sound\tb_sound_source_common.cpp">
+      <Filter>src\sound</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\sound\tb_sound_stream_buffer.cpp">
+      <Filter>src\sound</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\tb_fwd.cpp" />
+    <ClCompile Include="..\..\..\src\sound\resource\tb_sound_resource_wav.cpp">
+      <Filter>src\sound\resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\sound\depend\xaudio\tb_sound_manager_xaudio.cpp">
+      <Filter>src\sound\depend\xaudio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\sound\depend\xaudio\tb_sound_source_xaudio.cpp">
+      <Filter>src\sound\depend\xaudio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\sound\depend\xaudio\tb_sound_listener_xaudio.cpp">
+      <Filter>src\sound\depend\xaudio</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\sound\resource\tb_sound_resource_ogg.cpp">
+      <Filter>src\sound\resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\sound\tb_sound_source_handle.cpp">
+      <Filter>src\sound</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\include\sound\tb_sound_listener.h">
+      <Filter>include\sound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\sound\tb_sound_manager.h">
+      <Filter>include\sound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\sound\tb_sound_source.h">
+      <Filter>include\sound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\sound\tb_sound_source_shape.h">
+      <Filter>include\sound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\sound\tb_sound_types.h">
+      <Filter>include\sound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\sound\tb_sound.h">
+      <Filter>include\sound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\sound\shape\tb_sound_source_shape_line.h">
+      <Filter>include\sound\shape</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\sound\shape\tb_sound_source_shape_point.h">
+      <Filter>include\sound\shape</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\sound\shape\tb_sound_source_shape_box.h">
+      <Filter>include\sound\shape</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\sound\shape\tb_sound_source_shape_group.h">
+      <Filter>include\sound\shape</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\sound\depend\tb_sound_manager_depend.h">
+      <Filter>include\sound\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\sound\depend\tb_sound_source_depend.h">
+      <Filter>include\sound\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\sound\depend\tb_sound_listener_depend.h">
+      <Filter>include\sound\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\sound\depend\al\tb_sound_source_al.h">
+      <Filter>include\sound\depend\al</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\sound\depend\al\tb_sound_util_al.h">
+      <Filter>include\sound\depend\al</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\sound\depend\al\tb_sound_manager_al.h">
+      <Filter>include\sound\depend\al</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\sound\tb_sound_stream_buffer.h">
+      <Filter>include\sound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\sound\depend\al\tb_sound_types_al.h">
+      <Filter>include\sound\depend\al</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\sound\depend\tb_sound_types_depend.h">
+      <Filter>include\sound\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\sound\resource\tb_sound_resource.h">
+      <Filter>include\sound\resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\sound\resource\tb_sound_resource_wav.h">
+      <Filter>include\sound\resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\sound\depend\xaudio\tb_sound_source_xaudio.h">
+      <Filter>include\sound\depend\xaudio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\sound\depend\xaudio\tb_sound_types_xaudio.h">
+      <Filter>include\sound\depend\xaudio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\sound\depend\xaudio\tb_sound_util_xaudio.h">
+      <Filter>include\sound\depend\xaudio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\sound\depend\xaudio\tb_sound_manager_xaudio.h">
+      <Filter>include\sound\depend\xaudio</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\sound\resource\tb_sound_resource_ogg.h">
+      <Filter>include\sound\resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\sound\tb_sound_source_fade.h">
+      <Filter>include\sound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\sound\tb_sound_source_handle.h">
+      <Filter>include\sound</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{0579696b-06d5-4b3b-9da8-670cc096f14d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{600d9ecc-7947-4c0f-851f-a503052f4695}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\sound">
+      <UniqueIdentifier>{cb074df3-f698-4f05-9d46-bb43f017405d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\sound">
+      <UniqueIdentifier>{f1dee9ae-cb34-44d9-aa04-648971f78c2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\sound\depend">
+      <UniqueIdentifier>{d70f055b-c9ca-4332-b85c-23b44e34630e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\sound\depend">
+      <UniqueIdentifier>{0d4aa37b-0511-49d0-9754-2ce11eea90c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\sound\depend\al">
+      <UniqueIdentifier>{3db5712a-b048-4081-9cab-79769465756a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\sound\shape">
+      <UniqueIdentifier>{1bde6cf4-7e01-46f7-99a8-f25c6ad08cb2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\sound\depend\al">
+      <UniqueIdentifier>{629a8acf-fa1f-427c-9a5b-3936c3bf0dff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\sound\resource">
+      <UniqueIdentifier>{b8207bbc-f30f-4cac-818e-187c80ed3975}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\sound\resource">
+      <UniqueIdentifier>{49bf015f-60ff-4944-86d1-1cbcf5b475aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\sound\depend\xaudio">
+      <UniqueIdentifier>{26cab4cb-d41f-4f02-afc8-729ed128293c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\sound\depend\xaudio">
+      <UniqueIdentifier>{bbb7ee69-b99c-4d32-b3f2-b9c678d9cd17}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

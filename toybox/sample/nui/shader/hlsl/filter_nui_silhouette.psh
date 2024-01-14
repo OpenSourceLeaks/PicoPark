@@ -1,0 +1,78 @@
+#include "format_types_tex.h"
+
+uniform float u_Ratio : register(c0);
+uniform float u_TexWidth : register(c4);
+uniform float u_TexHeight : register(c5);
+
+// Sobelフィルター用輝度値関数
+float luminance(float4 color) 
+{ 
+   return color.r*0.3 + color.g*0.59 + color.b*0.11; 
+}
+
+// Sobelフィルター
+float4 SobelFilter( float2 uv )
+{
+    float dx = 1.0f / u_TexWidth;
+    float dy = 1.0f / u_TexHeight;
+
+    float UpLeft = luminance(tex2D( g_Texture , 
+                                    float2(uv.x - dx, uv.y - dy))); 
+    float Up = luminance(tex2D( g_Texture ,   
+                                float2(uv.x, uv.y - dy))); 
+    float UpRight = luminance(tex2D( g_Texture , 
+                                     float2(uv.x + dx, uv.y - dy))); 
+    float Left = luminance(tex2D( g_Texture ,  
+                                  float2(uv.x - dx, uv.y - dy))); 
+    float Right = luminance(tex2D( g_Texture , 
+                                   float2(uv.x + dx, uv.y - dy))); 
+    float DownLeft = luminance(tex2D( g_Texture ,  
+                                      float2(uv.x - dx, uv.y + dy))); 
+    float Down = luminance(tex2D( g_Texture , 
+                                  float2(uv.x, uv.y+dy))); 
+    float DownRight = luminance(tex2D( g_Texture , 
+                                       float2(uv.x + dx, uv.y + dy)));
+    float dX = -UpLeft - 2.0*Left - DownLeft + UpRight + 2.0*Right + DownRight; 
+    float dY = -UpLeft - 2.0*Up - UpRight + DownLeft + 2.0*Down + DownRight; 
+    float4 sobel = sqrt(dX*dX + dY*dY); 
+    sobel.w = 1.0;
+    return sobel;
+}
+
+// シルエットぼかしフィルター
+float4 SilhouetteFilter( float2 uv )
+{
+    static const float4 white = { 1.0f , 1.0f , 1.0f , 1.0f };
+    float dx = ( 2.0f / 512.0f );
+    float dy = ( 2.0f / 512.0f );
+    
+    float4 centerColor = tex2D( g_Texture , float2(uv.x, uv.y));
+    float center = centerColor.a; 
+
+    float upLeft = tex2D( g_Texture , float2(uv.x - dx, uv.y - dy)).a; 
+    float up = tex2D( g_Texture , float2(uv.x, uv.y - dy)).a; 
+    float upRight = tex2D( g_Texture , float2(uv.x + dx , uv.y - dy)).a; 
+    float left = tex2D( g_Texture , float2(uv.x - dx, uv.y )).a; 
+    float right = tex2D( g_Texture , float2(uv.x + dx, uv.y )).a; 
+    float downLeft = tex2D( g_Texture , float2(uv.x - dx, uv.y + dy)).a; 
+    float down = tex2D( g_Texture , float2(uv.x, uv.y + dy)).a; 
+    float downRight = tex2D( g_Texture , float2(uv.x + dx , uv.y + dy)).a;
+    float value = upLeft * up * upRight * left * right * downLeft * down * downRight;
+    
+    float resultAlpha = ( 1.0f - value ) * center;
+    
+    float4 result = resultAlpha * white;
+//    float4 result = resultAlpha * white + ( 1.0f - resultAlpha ) * centerColor;
+    return result;
+}
+
+// メイン関数
+PsOut MainPS( VsOut input )
+{
+    PsOut result = (PsOut)0;
+
+//    result.color = SobelFilter( input.texcoord );
+    result.color = SilhouetteFilter( input.texcoord );
+    
+    return result;
+}

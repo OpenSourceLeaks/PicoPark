@@ -1,0 +1,39 @@
+TARGET=lua
+SRCS=$(SRC_DIR)/lapi.c\
+	 $(SRC_DIR)/lauxlib.c\
+	 $(SRC_DIR)/lbaselib.c\
+	 $(SRC_DIR)/lbitlib.c\
+	 $(SRC_DIR)/lcode.c\
+	 $(SRC_DIR)/lcorolib.c\
+	 $(SRC_DIR)/lctype.c\
+	 $(SRC_DIR)/ldblib.c\
+	 $(SRC_DIR)/ldebug.c\
+	 $(SRC_DIR)/ldo.c\
+	 $(SRC_DIR)/ldump.c\
+	 $(SRC_DIR)/lfunc.c\
+	 $(SRC_DIR)/lgc.c\
+	 $(SRC_DIR)/linit.c\
+	 $(SRC_DIR)/liolib.c\
+	 $(SRC_DIR)/llex.c\
+	 $(SRC_DIR)/lmathlib.c\
+	 $(SRC_DIR)/lmem.c\
+	 $(SRC_DIR)/loadlib.c\
+	 $(SRC_DIR)/lobject.c\
+	 $(SRC_DIR)/lopcodes.c\
+	 $(SRC_DIR)/loslib.c\
+	 $(SRC_DIR)/lparser.c\
+	 $(SRC_DIR)/lstate.c\
+	 $(SRC_DIR)/lstring.c\
+	 $(SRC_DIR)/lstrlib.c\
+	 $(SRC_DIR)/ltable.c\
+	 $(SRC_DIR)/ltablib.c\
+	 $(SRC_DIR)/ltm.c\
+	 $(SRC_DIR)/lua.c\
+	 $(SRC_DIR)/luac.c\
+	 $(SRC_DIR)/lundump.c\
+	 $(SRC_DIR)/lutf8lib.c\
+	 $(SRC_DIR)/lvm.c\
+	 $(SRC_DIR)/lzio.c\
+	 
+include Makefile.common
+	

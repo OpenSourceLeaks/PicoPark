@@ -1,0 +1,750 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Develop|Win32">
+      <Configuration>Develop</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Develop|x64">
+      <Configuration>Develop</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|NX32">
+      <Configuration>Debug</Configuration>
+      <Platform>NX32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Develop|NX32">
+      <Configuration>Develop</Configuration>
+      <Platform>NX32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|NX32">
+      <Configuration>Release</Configuration>
+      <Platform>NX32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|NX64">
+      <Configuration>Debug</Configuration>
+      <Platform>NX64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Develop|NX64">
+      <Configuration>Develop</Configuration>
+      <Platform>NX64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|NX64">
+      <Configuration>Release</Configuration>
+      <Platform>NX64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Application.arm.ilp32.nmeta" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Application.aarch64.lp64.nmeta" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\battle\battle_manager.cpp" />
+    <ClCompile Include="..\..\src\battle\battle_result_slide.cpp" />
+    <ClCompile Include="..\..\src\breakout\actor\breakout_ball.cpp" />
+    <ClCompile Include="..\..\src\breakout\actor\breakout_bar.cpp" />
+    <ClCompile Include="..\..\src\breakout\stage\breakout_stage.cpp" />
+    <ClCompile Include="..\..\src\common\cmn_fade.cpp" />
+    <ClCompile Include="..\..\src\common\cmn_simple_sprite.cpp" />
+    <ClCompile Include="..\..\src\common\cmn_util.cpp" />
+    <ClCompile Include="..\..\src\common\material\cmn_sprite_player_material.cpp" />
+    <ClCompile Include="..\..\src\common\slide\cmn_slide.cpp" />
+    <ClCompile Include="..\..\src\common\ui\ui_gamepad_config_window.cpp" />
+    <ClCompile Include="..\..\src\common\ui\ui_keyboard_config_window.cpp" />
+    <ClCompile Include="..\..\src\common\ui\ui_option_window.cpp" />
+    <ClCompile Include="..\..\src\common\ui\ui_option_window_old.cpp" />
+    <ClCompile Include="..\..\src\common\ui\ui_pause_window.cpp" />
+    <ClCompile Include="..\..\src\common\ui\ui_player_select_window.cpp" />
+    <ClCompile Include="..\..\src\edit\edit_mode_actor.cpp" />
+    <ClCompile Include="..\..\src\edit\edit_mode_manager.cpp" />
+    <ClCompile Include="..\..\src\edit\edit_mode_map.cpp" />
+    <ClCompile Include="..\..\src\edit\edit_mode_setting.cpp" />
+    <ClCompile Include="..\..\src\fwd.cpp" />
+    <ClCompile Include="..\..\src\main.cpp" />
+    <ClCompile Include="..\..\src\main_menu\main_menu_slide.cpp" />
+    <ClCompile Include="..\..\src\puzzle\actor\puzzle_block_base.cpp" />
+    <ClCompile Include="..\..\src\puzzle\actor\puzzle_block_dr.cpp" />
+    <ClCompile Include="..\..\src\puzzle\actor\puzzle_block_dr_free.cpp" />
+    <ClCompile Include="..\..\src\puzzle\actor\puzzle_block_tetris.cpp" />
+    <ClCompile Include="..\..\src\puzzle\actor\puzzle_timer.cpp" />
+    <ClCompile Include="..\..\src\puzzle\map\puzzle_dr_map.cpp" />
+    <ClCompile Include="..\..\src\puzzle\map\puzzle_map.cpp" />
+    <ClCompile Include="..\..\src\puzzle\map\puzzle_tetris_map.cpp" />
+    <ClCompile Include="..\..\src\puzzle\stage\puzzle_dr_stage.cpp" />
+    <ClCompile Include="..\..\src\puzzle\stage\puzzle_tetris_stage.cpp" />
+    <ClCompile Include="..\..\src\puzzle\stage\puzzle_vs_dr_stage.cpp" />
+    <ClCompile Include="..\..\src\puzzle\stage\puzzle_vs_tetris_stage.cpp" />
+    <ClCompile Include="..\..\src\root.cpp" />
+    <ClCompile Include="..\..\src\save\save_data_struct .cpp" />
+    <ClCompile Include="..\..\src\save\save_file.cpp" />
+    <ClCompile Include="..\..\src\sequence\seq_base.cpp" />
+    <ClCompile Include="..\..\src\sequence\seq_battle_result .cpp" />
+    <ClCompile Include="..\..\src\sequence\seq_battle_select.cpp" />
+    <ClCompile Include="..\..\src\sequence\seq_ending.cpp" />
+    <ClCompile Include="..\..\src\sequence\seq_ending_trial.cpp" />
+    <ClCompile Include="..\..\src\sequence\seq_endless_select.cpp" />
+    <ClCompile Include="..\..\src\sequence\seq_main_menu.cpp" />
+    <ClCompile Include="..\..\src\sequence\seq_manager.cpp" />
+    <ClCompile Include="..\..\src\sequence\seq_stage.cpp" />
+    <ClCompile Include="..\..\src\sequence\seq_stage_edit.cpp" />
+    <ClCompile Include="..\..\src\sequence\seq_stage_select.cpp" />
+    <ClCompile Include="..\..\src\sequence\seq_title.cpp" />
+    <ClCompile Include="..\..\src\sequence\seq_world_select.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_anim_data.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_balance.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_ball_pitcher.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_ball_pitcher_manager.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_ball_receiver.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_ball_speed_controller.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_best_score.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_big_box.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_blink_block.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_bound_ball.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_bowwow_enemy.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_breakout_battle_ball.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_check_point.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_coin.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_collision_switch.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_color_block.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_color_box.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_coop_stop_watch.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_dead_switch.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_distance_constraint.cpp">
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Disabled</Optimization>
+    </ClCompile>
+    <ClCompile Include="..\..\src\side_action\actor\side_action_endless_jump_score.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_endless_obstacle.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_endless_plane_obstacle.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_endless_scroll_score.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_endless_tetris.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_endless_thunder.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_fall_box.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_ghost.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_goal.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_judge_base.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_judge_battle_jump.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_judge_breakout.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_judge_height.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_judge_stop_watch.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_judge_territory.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_jump_area.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_jump_stand.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_key.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_key_box.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_key_proxy_goal.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_laser_ball.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_lift.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_link.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_logo .cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_majority_controller.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_map_rect.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_marker.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_move_energy.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_move_wall.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_obstacle.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_physics_ball.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_physics_object.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_plane_obstacle.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_player.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_player_dress.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_player_guard.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_player_gun.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_player_input.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_player_magnet.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_player_plane.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_rect.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_roulette.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_score_base.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_score_stop_watch.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_scroll_range.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_seesaw.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_step_enemy.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_stop_watch.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_switch.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_tetris.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_tetris_base.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_text.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_thunder.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_timer.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_title.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_traffic_light.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_updown_enemy.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_updown_lift.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_variable_weighted_lift.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_warp.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_warp_switch.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_watch.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_weighted_lift.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\side_action_wind.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\state\side_action_player_state_clear.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\state\side_action_player_state_dead.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\state\side_action_player_state_default.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\state\side_action_player_state_null.cpp" />
+    <ClCompile Include="..\..\src\side_action\actor\state\side_action_player_state_plane.cpp" />
+    <ClCompile Include="..\..\src\side_action\collision\side_action_collision_scene.cpp" />
+    <ClCompile Include="..\..\src\side_action\stage\side_action_actor_manager.cpp" />
+    <ClCompile Include="..\..\src\side_action\stage\side_action_stage.cpp" />
+    <ClCompile Include="..\..\src\stage_select\stage_select_menu.cpp" />
+    <ClCompile Include="..\..\src\system\shader\sys_shader_manager.cpp" />
+    <ClCompile Include="..\..\src\system\sys_majority_input.cpp" />
+    <ClCompile Include="..\..\src\title\ui\ui_title_select_window.cpp" />
+    <ClCompile Include="..\..\src\ui\ui_arrow_button.cpp" />
+    <ClCompile Include="..\..\src\ui\ui_button.cpp" />
+    <ClCompile Include="..\..\src\ui\ui_input.cpp" />
+    <ClCompile Include="..\..\src\ui\ui_manager.cpp" />
+    <ClCompile Include="..\..\src\ui\ui_message_window.cpp" />
+    <ClCompile Include="..\..\src\ui\ui_player_window.cpp" />
+    <ClCompile Include="..\..\src\ui\ui_select_box.cpp" />
+    <ClCompile Include="..\..\src\ui\ui_select_image_box.cpp" />
+    <ClCompile Include="..\..\src\ui\ui_select_window.cpp" />
+    <ClCompile Include="..\..\src\world_manager.cpp" />
+    <ClCompile Include="..\..\src\world_select\battle_stage_select_slide.cpp" />
+    <ClCompile Include="..\..\src\world_select\endless_stage_select_slide.cpp" />
+    <ClCompile Include="..\..\src\world_select\world_select_slide.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\battle\battle_manager.h" />
+    <ClInclude Include="..\..\src\battle\battle_result_slide.h" />
+    <ClInclude Include="..\..\src\breakout\actor\breakout_ball.h" />
+    <ClInclude Include="..\..\src\breakout\actor\breakout_bar.h" />
+    <ClInclude Include="..\..\src\breakout\stage\breakout_stage.h" />
+    <ClInclude Include="..\..\src\common\cmn_def.h" />
+    <ClInclude Include="..\..\src\common\cmn_fade.h" />
+    <ClInclude Include="..\..\src\common\cmn_global_data.h" />
+    <ClInclude Include="..\..\src\common\cmn_simple_sprite.h" />
+    <ClInclude Include="..\..\src\common\cmn_util.h" />
+    <ClInclude Include="..\..\src\common\material\cmn_sprite_player_material.h" />
+    <ClInclude Include="..\..\src\common\slide\cmn_slide.h" />
+    <ClInclude Include="..\..\src\common\ui\ui_gamepad_config_window.h" />
+    <ClInclude Include="..\..\src\common\ui\ui_keyboard_config_window.h" />
+    <ClInclude Include="..\..\src\common\ui\ui_option_window.h" />
+    <ClInclude Include="..\..\src\common\ui\ui_option_window_old.h" />
+    <ClInclude Include="..\..\src\common\ui\ui_pause_window.h" />
+    <ClInclude Include="..\..\src\common\ui\ui_player_select_window.h" />
+    <ClInclude Include="..\..\src\edit\edit_mode_actor.h" />
+    <ClInclude Include="..\..\src\edit\edit_mode_base.h" />
+    <ClInclude Include="..\..\src\edit\edit_mode_manager.h" />
+    <ClInclude Include="..\..\src\edit\edit_mode_map.h" />
+    <ClInclude Include="..\..\src\edit\edit_mode_setting.h" />
+    <ClInclude Include="..\..\src\edit\edit_types.h" />
+    <ClInclude Include="..\..\src\edit\edit_util.h" />
+    <ClInclude Include="..\..\src\font_info.h" />
+    <ClInclude Include="..\..\src\font_info_famania.h" />
+    <ClInclude Include="..\..\src\fwd.h" />
+    <ClInclude Include="..\..\src\main_menu\main_menu_slide.h" />
+    <ClInclude Include="..\..\src\puzzle\actor\puzzle_block_base.h" />
+    <ClInclude Include="..\..\src\puzzle\actor\puzzle_block_dr.h" />
+    <ClInclude Include="..\..\src\puzzle\actor\puzzle_block_dr_free.h" />
+    <ClInclude Include="..\..\src\puzzle\actor\puzzle_block_tetris.h" />
+    <ClInclude Include="..\..\src\puzzle\actor\puzzle_timer.h" />
+    <ClInclude Include="..\..\src\puzzle\map\puzzle_dr_map.h" />
+    <ClInclude Include="..\..\src\puzzle\map\puzzle_map.h" />
+    <ClInclude Include="..\..\src\puzzle\map\puzzle_tetris_map.h" />
+    <ClInclude Include="..\..\src\puzzle\stage\puzzle_dr_stage.h" />
+    <ClInclude Include="..\..\src\puzzle\stage\puzzle_tetris_stage.h" />
+    <ClInclude Include="..\..\src\puzzle\stage\puzzle_vs_dr_stage.h" />
+    <ClInclude Include="..\..\src\puzzle\stage\puzzle_vs_tetris_stage.h" />
+    <ClInclude Include="..\..\src\root.h" />
+    <ClInclude Include="..\..\src\save\save_data_struct.h" />
+    <ClInclude Include="..\..\src\save\save_file.h" />
+    <ClInclude Include="..\..\src\sequence\seq_base.h" />
+    <ClInclude Include="..\..\src\sequence\seq_battle_result.h" />
+    <ClInclude Include="..\..\src\sequence\seq_battle_select.h" />
+    <ClInclude Include="..\..\src\sequence\seq_ending.h" />
+    <ClInclude Include="..\..\src\sequence\seq_ending_trial.h" />
+    <ClInclude Include="..\..\src\sequence\seq_endless_select.h" />
+    <ClInclude Include="..\..\src\sequence\seq_main_menu.h" />
+    <ClInclude Include="..\..\src\sequence\seq_manager.h" />
+    <ClInclude Include="..\..\src\sequence\seq_stage.h" />
+    <ClInclude Include="..\..\src\sequence\seq_stage_edit.h" />
+    <ClInclude Include="..\..\src\sequence\seq_stage_select.h" />
+    <ClInclude Include="..\..\src\sequence\seq_title.h" />
+    <ClInclude Include="..\..\src\sequence\seq_types.h" />
+    <ClInclude Include="..\..\src\sequence\seq_world_select.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_anim_data.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_balance.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_ball_pitcher.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_ball_pitcher_manager.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_ball_receiver.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_ball_speed_controller.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_best_score.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_big_box.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_blink_block.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_bound_ball.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_bowwow_enemy.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_breakout_battle_ball.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_check_point.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_coin.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_collision_switch.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_color_block.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_color_box.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_coop_stop_watch.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_dead_switch.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_distance_constraint.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_endless_jump_score.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_endless_obstacle.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_endless_plane_obstacle.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_endless_scroll_score.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_endless_tetris.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_endless_thunder.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_fall_box.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_ghost.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_goal.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_judge_base.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_judge_battle_jump.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_judge_breakout.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_judge_height.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_judge_stop_watch.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_judge_territory.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_jump_area.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_jump_stand.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_key.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_key_box.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_key_proxy_goal.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_laser_ball.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_lift.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_link.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_logo.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_majority_controller.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_map_rect.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_marker.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_move_energy.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_move_wall.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_obstacle.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_physics_ball.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_physics_object.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_plane_obstacle.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_player.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_player_dress.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_player_guard.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_player_gun.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_player_input.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_player_magnet.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_player_plane.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_rect.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_roulette.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_score_base.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_score_stop_watch.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_scroll_range.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_seesaw.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_step_enemy.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_stop_watch.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_switch.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_tetris.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_tetris_base.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_text.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_thunder.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_timer.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_title.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_traffic_light.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_updown_enemy.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_updown_lift.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_variable_weighted_lift.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_warp.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_warp_switch.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_watch.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_weighted_lift.h" />
+    <ClInclude Include="..\..\src\side_action\actor\side_action_wind.h" />
+    <ClInclude Include="..\..\src\side_action\actor\state\side_action_player_state.h" />
+    <ClInclude Include="..\..\src\side_action\actor\state\side_action_player_state_clear.h" />
+    <ClInclude Include="..\..\src\side_action\actor\state\side_action_player_state_dead.h" />
+    <ClInclude Include="..\..\src\side_action\actor\state\side_action_player_state_default.h" />
+    <ClInclude Include="..\..\src\side_action\actor\state\side_action_player_state_null.h" />
+    <ClInclude Include="..\..\src\side_action\actor\state\side_action_player_state_plane.h" />
+    <ClInclude Include="..\..\src\side_action\collision\side_action_collision_scene.h" />
+    <ClInclude Include="..\..\src\side_action\side_action_types.h" />
+    <ClInclude Include="..\..\src\side_action\stage\side_action_actor_manager.h" />
+    <ClInclude Include="..\..\src\side_action\stage\side_action_stage.h" />
+    <ClInclude Include="..\..\src\stage_select\stage_select_menu.h" />
+    <ClInclude Include="..\..\src\system\shader\sys_shader_manager.h" />
+    <ClInclude Include="..\..\src\system\sys_majority_input.h" />
+    <ClInclude Include="..\..\src\title\ui\ui_title_select_window.h" />
+    <ClInclude Include="..\..\src\ui\ui_arrow_button.h" />
+    <ClInclude Include="..\..\src\ui\ui_button.h" />
+    <ClInclude Include="..\..\src\ui\ui_input.h" />
+    <ClInclude Include="..\..\src\ui\ui_manager.h" />
+    <ClInclude Include="..\..\src\ui\ui_message_window.h" />
+    <ClInclude Include="..\..\src\ui\ui_player_window.h" />
+    <ClInclude Include="..\..\src\ui\ui_select_box.h" />
+    <ClInclude Include="..\..\src\ui\ui_select_image_box.h" />
+    <ClInclude Include="..\..\src\ui\ui_select_window.h" />
+    <ClInclude Include="..\..\src\world_manager.h" />
+    <ClInclude Include="..\..\src\world_select\battle_stage_select_slide.h" />
+    <ClInclude Include="..\..\src\world_select\endless_stage_select_slide.h" />
+    <ClInclude Include="..\..\src\world_select\world_select_slide.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{07A5572E-C036-4051-B2A5-972F51823CE4}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <NintendoSdkRoot>$(NINTENDO_SDK_ROOT)</NintendoSdkRoot>
+    <NintendoSdkSpec>NX</NintendoSdkSpec>
+    <NintendoSdkBuildType>Debug</NintendoSdkBuildType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <NintendoSdkRoot>$(NINTENDO_SDK_ROOT)</NintendoSdkRoot>
+    <NintendoSdkSpec>NX</NintendoSdkSpec>
+    <NintendoSdkBuildType>Develop</NintendoSdkBuildType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <NintendoSdkRoot>$(NINTENDO_SDK_ROOT)</NintendoSdkRoot>
+    <NintendoSdkSpec>NX</NintendoSdkSpec>
+    <NintendoSdkBuildType>Release</NintendoSdkBuildType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <NintendoSdkRoot>$(NINTENDO_SDK_ROOT)</NintendoSdkRoot>
+    <NintendoSdkSpec>NX</NintendoSdkSpec>
+    <NintendoSdkBuildType>Debug</NintendoSdkBuildType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Develop|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <NintendoSdkRoot>$(NINTENDO_SDK_ROOT)</NintendoSdkRoot>
+    <NintendoSdkSpec>NX</NintendoSdkSpec>
+    <NintendoSdkBuildType>Develop</NintendoSdkBuildType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <NintendoSdkRoot>$(NINTENDO_SDK_ROOT)</NintendoSdkRoot>
+    <NintendoSdkSpec>NX</NintendoSdkSpec>
+    <NintendoSdkBuildType>Release</NintendoSdkBuildType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|NX32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <NintendoSdkRoot>$(NINTENDO_SDK_ROOT)</NintendoSdkRoot>
+    <NintendoSdkSpec>NX</NintendoSdkSpec>
+    <NintendoSdkBuildType>Debug</NintendoSdkBuildType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Develop|NX32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <NintendoSdkRoot>$(NINTENDO_SDK_ROOT)</NintendoSdkRoot>
+    <NintendoSdkSpec>NX</NintendoSdkSpec>
+    <NintendoSdkBuildType>Develop</NintendoSdkBuildType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|NX32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <NintendoSdkRoot>$(NINTENDO_SDK_ROOT)</NintendoSdkRoot>
+    <NintendoSdkSpec>NX</NintendoSdkSpec>
+    <NintendoSdkBuildType>Release</NintendoSdkBuildType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|NX64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <NintendoSdkRoot>$(NINTENDO_SDK_ROOT)</NintendoSdkRoot>
+    <NintendoSdkSpec>NX</NintendoSdkSpec>
+    <NintendoSdkBuildType>Debug</NintendoSdkBuildType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Develop|NX64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <NintendoSdkRoot>$(NINTENDO_SDK_ROOT)</NintendoSdkRoot>
+    <NintendoSdkSpec>NX</NintendoSdkSpec>
+    <NintendoSdkBuildType>Develop</NintendoSdkBuildType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|NX64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <NintendoSdkRoot>$(NINTENDO_SDK_ROOT)</NintendoSdkRoot>
+    <NintendoSdkSpec>NX</NintendoSdkSpec>
+    <NintendoSdkBuildType>Release</NintendoSdkBuildType>
+    <ApplicationProgramFormat>Nsp</ApplicationProgramFormat>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="ImportNintendoSdk.props" Condition="exists('ImportNintendoSdk.props')" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="ImportNintendoSdk.props" Condition="exists('ImportNintendoSdk.props')" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="ImportNintendoSdk.props" Condition="exists('ImportNintendoSdk.props')" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="ImportNintendoSdk.props" Condition="exists('ImportNintendoSdk.props')" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Develop|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="ImportNintendoSdk.props" Condition="exists('ImportNintendoSdk.props')" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="ImportNintendoSdk.props" Condition="exists('ImportNintendoSdk.props')" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|NX32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="ImportNintendoSdk.props" Condition="exists('ImportNintendoSdk.props')" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Develop|NX32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="ImportNintendoSdk.props" Condition="exists('ImportNintendoSdk.props')" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|NX32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="ImportNintendoSdk.props" Condition="exists('ImportNintendoSdk.props')" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|NX64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="ImportNintendoSdk.props" Condition="exists('ImportNintendoSdk.props')" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Develop|NX64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="ImportNintendoSdk.props" Condition="exists('ImportNintendoSdk.props')" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|NX64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="ImportNintendoSdk.props" Condition="exists('ImportNintendoSdk.props')" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|NX32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Develop|NX32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|NX32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|NX64'">
+    <LinkIncremental>true</LinkIncremental>
+    <ApplicationDataDir>$(SolutionDir)..\..\..\bin\resource_nx</ApplicationDataDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Develop|NX64'">
+    <LinkIncremental>true</LinkIncremental>
+    <ApplicationDataDir>$(TBSDK_DIR)\sample\resource</ApplicationDataDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|NX64'">
+    <LinkIncremental>false</LinkIncremental>
+    <ApplicationDataDir>$(SolutionDir)..\..\..\bin\resource_nx</ApplicationDataDir>
+    <DisableFastUpToDateCheck>true</DisableFastUpToDateCheck>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\..\src;$(TBSDK_DIR)\include;$(TBSDK_DIR)\sdk\lua\5.3.1\include;$(TBSDK_DIR)\sdk\Box2D</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(TBSDK_DIR)\lib\nx\$(Platform);$(TBSDK_DIR)\sdk\lua\5.3.1\lib\nx\$(Platform);$(TBSDK_DIR)\sdk\libogg\lib\nx\$(Platform);$(TBSDK_DIR)\sdk\libvorbis\libs\nx\$(Platform);$(TBSDK_DIR)\sdk\GL\lib\$(Platform);$(TBSDK_DIR)\sdk\Box2d\lib\nx\$(Platform)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>tb_graphics_d.lib;tb_framework_d.lib;tb_input_d.lib;tb_base_d.lib;crayon_d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\..\src;$(TBSDK_DIR)\include;$(TBSDK_DIR)\sdk\lua\5.3.1\include;$(TBSDK_DIR)\sdk\Box2D</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(TBSDK_DIR)\lib\nx\$(Platform);$(TBSDK_DIR)\sdk\lua\5.3.1\lib\nx\$(Platform);$(TBSDK_DIR)\sdk\libogg\lib\nx\$(Platform);$(TBSDK_DIR)\sdk\libvorbis\libs\nx\$(Platform);$(TBSDK_DIR)\sdk\GL\lib\$(Platform);$(TBSDK_DIR)\sdk\Box2d\lib\nx\$(Platform)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\..\src;$(TBSDK_DIR)\include;$(TBSDK_DIR)\sdk\lua\5.3.1\include;$(TBSDK_DIR)\sdk\Box2D</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(TBSDK_DIR)\lib\nx\$(Platform);$(TBSDK_DIR)\sdk\lua\5.3.1\lib\nx\$(Platform);$(TBSDK_DIR)\sdk\libogg\lib\nx\$(Platform);$(TBSDK_DIR)\sdk\libvorbis\libs\nx\$(Platform);$(TBSDK_DIR)\sdk\GL\lib\$(Platform);$(TBSDK_DIR)\sdk\Box2d\lib\nx\$(Platform)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN64;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\..\src;$(TBSDK_DIR)\include;$(TBSDK_DIR)\sdk\lua\5.3.1\include;$(TBSDK_DIR)\sdk\Box2D</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(TBSDK_DIR)\lib\nx\$(Platform);$(TBSDK_DIR)\sdk\lua\5.3.1\lib\nx\$(Platform);$(TBSDK_DIR)\sdk\libogg\lib\nx\$(Platform);$(TBSDK_DIR)\sdk\libvorbis\libs\nx\$(Platform);$(TBSDK_DIR)\sdk\GL\lib\Win64;$(TBSDK_DIR)\sdk\Box2d\lib\nx\$(Platform)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libcurl.lib;libogg_static_d.lib;libvorbis_static_d.lib;lua_d.lib;Box2D_d.lib;OpenGL32.lib;glew32.lib;tb_graphics_d.lib;tb_framework_d.lib;tb_input_d.lib;tb_ui_d.lib;tb_script_lua_d.lib;tb_sound_d.lib;tb_physics2d_d.lib;tb_base_d.lib;crayon_d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Develop|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>WIN64;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\..\src;$(TBSDK_DIR)\include;$(TBSDK_DIR)\sdk\lua\5.3.1\include;$(TBSDK_DIR)\sdk\Box2D</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(TBSDK_DIR)\lib\nx\$(Platform);$(TBSDK_DIR)\sdk\lua\5.3.1\lib\nx\$(Platform);$(TBSDK_DIR)\sdk\libogg\lib\nx\$(Platform);$(TBSDK_DIR)\sdk\libvorbis\libs\nx\$(Platform);$(TBSDK_DIR)\sdk\GL\lib\Win64;$(TBSDK_DIR)\sdk\Box2d\lib\nx\$(Platform)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libcurl.lib;libogg_static_o.lib;libvorbis_static_o.lib;lua_o.lib;Box2D_o.lib;OpenGL32.lib;glew32.lib;tb_graphics_o.lib;tb_framework_o.lib;tb_input_o.lib;tb_ui_o.lib;tb_script_lua_o.lib;tb_sound_o.lib;tb_physics2d_o.lib;tb_base_o.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN64;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\..\src;$(TBSDK_DIR)\include;$(TBSDK_DIR)\sdk\lua\5.3.1\include;$(TBSDK_DIR)\sdk\Box2D</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(TBSDK_DIR)\lib\nx\$(Platform);$(TBSDK_DIR)\sdk\lua\5.3.1\lib\nx\$(Platform);$(TBSDK_DIR)\sdk\libogg\lib\nx\$(Platform);$(TBSDK_DIR)\sdk\libvorbis\libs\nx\$(Platform);$(TBSDK_DIR)\sdk\GL\lib\Win64;$(TBSDK_DIR)\sdk\Box2d\lib\nx\$(Platform)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libcurl.lib;libogg_static_r.lib;libvorbis_static_r.lib;lua_r.lib;Box2D_r.lib;OpenGL32.lib;glew32.lib;tb_graphics_r.lib;tb_framework_r.lib;tb_input_r.lib;tb_ui_r.lib;tb_script_lua_r.lib;tb_sound_r.lib;tb_physics2d_r.lib;tb_base_r.lib;crayon_r.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|NX32'">
+    <Link>
+      <FinalizeMetaSource>$(ProjectDir)Application.arm.ilp32.nmeta</FinalizeMetaSource>
+      <AdditionalLibraryDirectories>$(TBSDK_DIR)\lib\nx\$(Platform);$(TBSDK_DIR)\sdk\lua\5.3.1\lib\nx\$(Platform);$(TBSDK_DIR)\sdk\libogg\lib\nx\$(Platform);$(TBSDK_DIR)\sdk\libvorbis\libs\nx\$(Platform);$(TBSDK_DIR)\sdk\GL\lib\$(Platform);$(TBSDK_DIR)\sdk\Box2d\lib\nx\$(Platform)</AdditionalLibraryDirectories>
+    </Link>
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\src;$(TBSDK_DIR)\include;$(TBSDK_DIR)\sdk\lua\5.3.1\include;$(TBSDK_DIR)\sdk\Box2D</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Develop|NX32'">
+    <Link>
+      <FinalizeMetaSource>$(ProjectDir)Application.arm.ilp32.nmeta</FinalizeMetaSource>
+      <AdditionalLibraryDirectories>$(TBSDK_DIR)\lib\nx\$(Platform);$(TBSDK_DIR)\sdk\lua\5.3.1\lib\nx\$(Platform);$(TBSDK_DIR)\sdk\libogg\lib\nx\$(Platform);$(TBSDK_DIR)\sdk\libvorbis\libs\nx\$(Platform);$(TBSDK_DIR)\sdk\GL\lib\$(Platform);$(TBSDK_DIR)\sdk\Box2d\lib\nx\$(Platform)</AdditionalLibraryDirectories>
+    </Link>
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\src;$(TBSDK_DIR)\include;$(TBSDK_DIR)\sdk\lua\5.3.1\include;$(TBSDK_DIR)\sdk\Box2D</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|NX32'">
+    <Link>
+      <FinalizeMetaSource>$(ProjectDir)Application.arm.ilp32.nmeta</FinalizeMetaSource>
+      <AdditionalLibraryDirectories>$(TBSDK_DIR)\lib\nx\$(Platform);$(TBSDK_DIR)\sdk\lua\5.3.1\lib\nx\$(Platform);$(TBSDK_DIR)\sdk\libogg\lib\nx\$(Platform);$(TBSDK_DIR)\sdk\libvorbis\libs\nx\$(Platform);$(TBSDK_DIR)\sdk\GL\lib\$(Platform);$(TBSDK_DIR)\sdk\Box2d\lib\nx\$(Platform)</AdditionalLibraryDirectories>
+    </Link>
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\src;$(TBSDK_DIR)\include;$(TBSDK_DIR)\sdk\lua\5.3.1\include;$(TBSDK_DIR)\sdk\Box2D</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|NX64'">
+    <Link>
+      <FinalizeMetaSource>$(ProjectDir)Application.aarch64.lp64.nmeta</FinalizeMetaSource>
+      <AdditionalLibraryDirectories>$(TBSDK_DIR)\lib\nx\$(Platform);$(TBSDK_DIR)\sdk\lua\5.3.1\lib\nx\$(Platform);$(TBSDK_DIR)\sdk\libogg\lib\nx\$(Platform);$(TBSDK_DIR)\sdk\libvorbis\libs\nx\$(Platform);$(TBSDK_DIR)\sdk\GL\lib\$(Platform);$(TBSDK_DIR)\sdk\Box2d\lib\nx\$(Platform)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Box2D_d.a;lua_d.a;libvorbis_static_d.a;libogg_static_d.a;tb_base_d.a;tb_framework_d.a;tb_graphics_d.a;tb_input_d.a;tb_ui_d.a;tb_physics2d_d.a;tb_script_lua_d.a;tb_sound_d.a;crayon_d.a;libnn_init_memory.a;libnn_gfx.a;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalNSODependencies>glslc$(NintendoSdkDllSuffix);%(AdditionalNSODependencies)</AdditionalNSODependencies>
+    </Link>
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\src;$(TBSDK_DIR)\include;$(TBSDK_DIR)\sdk\lua\5.3.1\include;$(TBSDK_DIR)\sdk\Box2D</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Develop|NX64'">
+    <Link>
+      <FinalizeMetaSource>$(ProjectDir)Application.aarch64.lp64.nmeta</FinalizeMetaSource>
+      <AdditionalLibraryDirectories>$(TBSDK_DIR)\lib\nx\$(Platform);$(TBSDK_DIR)\sdk\lua\5.3.1\lib\nx\$(Platform);$(TBSDK_DIR)\sdk\libogg\lib\nx\$(Platform);$(TBSDK_DIR)\sdk\libvorbis\libs\nx\$(Platform);$(TBSDK_DIR)\sdk\GL\lib\$(Platform);$(TBSDK_DIR)\sdk\Box2d\lib\nx\$(Platform)</AdditionalLibraryDirectories>
+      <AdditionalNSODependencies>glslc$(NintendoSdkDllSuffix);%(AdditionalNSODependencies)</AdditionalNSODependencies>
+      <AdditionalDependencies>tb_base_o.a;tb_framework_o.a;tb_graphics_o.a;tb_input_o.a;libnn_init_memory.a;libnn_gfx.a;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\src;$(TBSDK_DIR)\include;$(TBSDK_DIR)\sdk\lua\5.3.1\include;$(TBSDK_DIR)\sdk\Box2D</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|NX64'">
+    <Link>
+      <FinalizeMetaSource>$(ProjectDir)Application.aarch64.lp64.nmeta</FinalizeMetaSource>
+      <AdditionalLibraryDirectories>$(TBSDK_DIR)\lib\nx\$(Platform);$(TBSDK_DIR)\sdk\lua\5.3.1\lib\nx\$(Platform);$(TBSDK_DIR)\sdk\libogg\lib\nx\$(Platform);$(TBSDK_DIR)\sdk\libvorbis\libs\nx\$(Platform);$(TBSDK_DIR)\sdk\GL\lib\$(Platform);$(TBSDK_DIR)\sdk\Box2d\lib\nx\$(Platform)</AdditionalLibraryDirectories>
+      <AdditionalNSODependencies>glslc$(NintendoSdkDllSuffix);%(AdditionalNSODependencies)</AdditionalNSODependencies>
+      <AdditionalDependencies>Box2D_r.a;lua_r.a;libvorbis_static_r.a;libogg_static_r.a;tb_base_r.a;tb_framework_r.a;tb_graphics_r.a;tb_input_r.a;tb_ui_r.a;tb_script_lua_r.a;tb_physics2d_r.a;tb_sound_r.a;crayon_r.a;libnn_init_memory.a;libnn_gfx.a;%(AdditionalDependencies)</AdditionalDependencies>
+      <FailOnPublishError>true</FailOnPublishError>
+      <DeployGeneratePatch>true</DeployGeneratePatch>
+      <DeployGeneratePatchOriginal>C:\Users\teco\Desktop\Portal\dev\workspace\base\pico_park\package\switch\master\pico_park.nsp</DeployGeneratePatchOriginal>
+      <DeployGeneratePatchLast>C:\Users\teco\Desktop\Portal\dev\workspace\base\pico_park\package\switch\patch1\pico_park.patch.nsp</DeployGeneratePatchLast>
+    </Link>
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\..\src;$(TBSDK_DIR)\include;$(TBSDK_DIR)\sdk\lua\5.3.1\include;$(TBSDK_DIR)\sdk\Box2D</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

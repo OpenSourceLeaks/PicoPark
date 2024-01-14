@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\framework\tb_framework_cui.cpp">
+      <Filter>src\framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\tb_fwd.cpp" />
+    <ClCompile Include="..\..\..\src\framework\impl\tb_framework_cui_impl.cpp">
+      <Filter>src\framework\impl</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{323c92a7-5189-4ae3-b343-7f76d4bb1271}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{2336dd6b-82ad-4346-91f0-4f6c1cba47e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\framework">
+      <UniqueIdentifier>{a3fd101e-d114-4a0b-bb24-06c9c8639a90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\framework">
+      <UniqueIdentifier>{495f6c3c-80a8-4f09-adcd-1403bde27af5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\framework\depend">
+      <UniqueIdentifier>{c7d258c2-9595-4bd6-bc08-8fddd309b111}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\framework\depend\win32">
+      <UniqueIdentifier>{94955a5e-89c3-410a-946f-4a2172c77040}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\framework\impl">
+      <UniqueIdentifier>{71de3771-5623-49f0-82ca-c3e521608b73}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\src\framework\depend\tb_framework_cui_impl_depend.h">
+      <Filter>src\framework\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\framework\tb_framework_impl_common.h">
+      <Filter>src\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\framework\depend\win32\tb_framework_cui_impl_win32.h">
+      <Filter>src\framework\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\framework\tb_framework_cui.h">
+      <Filter>include\framework</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ビルド">
+      <UniqueIdentifier>{F1DF9757-14C3-43FA-8525-6665FEDE7BA5}</UniqueIdentifier>
+      <Extensions>props</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\script">
+      <UniqueIdentifier>{8bc73998-ed95-4419-b334-5612fd73111a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\script">
+      <UniqueIdentifier>{444a7568-8f75-45af-8f3f-fdc982d57e2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\script\lua">
+      <UniqueIdentifier>{a32b7e79-023c-4e78-8cad-f4ed26d60504}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\script\lua">
+      <UniqueIdentifier>{074a13e2-8c12-41cb-a996-1b77796796ac}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\include\script\lua\tb_script_lua_manager.h">
+      <Filter>ヘッダー ファイル\script\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\script\lua\tb_script_lua_node.h">
+      <Filter>ヘッダー ファイル\script\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\script\lua\tb_script_lua_variable.h">
+      <Filter>ヘッダー ファイル\script\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\script\lua\tb_script_lua_vm.h">
+      <Filter>ヘッダー ファイル\script\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\script\lua\tb_script_lua.h">
+      <Filter>ヘッダー ファイル\script\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\script\lua\tb_script_lua_fwd.h">
+      <Filter>ヘッダー ファイル\script\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\tb_fwd.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\tb_pch.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\src\script\lua\tb_script_lua_node.cpp">
+      <Filter>ソース ファイル\script\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\script\lua\tb_script_lua_variable.cpp">
+      <Filter>ソース ファイル\script\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\script\lua\tb_script_lua_vm.cpp">
+      <Filter>ソース ファイル\script\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\script\lua\tb_script_lua_manager.cpp">
+      <Filter>ソース ファイル\script\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\tb_fwd.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

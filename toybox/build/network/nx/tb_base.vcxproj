@@ -1,0 +1,644 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Develop|Win32">
+      <Configuration>Develop</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Develop|x64">
+      <Configuration>Develop</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|NX32">
+      <Configuration>Debug</Configuration>
+      <Platform>NX32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Develop|NX32">
+      <Configuration>Develop</Configuration>
+      <Platform>NX32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|NX32">
+      <Configuration>Release</Configuration>
+      <Platform>NX32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|NX64">
+      <Configuration>Debug</Configuration>
+      <Platform>NX64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Develop|NX64">
+      <Configuration>Develop</Configuration>
+      <Platform>NX64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|NX64">
+      <Configuration>Release</Configuration>
+      <Platform>NX64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\include\base\actor\tb_actor.h" />
+    <ClInclude Include="..\..\..\..\include\base\actor\tb_actor_component.h" />
+    <ClInclude Include="..\..\..\..\include\base\actor\tb_actor_scene.h" />
+    <ClInclude Include="..\..\..\..\include\base\algorithm\tb_algorithm_misc.h" />
+    <ClInclude Include="..\..\..\..\include\base\algorithm\tb_endian.h" />
+    <ClInclude Include="..\..\..\..\include\base\algorithm\tb_merge_sort.h" />
+    <ClInclude Include="..\..\..\..\include\base\algorithm\tb_search.h" />
+    <ClInclude Include="..\..\..\..\include\base\algorithm\tb_sort.h" />
+    <ClInclude Include="..\..\..\..\include\base\animation\tb_animation_key_frame.h" />
+    <ClInclude Include="..\..\..\..\include\base\animation\tb_animation_key_frame_data.h" />
+    <ClInclude Include="..\..\..\..\include\base\animation\tb_animation_key_frame_data_inl.h" />
+    <ClInclude Include="..\..\..\..\include\base\animation\tb_animation_key_frame_inl.h" />
+    <ClInclude Include="..\..\..\..\include\base\animation\tb_animation_types.h" />
+    <ClInclude Include="..\..\..\..\include\base\container\tb_array.h" />
+    <ClInclude Include="..\..\..\..\include\base\container\tb_array_inl.h" />
+    <ClInclude Include="..\..\..\..\include\base\container\tb_array_iterator.h" />
+    <ClInclude Include="..\..\..\..\include\base\container\tb_assoc_array.h" />
+    <ClInclude Include="..\..\..\..\include\base\container\tb_deque.h" />
+    <ClInclude Include="..\..\..\..\include\base\container\tb_deque_inl.h" />
+    <ClInclude Include="..\..\..\..\include\base\container\tb_key_value.h" />
+    <ClInclude Include="..\..\..\..\include\base\container\tb_node_tree.h" />
+    <ClInclude Include="..\..\..\..\include\base\container\tb_node_tree_inl.h" />
+    <ClInclude Include="..\..\..\..\include\base\container\tb_pool.h" />
+    <ClInclude Include="..\..\..\..\include\base\container\tb_pool_inl.h" />
+    <ClInclude Include="..\..\..\..\include\base\container\tb_queue.h" />
+    <ClInclude Include="..\..\..\..\include\base\container\tb_queue_inl.h" />
+    <ClInclude Include="..\..\..\..\include\base\container\tb_sorted_array.h" />
+    <ClInclude Include="..\..\..\..\include\base\container\tb_static_array.h" />
+    <ClInclude Include="..\..\..\..\include\base\container\tb_static_array_inl.h" />
+    <ClInclude Include="..\..\..\..\include\base\container\tb_static_deque.h" />
+    <ClInclude Include="..\..\..\..\include\base\container\tb_static_deque_inl.h" />
+    <ClInclude Include="..\..\..\..\include\base\container\tb_static_queue.h" />
+    <ClInclude Include="..\..\..\..\include\base\container\tb_static_queue_inl.h" />
+    <ClInclude Include="..\..\..\..\include\base\container\tb_static_set.h" />
+    <ClInclude Include="..\..\..\..\include\base\container\tb_str_assoc_array.h" />
+    <ClInclude Include="..\..\..\..\include\base\crypt\tb_crc32.h" />
+    <ClInclude Include="..\..\..\..\include\base\io\archive\tb_archive.h" />
+    <ClInclude Include="..\..\..\..\include\base\io\archive\tb_archive_exporter.h" />
+    <ClInclude Include="..\..\..\..\include\base\io\archive\tb_archive_types.h" />
+    <ClInclude Include="..\..\..\..\include\base\io\archive\tb_file_archive.h" />
+    <ClInclude Include="..\..\..\..\include\base\io\archive\tb_file_mapper_archive.h" />
+    <ClInclude Include="..\..\..\..\include\base\io\depend\nx\tb_file_mapper_nx.h" />
+    <ClInclude Include="..\..\..\..\include\base\io\depend\nx\tb_file_nx.h" />
+    <ClInclude Include="..\..\..\..\include\base\io\depend\tb_file_mapper_depend.h" />
+    <ClInclude Include="..\..\..\..\include\base\io\resource\tb_resource.h" />
+    <ClInclude Include="..\..\..\..\include\base\io\resource\tb_resource_all.h" />
+    <ClInclude Include="..\..\..\..\include\base\io\resource\tb_resource_data.h" />
+    <ClInclude Include="..\..\..\..\include\base\io\resource\tb_resource_handle.h" />
+    <ClInclude Include="..\..\..\..\include\base\io\resource\tb_resource_manager.h" />
+    <ClInclude Include="..\..\..\..\include\base\io\resource\tb_resource_manager_inl.h" />
+    <ClInclude Include="..\..\..\..\include\base\io\resource\tb_resource_types.h" />
+    <ClInclude Include="..\..\..\..\include\base\io\stream\tb_const_memory_stream.h" />
+    <ClInclude Include="..\..\..\..\include\base\io\stream\tb_file_stream.h" />
+    <ClInclude Include="..\..\..\..\include\base\io\stream\tb_memory_stream.h" />
+    <ClInclude Include="..\..\..\..\include\base\io\stream\tb_stream.h" />
+    <ClInclude Include="..\..\..\..\include\base\io\stream\tb_stream_binary_reader.h" />
+    <ClInclude Include="..\..\..\..\include\base\io\stream\tb_stream_binary_writer.h" />
+    <ClInclude Include="..\..\..\..\include\base\io\stream\tb_stream_text_reader.h" />
+    <ClInclude Include="..\..\..\..\include\base\io\stream\tb_stream_text_writer.h" />
+    <ClInclude Include="..\..\..\..\include\base\io\tb_file.h" />
+    <ClInclude Include="..\..\..\..\include\base\io\tb_file_all.h" />
+    <ClInclude Include="..\..\..\..\include\base\io\tb_file_impl.h" />
+    <ClInclude Include="..\..\..\..\include\base\io\tb_file_manager.h" />
+    <ClInclude Include="..\..\..\..\include\base\io\tb_file_mapper.h" />
+    <ClInclude Include="..\..\..\..\include\base\io\tb_file_types.h" />
+    <ClInclude Include="..\..\..\..\include\base\io\tb_file_util.h" />
+    <ClInclude Include="..\..\..\..\include\base\io\tb_file_util_private.h" />
+    <ClInclude Include="..\..\..\..\include\base\io\tb_io_types.h" />
+    <ClInclude Include="..\..\..\..\include\base\io\tb_log.h" />
+    <ClInclude Include="..\..\..\..\include\base\io\tb_path.h" />
+    <ClInclude Include="..\..\..\..\include\base\io\tb_print.h" />
+    <ClInclude Include="..\..\..\..\include\base\math\tb_curve.h" />
+    <ClInclude Include="..\..\..\..\include\base\math\tb_geometry.h" />
+    <ClInclude Include="..\..\..\..\include\base\math\tb_geometry_util.h" />
+    <ClInclude Include="..\..\..\..\include\base\math\tb_math_animation_types.h" />
+    <ClInclude Include="..\..\..\..\include\base\math\tb_math_helper.h" />
+    <ClInclude Include="..\..\..\..\include\base\math\tb_math_util.h" />
+    <ClInclude Include="..\..\..\..\include\base\math\tb_math_util_inl.h" />
+    <ClInclude Include="..\..\..\..\include\base\math\tb_matrix.h" />
+    <ClInclude Include="..\..\..\..\include\base\math\tb_polygon.h" />
+    <ClInclude Include="..\..\..\..\include\base\math\tb_quaternion.h" />
+    <ClInclude Include="..\..\..\..\include\base\math\tb_random.h" />
+    <ClInclude Include="..\..\..\..\include\base\math\tb_vector2.h" />
+    <ClInclude Include="..\..\..\..\include\base\math\tb_vector3.h" />
+    <ClInclude Include="..\..\..\..\include\base\math\tb_vector4.h" />
+    <ClInclude Include="..\..\..\..\include\base\math\tb_vector4_simd.h" />
+    <ClInclude Include="..\..\..\..\include\base\memory\tb_allocatable.h" />
+    <ClInclude Include="..\..\..\..\include\base\memory\tb_allocator.h" />
+    <ClInclude Include="..\..\..\..\include\base\memory\tb_allocator_holder.h" />
+    <ClInclude Include="..\..\..\..\include\base\memory\tb_fixed_allocator.h" />
+    <ClInclude Include="..\..\..\..\include\base\memory\tb_heap.h" />
+    <ClInclude Include="..\..\..\..\include\base\memory\tb_heap_allocator.h" />
+    <ClInclude Include="..\..\..\..\include\base\memory\tb_memory.h" />
+    <ClInclude Include="..\..\..\..\include\base\memory\tb_new_delete.h" />
+    <ClInclude Include="..\..\..\..\include\base\memory\tb_template_allocator_std.h" />
+    <ClInclude Include="..\..\..\..\include\base\performance\depend\tb_profiler_depend.h" />
+    <ClInclude Include="..\..\..\..\include\base\performance\tb_profiler.h" />
+    <ClInclude Include="..\..\..\..\include\base\preprocessor\control\tb_pp_if.h" />
+    <ClInclude Include="..\..\..\..\include\base\preprocessor\control\tb_pp_iif.h" />
+    <ClInclude Include="..\..\..\..\include\base\preprocessor\logical\tb_pp_bool.h" />
+    <ClInclude Include="..\..\..\..\include\base\preprocessor\logical\tb_pp_not.h" />
+    <ClInclude Include="..\..\..\..\include\base\preprocessor\punctuation\tb_pp_comma_if.h" />
+    <ClInclude Include="..\..\..\..\include\base\preprocessor\repetition\tb_pp_enum_binary_params.h" />
+    <ClInclude Include="..\..\..\..\include\base\preprocessor\repetition\tb_pp_enum_params.h" />
+    <ClInclude Include="..\..\..\..\include\base\preprocessor\repetition\tb_pp_repeat.h" />
+    <ClInclude Include="..\..\..\..\include\base\preprocessor\tb_pp_cat.h" />
+    <ClInclude Include="..\..\..\..\include\base\preprocessor\tb_pp_define.h" />
+    <ClInclude Include="..\..\..\..\include\base\preprocessor\tb_pp_tuple.h" />
+    <ClInclude Include="..\..\..\..\include\base\string\encoding\tb_string_encoding.h" />
+    <ClInclude Include="..\..\..\..\include\base\string\encoding\tb_string_encoding_sjis.h" />
+    <ClInclude Include="..\..\..\..\include\base\string\encoding\tb_string_encoding_utf16.h" />
+    <ClInclude Include="..\..\..\..\include\base\string\encoding\tb_string_encoding_utf8.h" />
+    <ClInclude Include="..\..\..\..\include\base\string\tb_raw_string.h" />
+    <ClInclude Include="..\..\..\..\include\base\string\tb_static_string.h" />
+    <ClInclude Include="..\..\..\..\include\base\string\tb_static_string_inl.h" />
+    <ClInclude Include="..\..\..\..\include\base\string\tb_string.h" />
+    <ClInclude Include="..\..\..\..\include\base\string\tb_string_code_page.h" />
+    <ClInclude Include="..\..\..\..\include\base\string\tb_string_converter.h" />
+    <ClInclude Include="..\..\..\..\include\base\string\tb_string_encoding_all.h" />
+    <ClInclude Include="..\..\..\..\include\base\string\tb_string_inl.h" />
+    <ClInclude Include="..\..\..\..\include\base\string\tb_string_types.h" />
+    <ClInclude Include="..\..\..\..\include\base\string\tb_string_util.h" />
+    <ClInclude Include="..\..\..\..\include\base\string\tb_string_util_inl.h" />
+    <ClInclude Include="..\..\..\..\include\base\system\depend\gcc\tb_atomic_op_gcc.h" />
+    <ClInclude Include="..\..\..\..\include\base\system\depend\tb_atomic_op_depend.h" />
+    <ClInclude Include="..\..\..\..\include\base\system\tb_assert.h" />
+    <ClInclude Include="..\..\..\..\include\base\system\tb_atomic.h" />
+    <ClInclude Include="..\..\..\..\include\base\system\tb_atomic_op.h" />
+    <ClInclude Include="..\..\..\..\include\base\system\tb_base_types.h" />
+    <ClInclude Include="..\..\..\..\include\base\system\tb_base_types_util.h" />
+    <ClInclude Include="..\..\..\..\include\base\system\tb_bit_array.h" />
+    <ClInclude Include="..\..\..\..\include\base\system\tb_console.h" />
+    <ClInclude Include="..\..\..\..\include\base\system\tb_debug.h" />
+    <ClInclude Include="..\..\..\..\include\base\system\tb_processor.h" />
+    <ClInclude Include="..\..\..\..\include\base\system\tb_result.h" />
+    <ClInclude Include="..\..\..\..\include\base\system\tb_stack_trace.h" />
+    <ClInclude Include="..\..\..\..\include\base\system\tb_system_util.h" />
+    <ClInclude Include="..\..\..\..\include\base\system\tb_system_util_android.h" />
+    <ClInclude Include="..\..\..\..\include\base\system\tb_target_types.h" />
+    <ClInclude Include="..\..\..\..\include\base\task\tb_sequence_task.h" />
+    <ClInclude Include="..\..\..\..\include\base\task\tb_task.h" />
+    <ClInclude Include="..\..\..\..\include\base\task\tb_task_manager.h" />
+    <ClInclude Include="..\..\..\..\include\base\task\tb_task_types.h" />
+    <ClInclude Include="..\..\..\..\include\base\thread\depend\nx\tb_mutex_nx.h" />
+    <ClInclude Include="..\..\..\..\include\base\thread\depend\nx\tb_thread_condition_nx.h" />
+    <ClInclude Include="..\..\..\..\include\base\thread\depend\nx\tb_thread_nx.h" />
+    <ClInclude Include="..\..\..\..\include\base\thread\depend\tb_mutex_depend.h" />
+    <ClInclude Include="..\..\..\..\include\base\thread\depend\tb_thread_condition_depend.h" />
+    <ClInclude Include="..\..\..\..\include\base\thread\depend\tb_thread_depend.h" />
+    <ClInclude Include="..\..\..\..\include\base\thread\tb_func_thread.h" />
+    <ClInclude Include="..\..\..\..\include\base\thread\tb_mutex.h" />
+    <ClInclude Include="..\..\..\..\include\base\thread\tb_scoped_lock.h" />
+    <ClInclude Include="..\..\..\..\include\base\thread\tb_thread.h" />
+    <ClInclude Include="..\..\..\..\include\base\thread\tb_thread_condition.h" />
+    <ClInclude Include="..\..\..\..\include\base\thread\tb_thread_group.h" />
+    <ClInclude Include="..\..\..\..\include\base\thread\tb_thread_pool.h" />
+    <ClInclude Include="..\..\..\..\include\base\thread\tb_thread_pool_func_job.h" />
+    <ClInclude Include="..\..\..\..\include\base\thread\tb_thread_pool_job.h" />
+    <ClInclude Include="..\..\..\..\include\base\thread\tb_thread_types.h" />
+    <ClInclude Include="..\..\..\..\include\base\thread\tb_wait_notify_thread.h" />
+    <ClInclude Include="..\..\..\..\include\base\time\tb_frame_rate_control.h" />
+    <ClInclude Include="..\..\..\..\include\base\time\tb_tick.h" />
+    <ClInclude Include="..\..\..\..\include\base\time\tb_time.h" />
+    <ClInclude Include="..\..\..\..\include\base\util\bind\tb_bind_for_global.h" />
+    <ClInclude Include="..\..\..\..\include\base\util\bind\tb_bind_for_member.h" />
+    <ClInclude Include="..\..\..\..\include\base\util\bind\tb_bind_for_object.h" />
+    <ClInclude Include="..\..\..\..\include\base\util\bind\tb_bind_impl.h" />
+    <ClInclude Include="..\..\..\..\include\base\util\bind\tb_bind_list0.h" />
+    <ClInclude Include="..\..\..\..\include\base\util\bind\tb_bind_list1.h" />
+    <ClInclude Include="..\..\..\..\include\base\util\bind\tb_bind_list2.h" />
+    <ClInclude Include="..\..\..\..\include\base\util\bind\tb_bind_list3.h" />
+    <ClInclude Include="..\..\..\..\include\base\util\bind\tb_bind_list4.h" />
+    <ClInclude Include="..\..\..\..\include\base\util\bind\tb_bind_list5.h" />
+    <ClInclude Include="..\..\..\..\include\base\util\bind\tb_bind_list6.h" />
+    <ClInclude Include="..\..\..\..\include\base\util\bind\tb_bind_list7.h" />
+    <ClInclude Include="..\..\..\..\include\base\util\bind\tb_bind_list8.h" />
+    <ClInclude Include="..\..\..\..\include\base\util\bind\tb_bind_list9.h" />
+    <ClInclude Include="..\..\..\..\include\base\util\bind\tb_bind_mem_func.h" />
+    <ClInclude Include="..\..\..\..\include\base\util\bind\tb_bind_mem_func_inl.h" />
+    <ClInclude Include="..\..\..\..\include\base\util\bind\tb_bind_placeholders.h" />
+    <ClInclude Include="..\..\..\..\include\base\util\enum\tb_enum_inl.h" />
+    <ClInclude Include="..\..\..\..\include\base\util\factory\tb_factory_arg1.h" />
+    <ClInclude Include="..\..\..\..\include\base\util\factory\tb_factory_arg2.h" />
+    <ClInclude Include="..\..\..\..\include\base\util\function\tb_function_inl.h" />
+    <ClInclude Include="..\..\..\..\include\base\util\function\tb_static_function_inl.h" />
+    <ClInclude Include="..\..\..\..\include\base\util\tb_adapter_iterator.h" />
+    <ClInclude Include="..\..\..\..\include\base\util\tb_async_func.h" />
+    <ClInclude Include="..\..\..\..\include\base\util\tb_binary_write_buffer.h" />
+    <ClInclude Include="..\..\..\..\include\base\util\tb_bind.h" />
+    <ClInclude Include="..\..\..\..\include\base\util\tb_depend_cast.h" />
+    <ClInclude Include="..\..\..\..\include\base\util\tb_dynamic_cast.h" />
+    <ClInclude Include="..\..\..\..\include\base\util\tb_enum.h" />
+    <ClInclude Include="..\..\..\..\include\base\util\tb_factory.h" />
+    <ClInclude Include="..\..\..\..\include\base\util\tb_function.h" />
+    <ClInclude Include="..\..\..\..\include\base\util\tb_holder_singleton.h" />
+    <ClInclude Include="..\..\..\..\include\base\util\tb_iterator_traits.h" />
+    <ClInclude Include="..\..\..\..\include\base\util\tb_observer.h" />
+    <ClInclude Include="..\..\..\..\include\base\util\tb_ref.h" />
+    <ClInclude Include="..\..\..\..\include\base\util\tb_ref_counter.h" />
+    <ClInclude Include="..\..\..\..\include\base\util\tb_scoped_ptr.h" />
+    <ClInclude Include="..\..\..\..\include\base\util\tb_scoped_ref_counter.h" />
+    <ClInclude Include="..\..\..\..\include\base\util\tb_scope_finalizer.h" />
+    <ClInclude Include="..\..\..\..\include\base\util\tb_singleton.h" />
+    <ClInclude Include="..\..\..\..\include\base\util\tb_smart_device_util.h" />
+    <ClInclude Include="..\..\..\..\include\base\util\tb_template_util.h" />
+    <ClInclude Include="..\..\..\..\include\base\util\tb_type_heap.h" />
+    <ClInclude Include="..\..\..\..\include\base\util\tb_type_id.h" />
+    <ClInclude Include="..\..\..\..\include\base\util\tb_type_traits.h" />
+    <ClInclude Include="..\..\..\..\include\base\util\tb_unique_id.h" />
+    <ClInclude Include="..\..\..\..\include\base\util\type_traits\tb_type_add.h" />
+    <ClInclude Include="..\..\..\..\include\base\util\type_traits\tb_type_remove.h" />
+    <ClInclude Include="..\..\..\..\include\tb_fwd.h" />
+    <ClInclude Include="..\..\..\..\include\tb_pch.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\src\base\actor\tb_actor.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\actor\tb_actor_scene.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\crypt\tb_crc32.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\io\archive\tb_archive.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\io\archive\tb_archive_exporter.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\io\archive\tb_file_archive.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\io\archive\tb_file_mapper_archive.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\io\depend\nx\tb_file_mapper_nx.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\io\depend\nx\tb_file_nx.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\io\tb_file.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\io\tb_file_impl.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\io\tb_file_manager.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\io\tb_file_util.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\io\tb_log.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\io\tb_print.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\math\tb_geometry_util.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\math\tb_math_helper.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\math\tb_matrix.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\math\tb_quaternion.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\math\tb_random.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\math\tb_vector2.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\math\tb_vector3.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\math\tb_vector4.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\memory\tb_fixed_allocator.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\memory\tb_heap.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\memory\tb_memory.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\memory\tb_new_delete.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\string\encoding\tb_string_encoding.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\string\encoding\tb_string_encoding_sjis.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\string\tb_static_string.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\string\tb_string_converter.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\system\depend\nx\tb_processor_nx.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\system\depend\tb_console_default.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\system\tb_assert.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\task\tb_sequence_task.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\task\tb_task.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\task\tb_task_manager.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\thread\depend\nx\tb_mutex_nx.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\thread\depend\nx\tb_thread_condition_nx.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\thread\depend\nx\tb_thread_nx.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\time\depend\nx\tb_tick_nx.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\time\depend\nx\tb_time_nx.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\time\tb_tick_common.cpp" />
+    <ClCompile Include="..\..\..\..\src\base\util\tb_async_func.cpp" />
+    <ClCompile Include="..\..\..\..\src\tb_fwd.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|NX64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Develop|NX64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|NX64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{AC4232B2-9D1A-4CD3-817A-CA13317D12D2}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <NintendoSdkRoot>$(NINTENDO_SDK_ROOT)</NintendoSdkRoot>
+    <NintendoSdkSpec>NX</NintendoSdkSpec>
+    <NintendoSdkBuildType>Debug</NintendoSdkBuildType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <NintendoSdkRoot>$(NINTENDO_SDK_ROOT)</NintendoSdkRoot>
+    <NintendoSdkSpec>NX</NintendoSdkSpec>
+    <NintendoSdkBuildType>Develop</NintendoSdkBuildType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <NintendoSdkRoot>$(NINTENDO_SDK_ROOT)</NintendoSdkRoot>
+    <NintendoSdkSpec>NX</NintendoSdkSpec>
+    <NintendoSdkBuildType>Release</NintendoSdkBuildType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <NintendoSdkRoot>$(NINTENDO_SDK_ROOT)</NintendoSdkRoot>
+    <NintendoSdkSpec>NX</NintendoSdkSpec>
+    <NintendoSdkBuildType>Debug</NintendoSdkBuildType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Develop|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <NintendoSdkRoot>$(NINTENDO_SDK_ROOT)</NintendoSdkRoot>
+    <NintendoSdkSpec>NX</NintendoSdkSpec>
+    <NintendoSdkBuildType>Develop</NintendoSdkBuildType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <NintendoSdkRoot>$(NINTENDO_SDK_ROOT)</NintendoSdkRoot>
+    <NintendoSdkSpec>NX</NintendoSdkSpec>
+    <NintendoSdkBuildType>Release</NintendoSdkBuildType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|NX32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <NintendoSdkRoot>$(NINTENDO_SDK_ROOT)</NintendoSdkRoot>
+    <NintendoSdkSpec>NX</NintendoSdkSpec>
+    <NintendoSdkBuildType>Debug</NintendoSdkBuildType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Develop|NX32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <NintendoSdkRoot>$(NINTENDO_SDK_ROOT)</NintendoSdkRoot>
+    <NintendoSdkSpec>NX</NintendoSdkSpec>
+    <NintendoSdkBuildType>Develop</NintendoSdkBuildType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|NX32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <NintendoSdkRoot>$(NINTENDO_SDK_ROOT)</NintendoSdkRoot>
+    <NintendoSdkSpec>NX</NintendoSdkSpec>
+    <NintendoSdkBuildType>Release</NintendoSdkBuildType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|NX64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <NintendoSdkRoot>$(NINTENDO_SDK_ROOT)</NintendoSdkRoot>
+    <NintendoSdkSpec>NX</NintendoSdkSpec>
+    <NintendoSdkBuildType>Debug</NintendoSdkBuildType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Develop|NX64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <NintendoSdkRoot>$(NINTENDO_SDK_ROOT)</NintendoSdkRoot>
+    <NintendoSdkSpec>NX</NintendoSdkSpec>
+    <NintendoSdkBuildType>Develop</NintendoSdkBuildType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|NX64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <NintendoSdkRoot>$(NINTENDO_SDK_ROOT)</NintendoSdkRoot>
+    <NintendoSdkSpec>NX</NintendoSdkSpec>
+    <NintendoSdkBuildType>Release</NintendoSdkBuildType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="ImportNintendoSdk.props" Condition="exists('ImportNintendoSdk.props')" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="ImportNintendoSdk.props" Condition="exists('ImportNintendoSdk.props')" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="ImportNintendoSdk.props" Condition="exists('ImportNintendoSdk.props')" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="ImportNintendoSdk.props" Condition="exists('ImportNintendoSdk.props')" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Develop|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="ImportNintendoSdk.props" Condition="exists('ImportNintendoSdk.props')" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="ImportNintendoSdk.props" Condition="exists('ImportNintendoSdk.props')" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|NX32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="ImportNintendoSdk.props" Condition="exists('ImportNintendoSdk.props')" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Develop|NX32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="ImportNintendoSdk.props" Condition="exists('ImportNintendoSdk.props')" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|NX32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="ImportNintendoSdk.props" Condition="exists('ImportNintendoSdk.props')" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|NX64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="ImportNintendoSdk.props" Condition="exists('ImportNintendoSdk.props')" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Develop|NX64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="ImportNintendoSdk.props" Condition="exists('ImportNintendoSdk.props')" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|NX64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="ImportNintendoSdk.props" Condition="exists('ImportNintendoSdk.props')" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|NX32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Develop|NX32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|NX32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|NX64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Develop|NX64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|NX64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(TBSDK_DIR)/include;</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>tb_fwd.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Develop|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(TBSDK_DIR)/include;</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>tb_fwd.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(TBSDK_DIR)/include;</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>tb_fwd.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN64;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(TBSDK_DIR)/include;</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>tb_fwd.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Develop|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN64;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(TBSDK_DIR)/include;</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>tb_fwd.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN64;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(TBSDK_DIR)/include;</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>tb_fwd.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|NX64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(TBSDK_DIR)/include;</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>tb_fwd.h</PrecompiledHeaderFile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Warnings>NormalWarnings</Warnings>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|NX32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(TBSDK_DIR)/include;</AdditionalIncludeDirectories>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>tb_fwd.h</PrecompiledHeaderFile>
+      <Warnings>NormalWarnings</Warnings>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Develop|NX32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(TBSDK_DIR)/include;</AdditionalIncludeDirectories>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>tb_fwd.h</PrecompiledHeaderFile>
+      <Warnings>NormalWarnings</Warnings>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|NX32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(TBSDK_DIR)/include;</AdditionalIncludeDirectories>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>tb_fwd.h</PrecompiledHeaderFile>
+      <Warnings>NormalWarnings</Warnings>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Develop|NX64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(TBSDK_DIR)/include;</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>tb_fwd.h</PrecompiledHeaderFile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Warnings>NormalWarnings</Warnings>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|NX64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(TBSDK_DIR)/include;</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>tb_fwd.h</PrecompiledHeaderFile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Warnings>NormalWarnings</Warnings>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

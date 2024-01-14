@@ -1,0 +1,46 @@
+#include "format_types_multi_tex.h"
+
+uniform float u_TexWidth : register(c4);
+uniform float u_TexHeight : register(c5);
+
+// 輪郭フィルター
+float4 OutlineFilter( float2 uv , float2 uv2 )
+{
+    static const float4 white = { 1.0f , 1.0f , 1.0f , 1.0f };
+    float dx = ( 1.0f / u_TexWidth );
+    float dy = ( 1.0f / u_TexHeight );
+    
+    float4 diffuse = tex2D( g_Texture1 , float2(uv2.x, uv2.y));
+
+    float center = tex2D( g_Texture0 , float2(uv.x, uv.y)).r;
+    float upLeft = tex2D( g_Texture0 , float2(uv.x - dx, uv.y - dy)).r;
+    float up = tex2D( g_Texture0 , float2(uv.x, uv.y - dy)).r; 
+    float upRight = tex2D( g_Texture0 , float2(uv.x + dx , uv.y - dy)).r; 
+    float left = tex2D( g_Texture0 , float2(uv.x - dx, uv.y )).r; 
+    float right = tex2D( g_Texture0 , float2(uv.x + dx, uv.y )).r;
+    float downLeft = tex2D( g_Texture0 , float2(uv.x - dx, uv.y + dy)).r; 
+    float down = tex2D( g_Texture0 , float2(uv.x, uv.y + dy)).r; 
+    float downRight = tex2D( g_Texture0 , float2(uv.x + dx , uv.y + dy)).r;
+    float value = ( center * 1.0f ) + 
+                  ( upLeft * 0.2f ) + 
+                  ( up * 0.2f ) + 
+                  ( upRight * 0.2f ) + 
+                  ( left * 0.2f ) + 
+                  ( right * 0.2f ) + 
+                  ( downLeft * 0.2f ) + 
+                  ( down * 0.2f ) + 
+                  ( downRight * 0.2f );
+    value = min( value , 1.0f );
+    return value * white + ( 1.0f - value ) * diffuse;
+//    float4 result = { 1.0f , 0.0f , 1.0f , 1.0f };
+//    return result;
+//    return diffuse;
+}
+
+// メイン関数
+PsOut MainPS( VsOut input )
+{
+    PsOut result = (PsOut)0;
+    result.color = OutlineFilter( input.uv0 , input.uv1 );
+    return result;
+}

@@ -1,0 +1,45 @@
+ifeq ($(TBSDK_DIR_CYG), )
+    TBSDK_DIR_CYG=$(shell cygpath -u $(TBSDK_DIR))
+endif
+include $(TBSDK_DIR_CYG)/build/common/wiiu/Makefile.common
+
+######################################
+# ビルドルール
+######################################
+# makerplについて
+#  -f 強制的にRPXとして生成
+#  -t <TAG>=<VALUE> タグを指定
+######################################
+
+# コンパイル
+$(TARGET): $(OBJ_DIR) $(BIN_DIR) $(OBJS)
+	$(PREPRPL) -e _start -o $(shell echo '$(EXPORT_OBJECT) $(OBJS) $(COMMON_LIBS) $(COMMON_DYNAMIC_LIBS) $(CORE_DYNAMIC_LIBS)' | $(PATH_CYGWIN_TO_DOS))
+	$(LD)                   $(shell echo '$(EXPORT_OBJECT) $(OBJS) $(COMMON_LIBS) $(COMMON_DYNAMIC_LIBS) $(CORE_DYNAMIC_LIBS) $(LDFLAGS) $(CFLAGS_OPT) $(LCFFLAGS) -L $(SYSTEM_LIB_TARGET_DIR) -map=$(MAP_PATH) -o $(ELF_PATH)' | $(PATH_CYGWIN_TO_DOS))
+	$(MAKERPL)              $(shell echo '$(ELF_PATH) -f -t BUILD_TYPE=$(BUILD_TARGET) -l $(RPL_A_PATH)' | $(PATH_CYGWIN_TO_DOS))
+
+######################################
+# 実行ルール
+######################################
+# caferunについて
+# -b は DEBUG バージョンのシステムライブラリ（RPL）を使用します（NDEBUG バージョンは使用しません）。
+######################################
+run:
+	make run_ $(TARGET) BUILD_TARGET=NDEBUG
+
+run_:
+	caferun $(RPX_PATH)
+
+# デバッグ機能付き
+drun:
+	make drun_ $(TARGET) BUILD_TARGET=DEBUG
+
+drun_:
+	caferun -b $(RPX_PATH)
+
+# デバッガ付き デバッグ機能付き
+multirun:
+	make multirun_ $(TARGET) BUILD_TARGET=DEBUG
+
+multirun_:
+	caferun -b -d multi $(RPX_PATH)
+

@@ -1,0 +1,346 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		26A456EC1C49F2DE00B19A71 /* tb_keyboard_manual.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26A456E81C49F2DE00B19A71 /* tb_keyboard_manual.cpp */; };
+		26A456ED1C49F2DE00B19A71 /* tb_mouse_manual.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26A456E91C49F2DE00B19A71 /* tb_mouse_manual.cpp */; };
+		26A456EE1C49F2DE00B19A71 /* tb_pad_manual.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26A456EA1C49F2DE00B19A71 /* tb_pad_manual.cpp */; };
+		26A456EF1C49F2DE00B19A71 /* tb_touch_manual.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26A456EB1C49F2DE00B19A71 /* tb_touch_manual.cpp */; };
+		26B8BE461C46AA0C00A5DBCD /* tb_input_setting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26B8BE431C46AA0C00A5DBCD /* tb_input_setting.cpp */; };
+		26B8BE471C46AA0C00A5DBCD /* tb_keyboard_common.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26B8BE441C46AA0C00A5DBCD /* tb_keyboard_common.cpp */; };
+		26B8BE481C46AA0C00A5DBCD /* tb_virtual_input_manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26B8BE451C46AA0C00A5DBCD /* tb_virtual_input_manager.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		26B8BE201C46A90900A5DBCD /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		26A456E81C49F2DE00B19A71 /* tb_keyboard_manual.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tb_keyboard_manual.cpp; path = ../../../../../src/input/depend/manual/tb_keyboard_manual.cpp; sourceTree = "<group>"; };
+		26A456E91C49F2DE00B19A71 /* tb_mouse_manual.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tb_mouse_manual.cpp; path = ../../../../../src/input/depend/manual/tb_mouse_manual.cpp; sourceTree = "<group>"; };
+		26A456EA1C49F2DE00B19A71 /* tb_pad_manual.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tb_pad_manual.cpp; path = ../../../../../src/input/depend/manual/tb_pad_manual.cpp; sourceTree = "<group>"; };
+		26A456EB1C49F2DE00B19A71 /* tb_touch_manual.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tb_touch_manual.cpp; path = ../../../../../src/input/depend/manual/tb_touch_manual.cpp; sourceTree = "<group>"; };
+		26B8BE221C46A90900A5DBCD /* libtb_input.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libtb_input.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		26B8BE3F1C46A94600A5DBCD /* tb_input-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "tb_input-Prefix.pch"; sourceTree = "<group>"; };
+		26B8BE421C46A9FA00A5DBCD /* input */ = {isa = PBXFileReference; lastKnownFileType = folder; name = input; path = ../../../../../include/input; sourceTree = "<group>"; };
+		26B8BE431C46AA0C00A5DBCD /* tb_input_setting.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tb_input_setting.cpp; path = ../../../../../src/input/tb_input_setting.cpp; sourceTree = "<group>"; };
+		26B8BE441C46AA0C00A5DBCD /* tb_keyboard_common.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tb_keyboard_common.cpp; path = ../../../../../src/input/tb_keyboard_common.cpp; sourceTree = "<group>"; };
+		26B8BE451C46AA0C00A5DBCD /* tb_virtual_input_manager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tb_virtual_input_manager.cpp; path = ../../../../../src/input/tb_virtual_input_manager.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		26B8BE1F1C46A90900A5DBCD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		26A456E61C49F2BB00B19A71 /* depend */ = {
+			isa = PBXGroup;
+			children = (
+				26A456E71C49F2C000B19A71 /* manual */,
+			);
+			name = depend;
+			sourceTree = "<group>";
+		};
+		26A456E71C49F2C000B19A71 /* manual */ = {
+			isa = PBXGroup;
+			children = (
+				26A456E81C49F2DE00B19A71 /* tb_keyboard_manual.cpp */,
+				26A456E91C49F2DE00B19A71 /* tb_mouse_manual.cpp */,
+				26A456EA1C49F2DE00B19A71 /* tb_pad_manual.cpp */,
+				26A456EB1C49F2DE00B19A71 /* tb_touch_manual.cpp */,
+			);
+			name = manual;
+			sourceTree = "<group>";
+		};
+		26B8BE191C46A90900A5DBCD = {
+			isa = PBXGroup;
+			children = (
+				26B8BE241C46A90900A5DBCD /* tb_input */,
+				26B8BE231C46A90900A5DBCD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		26B8BE231C46A90900A5DBCD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				26B8BE221C46A90900A5DBCD /* libtb_input.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		26B8BE241C46A90900A5DBCD /* tb_input */ = {
+			isa = PBXGroup;
+			children = (
+				26B8BE3E1C46A92C00A5DBCD /* pch */,
+				26B8BE3D1C46A92900A5DBCD /* include */,
+				26B8BE3C1C46A92200A5DBCD /* src */,
+			);
+			path = tb_input;
+			sourceTree = "<group>";
+		};
+		26B8BE3C1C46A92200A5DBCD /* src */ = {
+			isa = PBXGroup;
+			children = (
+				26B8BE411C46A9E400A5DBCD /* input */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		26B8BE3D1C46A92900A5DBCD /* include */ = {
+			isa = PBXGroup;
+			children = (
+				26B8BE421C46A9FA00A5DBCD /* input */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+		26B8BE3E1C46A92C00A5DBCD /* pch */ = {
+			isa = PBXGroup;
+			children = (
+				26B8BE3F1C46A94600A5DBCD /* tb_input-Prefix.pch */,
+			);
+			name = pch;
+			sourceTree = "<group>";
+		};
+		26B8BE411C46A9E400A5DBCD /* input */ = {
+			isa = PBXGroup;
+			children = (
+				26A456E61C49F2BB00B19A71 /* depend */,
+				26B8BE431C46AA0C00A5DBCD /* tb_input_setting.cpp */,
+				26B8BE441C46AA0C00A5DBCD /* tb_keyboard_common.cpp */,
+				26B8BE451C46AA0C00A5DBCD /* tb_virtual_input_manager.cpp */,
+			);
+			name = input;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		26B8BE211C46A90900A5DBCD /* tb_input */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26B8BE361C46A90900A5DBCD /* Build configuration list for PBXNativeTarget "tb_input" */;
+			buildPhases = (
+				26B8BE1E1C46A90900A5DBCD /* Sources */,
+				26B8BE1F1C46A90900A5DBCD /* Frameworks */,
+				26B8BE201C46A90900A5DBCD /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tb_input;
+			productName = tb_input;
+			productReference = 26B8BE221C46A90900A5DBCD /* libtb_input.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		26B8BE1A1C46A90900A5DBCD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = tecopark;
+				TargetAttributes = {
+					26B8BE211C46A90900A5DBCD = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = 26B8BE1D1C46A90900A5DBCD /* Build configuration list for PBXProject "tb_input" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 26B8BE191C46A90900A5DBCD;
+			productRefGroup = 26B8BE231C46A90900A5DBCD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				26B8BE211C46A90900A5DBCD /* tb_input */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		26B8BE1E1C46A90900A5DBCD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26B8BE461C46AA0C00A5DBCD /* tb_input_setting.cpp in Sources */,
+				26B8BE481C46AA0C00A5DBCD /* tb_virtual_input_manager.cpp in Sources */,
+				26A456EC1C49F2DE00B19A71 /* tb_keyboard_manual.cpp in Sources */,
+				26A456EE1C49F2DE00B19A71 /* tb_pad_manual.cpp in Sources */,
+				26A456ED1C49F2DE00B19A71 /* tb_mouse_manual.cpp in Sources */,
+				26A456EF1C49F2DE00B19A71 /* tb_touch_manual.cpp in Sources */,
+				26B8BE471C46AA0C00A5DBCD /* tb_keyboard_common.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		26B8BE341C46A90900A5DBCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "tb_input/tb_input-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/Users/miyakeshunsuke/Desktop/Portal/Dev/workspace/base/toybox/include,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-fembed-bitcode",
+				);
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		26B8BE351C46A90900A5DBCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "tb_input/tb_input-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/Users/miyakeshunsuke/Desktop/Portal/Dev/workspace/base/toybox/include,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-fembed-bitcode",
+				);
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		26B8BE371C46A90900A5DBCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		26B8BE381C46A90900A5DBCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		26B8BE1D1C46A90900A5DBCD /* Build configuration list for PBXProject "tb_input" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26B8BE341C46A90900A5DBCD /* Debug */,
+				26B8BE351C46A90900A5DBCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26B8BE361C46A90900A5DBCD /* Build configuration list for PBXNativeTarget "tb_input" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26B8BE371C46A90900A5DBCD /* Debug */,
+				26B8BE381C46A90900A5DBCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 26B8BE1A1C46A90900A5DBCD /* Project object */;
+}

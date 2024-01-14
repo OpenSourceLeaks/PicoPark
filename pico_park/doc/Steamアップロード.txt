@@ -1,0 +1,2 @@
+login tecopark nuba4115
+run_app_build *.vdf

@@ -1,0 +1,4 @@
+float4 main( VsOut input ) : COLOR
+{
+    return input.color;
+}

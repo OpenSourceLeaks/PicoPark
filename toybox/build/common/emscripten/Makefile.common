@@ -1,0 +1,57 @@
+CFLAGS:=-Wno-write-strings -Wno-trigraphs -Wno-invalid-offsetof -Wno-c++11-extensions -fno-exceptions
+ifneq (,$(LOCAL_CFLAGS))
+    CFLAGS+=$(LOCAL_CFLAGS)
+endif
+
+CXX=emcc
+OBJ_DIR=$(BUILD_TARGET)\obj
+OBJS=$(addprefix $(OBJ_DIR)/,$(notdir $(SRCS:.cpp=.o)))
+DEP_DIR=$(BUILD_TARGET)\depend
+DEPS=$(addprefix $(DEP_DIR)/,$(notdir $(SRCS:.cpp=.d)))
+
+INCLUDES=-I.
+ifneq (,$(LOCAL_INCLUDES))
+    INCLUDES+=$(LOCAL_INCLUDES)
+endif
+
+LIBS=-L.
+
+LDFLAGS=
+ifneq (,$(LOCAL_LDFLAGS))
+    LDFLAGS+=$(LOCAL_LDFLAGS)
+endif
+
+VPATH=$(dir $(SRCS))
+
+# リリースビルド用
+all:
+	make $(TARGET) EXENAME=$(TARGET).html CFLAGS_OPT=-O3 LDLIBS="$(LOCAL_LIBS)" BUILD_TARGET=release
+
+# デバッグビルド用
+.PHONY: debug
+debug:
+	make $(TARGET) EXENAME=$(TARGET)_d.html CFLAGS_OPT="-g -O0 -D_DEBUG" LDLIBS="$(LOCAL_LIBS_DEBUG)" BUILD_TARGET=debug
+
+$(TARGET):$(OBJ_DIR) $(DEP_DIR) $(OBJS)
+	emcc $(OBJS) $(LIBS) $(LDLIBS) $(CFLAGS_OPT) $(LDFLAGS) -o $(OUTPUT_PATH)$(EXENAME) --pre-js pre.js -s FULL_ES2=1 -s TOTAL_MEMORY=104857600
+
+-include $(DEPS)
+
+# objフォルダ作成
+$(OBJ_DIR):
+	-mkdir $(BUILD_TARGET)
+	-mkdir $(OBJ_DIR)
+
+# dependフォルダ作成
+$(DEP_DIR):
+	-mkdir $(BUILD_TARGET)
+	-mkdir $(DEP_DIR)
+
+# コンパイル & 依存ファイル出力
+$(OBJ_DIR)/%.o:%.cpp
+	$(CXX) $(CFLAGS) $(CFLAGS_OPT) $(INCLUDES) -c -MMD -MP -MF $(addprefix $(DEP_DIR)/,$(notdir $(<:.cpp=.d)))  $< -o $@
+
+# 不要なもの削除
+clean:
+	-rmdir /s /q release
+	-rmdir /s /q debug

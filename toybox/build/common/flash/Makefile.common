@@ -1,0 +1,75 @@
+AS3COMPILER:=asc2.jar
+CFLAGS:=-Werror -Wno-write-strings -Wno-trigraphs -Wno-invalid-offsetof  -jvmopt=-Xmx1G
+
+CXX="$(FLASCC)/usr/bin/g++"
+OBJ_DIR=$(BUILD_TARGET)/obj
+OBJS=$(addprefix $(OBJ_DIR)/,$(notdir $(SRCS:.cpp=.o)))
+DEP_DIR=$(BUILD_TARGET)/depend
+DEPS=$(addprefix $(DEP_DIR)/,$(notdir $(SRCS:.cpp=.d)))
+INCLUDES=-I$(TBSDK_DIR)/include
+ifneq (,$(LOCAL_INCLUDES))
+    INCLUDES+=$(addprefix -I,$(LOCAL_INCLUDES))
+endif
+TBSDK_SRC_DIR=$(TBSDK_DIR)/src
+VPATH=$(dir $(SRCS))
+
+$?UNAME=$(shell uname -s)
+ifneq (,$(findstring CYGWIN,$(UNAME)))
+	$?nativepath=$(shell cygpath -at mixed $(1))
+	$?unixpath=$(shell cygpath -at unix $(1))
+else
+	$?nativepath=$(abspath $(1))
+	$?unixpath=$(abspath $(1))
+endif
+
+ifneq (,$(findstring "asc2.jar","$(AS3COMPILER)"))
+	$?AS3COMPILERARGS=java $(JVMARGS) -jar $(call nativepath,$(FLASCC)/usr/lib/$(AS3COMPILER)) -merge -md 
+else
+	echo "ASC is no longer supported" ; exit 1 ;
+endif
+
+# リリースビルド用
+all:
+	make $(TARGET) LIBNAME=lib$(TARGET).a CFLAGS_OPT=-O4 BUILD_TARGET=release
+
+# デバッグビルド用
+.PHONY: debug
+debug:
+	make $(TARGET) LIBNAME=lib$(TARGET)_d.a CFLAGS_OPT="-g -O0" BUILD_TARGET=debug
+
+$(TARGET):check $(OBJ_DIR) $(DEP_DIR) $(OBJS)
+	$(FLASCC)/usr/bin/ar rcs $(TBSDK_DIR)/lib/flash/$(LIBNAME) $(OBJS)
+
+-include $(DEPS)
+
+check:
+	@echo -------- build [$(TARGET)]-------- 
+	@if [ -d $(FLASCC)/usr/bin ] ; then true ; \
+	else echo "Couldn't locate FLASCC sdk directory, please invoke make with \"make FLASCC=/path/to/FLASCC/sdk ...\"" ; exit 1 ; \
+	fi
+
+	@if [ -d "$(FLEX)/bin" ] ; then true ; \
+	else echo "Couldn't locate Flex sdk directory, please invoke make with \"make FLEX=/path/to/flex  ...\"" ; exit 1 ; \
+	fi
+
+# objフォルダ作成
+$(OBJ_DIR):
+	-mkdir $(BUILD_TARGET)
+	-mkdir $(OBJ_DIR)
+
+# dependフォルダ作成
+$(DEP_DIR):
+	-mkdir $(BUILD_TARGET)
+	-mkdir $(DEP_DIR)
+
+# コンパイル & 依存ファイル出力
+$(OBJ_DIR)/%.o:%.cpp
+	$(CXX) $(CFLAGS) $(CFLAGS_OPT) $(INCLUDES) -c -MMD -MP -MF $(addprefix $(DEP_DIR)/,$(notdir $(<:.cpp=.d)))  $< -o $@
+
+# 不要なもの削除
+clean:
+	rm -f release/$(OBJ_DIR)/*
+	rm -f release/$(DEP_DIR)/*
+	rm -f debug/$(OBJ_DIR)/*
+	rm -f debug/$(DEP_DIR)/*
+	rm -f $(TBSDK_DIR)/lib/flash/lib$(TARGET)*

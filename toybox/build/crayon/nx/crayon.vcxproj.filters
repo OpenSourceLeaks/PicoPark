@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ビルド">
+      <UniqueIdentifier>{F1DF9757-14C3-43FA-8525-6665FEDE7BA5}</UniqueIdentifier>
+      <Extensions>props</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\crayon">
+      <UniqueIdentifier>{7a55aec7-a79d-4b8a-b74d-010cc000a272}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\crayon">
+      <UniqueIdentifier>{c9520c8c-fc26-4339-9548-b089d8d4876b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\crayon\actor">
+      <UniqueIdentifier>{222dc5cd-f74f-4154-85cd-219283973249}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\crayon\collision">
+      <UniqueIdentifier>{0f92c93d-23a6-417e-ba19-216a08ddabc0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\crayon\input">
+      <UniqueIdentifier>{a2ca2d95-f2b2-4924-8038-2922b7fdcc69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\crayon\stage">
+      <UniqueIdentifier>{6a487873-0777-44eb-9c31-20069f6f76e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\crayon\map">
+      <UniqueIdentifier>{122d1172-f301-4f7f-bce5-447be18b2070}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\crayon\actor">
+      <UniqueIdentifier>{0bf80627-14e7-4294-ae45-4f5747ee9da0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\crayon\collision">
+      <UniqueIdentifier>{80cc664b-730b-4e0b-bbd7-e3216834591c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\crayon\input">
+      <UniqueIdentifier>{f3b4d8f8-b6b0-4d6c-9bc8-c8d69d048619}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\crayon\map">
+      <UniqueIdentifier>{0cd9e623-aabd-4f74-b4e0-8b32f07452be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\crayon\stage">
+      <UniqueIdentifier>{3af7ec10-01cd-4ee0-adb6-052f85f41464}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\include\tb_fwd.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\tb_pch.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\crayon\cr_all.h">
+      <Filter>ヘッダー ファイル\crayon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\crayon\cr_def.h">
+      <Filter>ヘッダー ファイル\crayon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\crayon\cr_util.h">
+      <Filter>ヘッダー ファイル\crayon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\crayon\stage\cr_action_stage.h">
+      <Filter>ヘッダー ファイル\crayon\stage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\crayon\stage\cr_stage.h">
+      <Filter>ヘッダー ファイル\crayon\stage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\crayon\map\cr_tile_map.h">
+      <Filter>ヘッダー ファイル\crayon\map</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\crayon\map\cr_tile_map_path_finding.h">
+      <Filter>ヘッダー ファイル\crayon\map</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\crayon\map\cr_action_map.h">
+      <Filter>ヘッダー ファイル\crayon\map</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\crayon\input\cr_player_input.h">
+      <Filter>ヘッダー ファイル\crayon\input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\crayon\input\cr_remote_input_server.h">
+      <Filter>ヘッダー ファイル\crayon\input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\crayon\input\cr_remote_input_types.h">
+      <Filter>ヘッダー ファイル\crayon\input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\crayon\input\cr_giant_input.h">
+      <Filter>ヘッダー ファイル\crayon\input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\crayon\input\cr_input.h">
+      <Filter>ヘッダー ファイル\crayon\input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\crayon\collision\cr_action_collision.h">
+      <Filter>ヘッダー ファイル\crayon\collision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\crayon\collision\cr_action_collision_scene.h">
+      <Filter>ヘッダー ファイル\crayon\collision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\crayon\actor\cr_action_actor_physics.h">
+      <Filter>ヘッダー ファイル\crayon\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\crayon\actor\cr_action_actor_sprite.h">
+      <Filter>ヘッダー ファイル\crayon\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\crayon\actor\cr_actor.h">
+      <Filter>ヘッダー ファイル\crayon\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\crayon\actor\cr_actor_factory.h">
+      <Filter>ヘッダー ファイル\crayon\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\crayon\actor\cr_sprite_actor.h">
+      <Filter>ヘッダー ファイル\crayon\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\crayon\actor\cr_action_actor.h">
+      <Filter>ヘッダー ファイル\crayon\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\crayon\actor\cr_action_actor_child.h">
+      <Filter>ヘッダー ファイル\crayon\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\crayon\actor\cr_action_actor_component.h">
+      <Filter>ヘッダー ファイル\crayon\actor</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\tb_fwd.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\crayon\cr_util.cpp">
+      <Filter>ソース ファイル\crayon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\crayon\stage\cr_action_stage.cpp">
+      <Filter>ソース ファイル\crayon\stage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\crayon\stage\cr_stage.cpp">
+      <Filter>ソース ファイル\crayon\stage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\crayon\map\cr_tile_map.cpp">
+      <Filter>ソース ファイル\crayon\map</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\crayon\map\cr_tile_map_path_finding.cpp">
+      <Filter>ソース ファイル\crayon\map</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\crayon\map\cr_action_map.cpp">
+      <Filter>ソース ファイル\crayon\map</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\crayon\input\cr_input.cpp">
+      <Filter>ソース ファイル\crayon\input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\crayon\input\cr_player_input.cpp">
+      <Filter>ソース ファイル\crayon\input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\crayon\input\cr_remote_input_server.cpp">
+      <Filter>ソース ファイル\crayon\input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\crayon\input\cr_giant_input.cpp">
+      <Filter>ソース ファイル\crayon\input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\crayon\collision\cr_action_collision_scene.cpp">
+      <Filter>ソース ファイル\crayon\collision</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\crayon\collision\cr_action_collision.cpp">
+      <Filter>ソース ファイル\crayon\collision</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\crayon\actor\cr_actor.cpp">
+      <Filter>ソース ファイル\crayon\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\crayon\actor\cr_actor_child.cpp">
+      <Filter>ソース ファイル\crayon\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\crayon\actor\cr_actor_factory.cpp">
+      <Filter>ソース ファイル\crayon\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\crayon\actor\cr_sprite_actor.cpp">
+      <Filter>ソース ファイル\crayon\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\crayon\actor\cr_action_actor.cpp">
+      <Filter>ソース ファイル\crayon\actor</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

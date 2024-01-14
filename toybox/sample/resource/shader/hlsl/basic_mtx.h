@@ -1,0 +1,13 @@
+struct VsOut
+{
+    float4 pos : POSITION;
+    float4 color : COLOR0;
+};
+float4x4 g_MatWVP : register(c0);
+
+//static const D3DVERTEXELEMENT9 VERTEX_ELEMENTS_BASIC_MTX[] =
+//{
+//    { 0,  0, D3DDECLTYPE_FLOAT4, D3DDECLMETHOD_DEFAULT, D3DDECLUSAGE_POSITION, 0 },
+//    { 0, 16, D3DDECLTYPE_FLOAT4, D3DDECLMETHOD_DEFAULT, D3DDECLUSAGE_COLOR, 0 },
+//    D3DDECL_END()
+//};

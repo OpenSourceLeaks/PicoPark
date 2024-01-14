@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\tb_fwd.cpp" />
+    <ClCompile Include="..\..\..\src\physics\depend\box2d\tb_physics_scene_2d_box2d.cpp">
+      <Filter>src\physics\depend\box2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\physics\depend\box2d\tb_physics_shape_2d_box2d.cpp">
+      <Filter>src\physics\depend\box2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\physics\depend\box2d\tb_physics_joint_2d_box2d.cpp">
+      <Filter>src\physics\depend\box2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\physics\depend\box2d\tb_physics_body_2d_box2d.cpp">
+      <Filter>src\physics\depend\box2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\physics\depend\box2d\tb_physics_box2d.cpp">
+      <Filter>src\physics\depend\box2d</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{0579696b-06d5-4b3b-9da8-670cc096f14d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{600d9ecc-7947-4c0f-851f-a503052f4695}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\physics">
+      <UniqueIdentifier>{7b8d8a81-9c66-4e6c-94c7-2bbcdde23bfc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\physics">
+      <UniqueIdentifier>{1d3f1038-e749-4ab0-8406-68fba23817e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\physics\depend">
+      <UniqueIdentifier>{0203e54d-ff7d-4f95-b6bf-76963afbaf74}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\physics\depend\box2d">
+      <UniqueIdentifier>{ae9fab15-423f-4e6d-8c20-04be8d3eb952}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\physics\depend">
+      <UniqueIdentifier>{534f352d-e271-4bb3-bbbc-a98760885616}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\physics\depend\box2d">
+      <UniqueIdentifier>{1357c038-24b7-42a5-a1aa-f7af74cf213c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\include\physics\tb_physics_scene_2d.h">
+      <Filter>include\physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\physics\tb_physics_types.h">
+      <Filter>include\physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\physics\depend\tb_physics_scene_2d_depend.h">
+      <Filter>include\physics\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\physics\depend\box2d\tb_physics_scene_2d_box2d.h">
+      <Filter>include\physics\depend\box2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\physics\tb_physics_shape_2d.h">
+      <Filter>include\physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\physics\depend\tb_physics_shape_2d_depend.h">
+      <Filter>include\physics\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\physics\depend\box2d\tb_physics_shape_2d_box2d.h">
+      <Filter>include\physics\depend\box2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\physics\tb_physics_2d_all.h">
+      <Filter>include\physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\physics\tb_physics_joint_2d.h">
+      <Filter>include\physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\physics\depend\tb_physics_joint_2d_depend.h">
+      <Filter>include\physics\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\physics\depend\box2d\tb_physics_joint_2d_box2d.h">
+      <Filter>include\physics\depend\box2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\physics\tb_physics_body_2d.h">
+      <Filter>include\physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\physics\depend\tb_physics_body_2d_depend.h">
+      <Filter>include\physics\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\physics\depend\box2d\tb_physics_body_2d_box2d.h">
+      <Filter>include\physics\depend\box2d</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

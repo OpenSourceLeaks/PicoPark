@@ -1,0 +1,338 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		26688FA21C48057C00F4A2DF /* tb_ui_button_skin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26688F991C48057C00F4A2DF /* tb_ui_button_skin.cpp */; };
+		26688FA31C48057C00F4A2DF /* tb_ui_button.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26688F9A1C48057C00F4A2DF /* tb_ui_button.cpp */; };
+		26688FA41C48057C00F4A2DF /* tb_ui_frame_sprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26688F9B1C48057C00F4A2DF /* tb_ui_frame_sprite.cpp */; };
+		26688FA51C48057C00F4A2DF /* tb_ui_image_box.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26688F9C1C48057C00F4A2DF /* tb_ui_image_box.cpp */; };
+		26688FA61C48057C00F4A2DF /* tb_ui_line.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26688F9D1C48057C00F4A2DF /* tb_ui_line.cpp */; };
+		26688FA71C48057C00F4A2DF /* tb_ui_manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26688F9E1C48057C00F4A2DF /* tb_ui_manager.cpp */; };
+		26688FA81C48057C00F4A2DF /* tb_ui_text_box.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26688F9F1C48057C00F4A2DF /* tb_ui_text_box.cpp */; };
+		26688FA91C48057C00F4A2DF /* tb_ui_widget.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26688FA01C48057C00F4A2DF /* tb_ui_widget.cpp */; };
+		26688FAA1C48057C00F4A2DF /* tb_ui_window.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26688FA11C48057C00F4A2DF /* tb_ui_window.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		26688F781C4802CC00F4A2DF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		26688F7A1C4802CC00F4A2DF /* libtb_ui.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libtb_ui.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		26688F971C48032100F4A2DF /* tb_ui-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "tb_ui-Prefix.pch"; sourceTree = "<group>"; };
+		26688F981C48056100F4A2DF /* ui */ = {isa = PBXFileReference; lastKnownFileType = folder; name = ui; path = ../../../../../include/ui; sourceTree = "<group>"; };
+		26688F991C48057C00F4A2DF /* tb_ui_button_skin.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tb_ui_button_skin.cpp; path = ../../../../../src/ui/tb_ui_button_skin.cpp; sourceTree = "<group>"; };
+		26688F9A1C48057C00F4A2DF /* tb_ui_button.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tb_ui_button.cpp; path = ../../../../../src/ui/tb_ui_button.cpp; sourceTree = "<group>"; };
+		26688F9B1C48057C00F4A2DF /* tb_ui_frame_sprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tb_ui_frame_sprite.cpp; path = ../../../../../src/ui/tb_ui_frame_sprite.cpp; sourceTree = "<group>"; };
+		26688F9C1C48057C00F4A2DF /* tb_ui_image_box.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tb_ui_image_box.cpp; path = ../../../../../src/ui/tb_ui_image_box.cpp; sourceTree = "<group>"; };
+		26688F9D1C48057C00F4A2DF /* tb_ui_line.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tb_ui_line.cpp; path = ../../../../../src/ui/tb_ui_line.cpp; sourceTree = "<group>"; };
+		26688F9E1C48057C00F4A2DF /* tb_ui_manager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tb_ui_manager.cpp; path = ../../../../../src/ui/tb_ui_manager.cpp; sourceTree = "<group>"; };
+		26688F9F1C48057C00F4A2DF /* tb_ui_text_box.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tb_ui_text_box.cpp; path = ../../../../../src/ui/tb_ui_text_box.cpp; sourceTree = "<group>"; };
+		26688FA01C48057C00F4A2DF /* tb_ui_widget.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tb_ui_widget.cpp; path = ../../../../../src/ui/tb_ui_widget.cpp; sourceTree = "<group>"; };
+		26688FA11C48057C00F4A2DF /* tb_ui_window.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tb_ui_window.cpp; path = ../../../../../src/ui/tb_ui_window.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		26688F771C4802CC00F4A2DF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		26688F711C4802CC00F4A2DF = {
+			isa = PBXGroup;
+			children = (
+				26688F7C1C4802CC00F4A2DF /* tb_ui */,
+				26688F7B1C4802CC00F4A2DF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		26688F7B1C4802CC00F4A2DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				26688F7A1C4802CC00F4A2DF /* libtb_ui.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		26688F7C1C4802CC00F4A2DF /* tb_ui */ = {
+			isa = PBXGroup;
+			children = (
+				26688F961C48030900F4A2DF /* src */,
+				26688F951C48030300F4A2DF /* include */,
+				26688F941C4802FE00F4A2DF /* pch */,
+			);
+			path = tb_ui;
+			sourceTree = "<group>";
+		};
+		26688F941C4802FE00F4A2DF /* pch */ = {
+			isa = PBXGroup;
+			children = (
+				26688F971C48032100F4A2DF /* tb_ui-Prefix.pch */,
+			);
+			name = pch;
+			sourceTree = "<group>";
+		};
+		26688F951C48030300F4A2DF /* include */ = {
+			isa = PBXGroup;
+			children = (
+				26688F981C48056100F4A2DF /* ui */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+		26688F961C48030900F4A2DF /* src */ = {
+			isa = PBXGroup;
+			children = (
+				26688FAB1C4805C400F4A2DF /* ui */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		26688FAB1C4805C400F4A2DF /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				26688F991C48057C00F4A2DF /* tb_ui_button_skin.cpp */,
+				26688F9A1C48057C00F4A2DF /* tb_ui_button.cpp */,
+				26688F9B1C48057C00F4A2DF /* tb_ui_frame_sprite.cpp */,
+				26688F9C1C48057C00F4A2DF /* tb_ui_image_box.cpp */,
+				26688F9D1C48057C00F4A2DF /* tb_ui_line.cpp */,
+				26688F9E1C48057C00F4A2DF /* tb_ui_manager.cpp */,
+				26688F9F1C48057C00F4A2DF /* tb_ui_text_box.cpp */,
+				26688FA01C48057C00F4A2DF /* tb_ui_widget.cpp */,
+				26688FA11C48057C00F4A2DF /* tb_ui_window.cpp */,
+			);
+			name = ui;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		26688F791C4802CC00F4A2DF /* tb_ui */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26688F8E1C4802CC00F4A2DF /* Build configuration list for PBXNativeTarget "tb_ui" */;
+			buildPhases = (
+				26688F761C4802CC00F4A2DF /* Sources */,
+				26688F771C4802CC00F4A2DF /* Frameworks */,
+				26688F781C4802CC00F4A2DF /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tb_ui;
+			productName = tb_ui;
+			productReference = 26688F7A1C4802CC00F4A2DF /* libtb_ui.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		26688F721C4802CC00F4A2DF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = tecopark;
+				TargetAttributes = {
+					26688F791C4802CC00F4A2DF = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = 26688F751C4802CC00F4A2DF /* Build configuration list for PBXProject "tb_ui" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 26688F711C4802CC00F4A2DF;
+			productRefGroup = 26688F7B1C4802CC00F4A2DF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				26688F791C4802CC00F4A2DF /* tb_ui */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		26688F761C4802CC00F4A2DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26688FAA1C48057C00F4A2DF /* tb_ui_window.cpp in Sources */,
+				26688FA41C48057C00F4A2DF /* tb_ui_frame_sprite.cpp in Sources */,
+				26688FA51C48057C00F4A2DF /* tb_ui_image_box.cpp in Sources */,
+				26688FA21C48057C00F4A2DF /* tb_ui_button_skin.cpp in Sources */,
+				26688FA71C48057C00F4A2DF /* tb_ui_manager.cpp in Sources */,
+				26688FA61C48057C00F4A2DF /* tb_ui_line.cpp in Sources */,
+				26688FA31C48057C00F4A2DF /* tb_ui_button.cpp in Sources */,
+				26688FA81C48057C00F4A2DF /* tb_ui_text_box.cpp in Sources */,
+				26688FA91C48057C00F4A2DF /* tb_ui_widget.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		26688F8C1C4802CC00F4A2DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-fembed-bitcode",
+				);
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		26688F8D1C4802CC00F4A2DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-fembed-bitcode",
+				);
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		26688F8F1C4802CC00F4A2DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "tb_ui/tb_ui-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/Users/miyakeshunsuke/Desktop/Portal/Dev/workspace/base/toybox/include,
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		26688F901C4802CC00F4A2DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "tb_ui/tb_ui-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/Users/miyakeshunsuke/Desktop/Portal/Dev/workspace/base/toybox/include,
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		26688F751C4802CC00F4A2DF /* Build configuration list for PBXProject "tb_ui" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26688F8C1C4802CC00F4A2DF /* Debug */,
+				26688F8D1C4802CC00F4A2DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26688F8E1C4802CC00F4A2DF /* Build configuration list for PBXNativeTarget "tb_ui" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26688F8F1C4802CC00F4A2DF /* Debug */,
+				26688F901C4802CC00F4A2DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 26688F721C4802CC00F4A2DF /* Project object */;
+}

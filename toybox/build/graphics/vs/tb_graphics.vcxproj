@@ -1,0 +1,777 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugDX9|Win32">
+      <Configuration>DebugDX9</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugDX9|x64">
+      <Configuration>DebugDX9</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugGL|Win32">
+      <Configuration>DebugGL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugGL|x64">
+      <Configuration>DebugGL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="OptimizeDX9|Win32">
+      <Configuration>OptimizeDX9</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="OptimizeDX9|x64">
+      <Configuration>OptimizeDX9</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseDX9|Win32">
+      <Configuration>ReleaseDX9</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseDX9|x64">
+      <Configuration>ReleaseDX9</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseGL|Win32">
+      <Configuration>ReleaseGL</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseGL|x64">
+      <Configuration>ReleaseGL</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3A53CB91-30A7-4841-8F2E-D99797D3619C}</ProjectGuid>
+    <RootNamespace>tb_nui</RootNamespace>
+    <ProjectName>tb_graphics</ProjectName>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDX9|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDX9|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDX9|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDX9|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGL|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGL|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseGL|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseGL|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='OptimizeDX9|Win32'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='OptimizeDX9|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugDX9|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugDX9|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDX9|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDX9|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugGL|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugGL|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseGL|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseGL|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDX9|Win32'">
+    <TargetName>$(ProjectName)_dx9d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugDX9|x64'">
+    <TargetName>$(ProjectName)_dx9d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDX9|Win32'">
+    <TargetName>$(ProjectName)_dx9</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDX9|x64'">
+    <TargetName>$(ProjectName)_dx9</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGL|Win32'">
+    <TargetName>$(ProjectName)_gld</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugGL|x64'">
+    <TargetName>$(ProjectName)_gld</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseGL|Win32'">
+    <TargetName>$(ProjectName)_gl</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseGL|x64'">
+    <TargetName>$(ProjectName)_gl</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='OptimizeDX9|Win32'">
+    <TargetName>$(ProjectName)_dx9o</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='OptimizeDX9|x64'">
+    <TargetName>$(ProjectName)_dx9o</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDX9|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../../../include;$(DXSDK_DIR)\Include</AdditionalIncludeDirectories>
+      <UndefinePreprocessorDefinitions>
+      </UndefinePreprocessorDefinitions>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions);_WINDOWS;_DEBUG</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>tb_fwd.h</PrecompiledHeaderFile>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <OutputFile>$(TBSDK_DIR)/lib/vs/win32/$(TargetName)$(TargetExt)</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugDX9|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../../../include;$(DXSDK_DIR)\Include</AdditionalIncludeDirectories>
+      <UndefinePreprocessorDefinitions>
+      </UndefinePreprocessorDefinitions>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions);_WINDOWS;_DEBUG</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>tb_fwd.h</PrecompiledHeaderFile>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <OutputFile>$(TBSDK_DIR)/lib/vs/win64/$(TargetName)$(TargetExt)</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDX9|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Full</Optimization>
+      <AdditionalIncludeDirectories>../../../include;$(DXSDK_DIR)\Include</AdditionalIncludeDirectories>
+      <UndefinePreprocessorDefinitions>
+      </UndefinePreprocessorDefinitions>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions);_WINDOWS;NDEBUG</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>tb_fwd.h</PrecompiledHeaderFile>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <OutputFile>$(TBSDK_DIR)/lib/vs/win32/$(TargetName)$(TargetExt)</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseDX9|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Full</Optimization>
+      <AdditionalIncludeDirectories>../../../include;$(DXSDK_DIR)\Include</AdditionalIncludeDirectories>
+      <UndefinePreprocessorDefinitions>
+      </UndefinePreprocessorDefinitions>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions);_WINDOWS;NDEBUG</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>tb_fwd.h</PrecompiledHeaderFile>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <OutputFile>$(TBSDK_DIR)/lib/vs/win64/$(TargetName)$(TargetExt)</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugGL|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(TBSDK_DIR)/include;$(TBSDK_DIR)/sdk/GL/include;$(OPENGLES_LIBDIR)/include</AdditionalIncludeDirectories>
+      <UndefinePreprocessorDefinitions>
+      </UndefinePreprocessorDefinitions>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions);_WINDOWS;_DEBUG;TB_USE_GL</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>tb_fwd.h</PrecompiledHeaderFile>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <OutputFile>$(TBSDK_DIR)/lib/vs/win32/$(TargetName)$(TargetExt)</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugGL|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(TBSDK_DIR)/include;$(TBSDK_DIR)/sdk/GL/include;$(OPENGLES_LIBDIR)/include</AdditionalIncludeDirectories>
+      <UndefinePreprocessorDefinitions>
+      </UndefinePreprocessorDefinitions>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions);_WINDOWS;_DEBUG;TB_USE_GL</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>tb_fwd.h</PrecompiledHeaderFile>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <OutputFile>$(TBSDK_DIR)/lib/vs/win64/$(TargetName)$(TargetExt)</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseGL|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Full</Optimization>
+      <AdditionalIncludeDirectories>$(TBSDK_DIR)/include;$(TBSDK_DIR)/sdk/GL/include;$(OPENGLES_LIBDIR)/include</AdditionalIncludeDirectories>
+      <UndefinePreprocessorDefinitions>
+      </UndefinePreprocessorDefinitions>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions);_WINDOWS;NDEBUG;TB_USE_GL</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>tb_fwd.h</PrecompiledHeaderFile>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <OutputFile>$(TBSDK_DIR)/lib/vs/win32/$(TargetName)$(TargetExt)</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseGL|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Full</Optimization>
+      <AdditionalIncludeDirectories>$(TBSDK_DIR)/include;$(TBSDK_DIR)/sdk/GL/include;$(OPENGLES_LIBDIR)/include</AdditionalIncludeDirectories>
+      <UndefinePreprocessorDefinitions>
+      </UndefinePreprocessorDefinitions>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions);_WINDOWS;NDEBUG;TB_USE_GL</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>tb_fwd.h</PrecompiledHeaderFile>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <OutputFile>$(TBSDK_DIR)/lib/vs/win64/$(TargetName)$(TargetExt)</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='OptimizeDX9|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../../../include;$(DXSDK_DIR)\Include</AdditionalIncludeDirectories>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Full</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <PreprocessorDefinitions>_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>tb_fwd.h</PrecompiledHeaderFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(TBSDK_DIR)/lib/vs/win32/$(TargetName)$(TargetExt)</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='OptimizeDX9|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>../../../include;$(DXSDK_DIR)\Include</AdditionalIncludeDirectories>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Full</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <PreprocessorDefinitions>_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>tb_fwd.h</PrecompiledHeaderFile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(TBSDK_DIR)/lib/vs/win64/$(TargetName)$(TargetExt)</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\graphics\font\depend\win32\tb_font_info_ttf_win32.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\font\tb_font.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\font\tb_font_buffer_2d.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\image\tb_image.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\light\tb_light.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\material\tb_material.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\material\tb_material_pmx.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\model\tb_mesh.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\model\tb_model_data_pmx.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\motion\tb_motion_data_vmd.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\motion\tb_motion_vmd.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\particle\tb_particle_sprite_emitter.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\particle\tb_particle_sprite.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\particle\tb_particle_sprite_scene.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\render\3dapi\depend\dx9\hlsl\tb_shader_manager_hlsl.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugGL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugGL|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseGL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseGL|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\render\3dapi\depend\dx9\hlsl\tb_shader_program_hlsl.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugGL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugGL|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseGL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseGL|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\render\3dapi\depend\dx9\tb_constant_buffer_gx9.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\render\3dapi\depend\dx9\tb_depth_stencil_dx9.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugGL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugGL|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseGL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseGL|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\render\3dapi\depend\dx9\tb_fixed_light_dx9.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugGL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugGL|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseGL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseGL|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\render\3dapi\depend\dx9\tb_fixed_material_dx9.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugGL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugGL|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseGL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseGL|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\render\3dapi\depend\dx9\tb_fixed_shader_dx9.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugGL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugGL|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseGL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseGL|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\render\3dapi\depend\dx9\tb_index_buffer_dx9.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugGL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugGL|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseGL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseGL|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\render\3dapi\depend\dx9\tb_render_device_dx9.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugGL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugGL|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseGL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseGL|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\render\3dapi\depend\dx9\tb_render_target_dx9.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugGL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugGL|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseGL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseGL|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\render\3dapi\depend\dx9\tb_render_util_dx9.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugGL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugGL|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseGL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseGL|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\render\3dapi\depend\dx9\tb_render_view_dx9.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugGL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugGL|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseGL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseGL|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\render\3dapi\depend\dx9\tb_texture_dx9.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugGL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugGL|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseGL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseGL|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\render\3dapi\depend\dx9\tb_vertex_buffer_dx9.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugGL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugGL|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseGL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseGL|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\render\3dapi\depend\dx9\tb_vertex_format_dx9.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugGL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugGL|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseGL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseGL|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\render\3dapi\depend\gl\cg\tb_shader_manager_cg_gl.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugDX9|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugDX9|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='OptimizeDX9|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='OptimizeDX9|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\render\3dapi\depend\gl\egl\tb_render_view_gl_egl.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\render\3dapi\depend\gl\glsl\tb_shader_manager_glsl.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugDX9|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugDX9|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='OptimizeDX9|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='OptimizeDX9|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\render\3dapi\depend\gl\glsl\tb_shader_program_glsl.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugDX9|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugDX9|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='OptimizeDX9|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='OptimizeDX9|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\render\3dapi\depend\gl\tb_depth_stencil_gl.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugDX9|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugDX9|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='OptimizeDX9|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='OptimizeDX9|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\render\3dapi\depend\gl\tb_fixed_light_gl.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugDX9|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugDX9|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugGL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugGL|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='OptimizeDX9|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='OptimizeDX9|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\render\3dapi\depend\gl\tb_fixed_material_gl.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugDX9|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugDX9|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugGL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugGL|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='OptimizeDX9|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='OptimizeDX9|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\render\3dapi\depend\gl\tb_fixed_shader_gl.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugDX9|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugDX9|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='OptimizeDX9|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='OptimizeDX9|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\render\3dapi\depend\gl\tb_fixed_shader_gl_sim.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugDX9|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugDX9|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='OptimizeDX9|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='OptimizeDX9|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\render\3dapi\depend\gl\tb_index_buffer_gl.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugDX9|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugDX9|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='OptimizeDX9|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='OptimizeDX9|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\render\3dapi\depend\gl\tb_render_device_gl.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugDX9|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugDX9|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='OptimizeDX9|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='OptimizeDX9|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\render\3dapi\depend\gl\tb_render_target_gl.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugDX9|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugDX9|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='OptimizeDX9|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='OptimizeDX9|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\render\3dapi\depend\gl\tb_render_view_gl_common.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugDX9|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugDX9|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='OptimizeDX9|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='OptimizeDX9|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\render\3dapi\depend\gl\tb_texture_gl.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugDX9|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugDX9|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='OptimizeDX9|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='OptimizeDX9|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\render\3dapi\depend\gl\tb_vertex_buffer_gl.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugDX9|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugDX9|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='OptimizeDX9|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='OptimizeDX9|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\render\3dapi\depend\gl\tb_vertex_format_gl.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugDX9|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugDX9|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='OptimizeDX9|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='OptimizeDX9|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\render\3dapi\depend\gl\win32\tb_render_view_gl_win32.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugDX9|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugDX9|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='OptimizeDX9|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='OptimizeDX9|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\render\3dapi\depend\tb_fixed_light_default.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugDX9|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugDX9|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseDX9|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseDX9|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='OptimizeDX9|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='OptimizeDX9|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseGL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseGL|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\render\3dapi\depend\tb_fixed_material_default.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugDX9|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='DebugDX9|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseDX9|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseDX9|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='OptimizeDX9|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='OptimizeDX9|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseGL|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='ReleaseGL|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\render\3dapi\depend\tb_render_system_default .cpp" />
+    <ClCompile Include="..\..\..\src\graphics\render\3dapi\depend\tb_texture_sampler_default.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\render\3dapi\tb_color.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\render\3dapi\tb_render_device_common.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\render\3dapi\tb_render_state_preset.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\render\3dapi\tb_shader_manager_common.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\render\3dapi\tb_texture_common.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\render\tb_draw_2d.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\render\tb_draw_3d.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\render\tb_fade.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\render\tb_render_command_buffer.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\render\tb_render_command_buffer_flush.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\render\tb_render_pass.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\render\tb_render_pass_manager.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\resource\tb_resource_model_pmx.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\scene\tb_render_object_mmd.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\scene\tb_render_scene.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\scene\tb_render_scene_node.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\sprite\tb_elastic_sprite.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\sprite\tb_sprite_scene_hooker.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\util\tb_screen_shot.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\window\tb_window_manager_common.cpp" />
+    <ClCompile Include="..\..\..\src\tb_fwd.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DebugGL|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DebugGL|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseGL|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseGL|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DebugDX9|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DebugDX9|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseDX9|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseDX9|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='OptimizeDX9|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='OptimizeDX9|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\display\depend\win32\tb_display_manager_win32.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\image\tb_image_bmp.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\image\tb_image_tga.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\math\tb_gr_matrix_util.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\resource\tb_resource_texture.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\sprite\tb_sprite_scene.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\sprite\tb_sprite_material.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\sprite\tb_sprite_node_anim_tree.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\sprite\tb_sprite.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\window\depend\win32\tb_window_manager_win32.cpp" />
+    <ClCompile Include="..\..\..\src\graphics\window\depend\win32\tb_window_win32.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\include\graphics\animation\tb_graphics_animation_types.h" />
+    <ClInclude Include="..\..\..\include\graphics\camera\tb_camera.h" />
+    <ClInclude Include="..\..\..\include\graphics\camera\tb_camera_manager.h" />
+    <ClInclude Include="..\..\..\include\graphics\display\depend\tb_display_manager_depend.h" />
+    <ClInclude Include="..\..\..\include\graphics\display\depend\win32\tb_display_manager_win32.h" />
+    <ClInclude Include="..\..\..\include\graphics\display\tb_display_manager.h" />
+    <ClInclude Include="..\..\..\include\graphics\display\tb_display_types.h" />
+    <ClInclude Include="..\..\..\include\graphics\font\depend\tb_font_info_ttf_depend.h" />
+    <ClInclude Include="..\..\..\include\graphics\font\depend\win32\tb_font_info_ttf_win32.h" />
+    <ClInclude Include="..\..\..\include\graphics\font\tb_font.h" />
+    <ClInclude Include="..\..\..\include\graphics\font\tb_font_buffer_2d.h" />
+    <ClInclude Include="..\..\..\include\graphics\font\tb_font_info_ttf.h" />
+    <ClInclude Include="..\..\..\include\graphics\font\tb_font_types.h" />
+    <ClInclude Include="..\..\..\include\graphics\image\tb_image.h" />
+    <ClInclude Include="..\..\..\include\graphics\image\tb_image_bmp.h" />
+    <ClInclude Include="..\..\..\include\graphics\image\tb_image_tga.h" />
+    <ClInclude Include="..\..\..\include\graphics\image\tb_image_types.h" />
+    <ClInclude Include="..\..\..\include\graphics\light\tb_light.h" />
+    <ClInclude Include="..\..\..\include\graphics\light\tb_light_manager.h" />
+    <ClInclude Include="..\..\..\include\graphics\material\tb_material.h" />
+    <ClInclude Include="..\..\..\include\graphics\material\tb_material_pmx.h" />
+    <ClInclude Include="..\..\..\include\graphics\math\tb_gr_matrix_util.h" />
+    <ClInclude Include="..\..\..\include\graphics\model\tb_mesh.h" />
+    <ClInclude Include="..\..\..\include\graphics\model\tb_model_data_pmx.h" />
+    <ClInclude Include="..\..\..\include\graphics\motion\tb_motion_data_vmd.h" />
+    <ClInclude Include="..\..\..\include\graphics\motion\tb_motion_vmd.h" />
+    <ClInclude Include="..\..\..\include\graphics\particle\tb_particle_sprite.h" />
+    <ClInclude Include="..\..\..\include\graphics\particle\tb_particle_sprite_emitter.h" />
+    <ClInclude Include="..\..\..\include\graphics\particle\tb_particle_sprite_scene.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\dx9\hlsl\tb_shader_manager_hlsl.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\dx9\tb_depth_stencil_dx9.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\dx9\tb_fixed_light_dx9.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\dx9\tb_fixed_material_dx9.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\dx9\tb_fixed_shader_dx9.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\dx9\tb_index_buffer_dx9.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\dx9\tb_lost_resource_dx9.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\dx9\tb_render_device_dx9.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\dx9\tb_render_target_dx9.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\dx9\tb_render_util_dx9.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\dx9\tb_render_view_dx9.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\dx9\tb_texture_dx9.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\dx9\tb_vertex_buffer_dx9.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\dx9\tb_vertex_format_dx9.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\gl\android\tb_render_view_gl_android.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\gl\egl\tb_render_view_gl_egl.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\gl\glsl\tb_shader_manager_glsl.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\gl\glsl\tb_shader_program_glsl.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\gl\tb_depth_stencil_gl.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\gl\tb_fixed_shader_gl.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\gl\tb_fixed_shader_gl_sim.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\gl\tb_gl_ext.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\gl\tb_index_buffer_gl.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\gl\tb_render_device_gl.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\gl\tb_render_target_gl.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\gl\tb_render_util_gl.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\gl\tb_texture_gl.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\gl\tb_vertex_buffer_gl.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\gl\tb_vertex_format_gl.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\gl\win32\tb_render_view_gl_win32.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\tb_color_depend.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\tb_constant_buffer_default.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\tb_constant_buffer_depend.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\tb_depth_stencil_depend.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\tb_fixed_light_depend.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\tb_fixed_material_depend.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\tb_fixed_shader_depend.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\tb_index_buffer_depend.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\tb_render_device_depend.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\tb_render_target_depend.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\tb_render_view_depend.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\tb_shader_manager_depend.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\tb_shader_program_depend.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\tb_texture_depend.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\tb_texture_sampler_default.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\tb_texture_sampler_depend.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\tb_vertex_buffer_depend.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\tb_vertex_format_depend.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\tb_3dapi.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\tb_3dapi_types.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\tb_3dapi_util.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\tb_blend_state.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\tb_color.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\tb_color_op.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\tb_depth_stencil.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\tb_depth_stencil_state.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\tb_fixed_light.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\tb_fixed_material.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\tb_fixed_shader.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\tb_index_buffer.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\tb_light.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\tb_material.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\tb_rasterizer_state.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\tb_render_device.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\tb_render_device_cache.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\tb_render_parameter.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\tb_render_system.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\tb_render_target.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\tb_render_view.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\tb_shader_manager.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\tb_shader_program.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\tb_shader_types.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\tb_texture.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\tb_texture_sampler.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\tb_vertex_buffer.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\tb_vertex_format.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\tb_viewport_scissor_state.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\tb_draw_2d.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\tb_draw_3d.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\tb_fade.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\tb_render_command_buffer.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\tb_render_command_types.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\tb_render_pass.h" />
+    <ClInclude Include="..\..\..\include\graphics\render\tb_render_pass_manager.h" />
+    <ClInclude Include="..\..\..\include\graphics\resource\tb_resource_model_pmx.h" />
+    <ClInclude Include="..\..\..\include\graphics\resource\tb_resource_motion_vmd.h" />
+    <ClInclude Include="..\..\..\include\graphics\resource\tb_resource_texture.h" />
+    <ClInclude Include="..\..\..\include\graphics\scene\tb_render_object_mmd.h" />
+    <ClInclude Include="..\..\..\include\graphics\scene\tb_render_scene.h" />
+    <ClInclude Include="..\..\..\include\graphics\scene\tb_render_scene_node.h" />
+    <ClInclude Include="..\..\..\include\graphics\skeleton\tb_skeleton_pmx.h" />
+    <ClInclude Include="..\..\..\include\graphics\sprite\tb_elastic_sprite.h" />
+    <ClInclude Include="..\..\..\include\graphics\sprite\tb_sprite_all.h" />
+    <ClInclude Include="..\..\..\include\graphics\sprite\tb_sprite_scene.h" />
+    <ClInclude Include="..\..\..\include\graphics\sprite\tb_sprite_material.h" />
+    <ClInclude Include="..\..\..\include\graphics\sprite\tb_sprite_node_anim_tree.h" />
+    <ClInclude Include="..\..\..\include\graphics\sprite\tb_sprite_node_tree.h" />
+    <ClInclude Include="..\..\..\include\graphics\sprite\tb_sprite.h" />
+    <ClInclude Include="..\..\..\include\graphics\sprite\tb_sprite_scene_hooker.h" />
+    <ClInclude Include="..\..\..\include\graphics\sprite\tb_sprite_types.h" />
+    <ClInclude Include="..\..\..\include\graphics\util\tb_screen_shot.h" />
+    <ClInclude Include="..\..\..\include\graphics\window\depend\tb_window_depend.h" />
+    <ClInclude Include="..\..\..\include\graphics\window\depend\tb_window_depend_types.h" />
+    <ClInclude Include="..\..\..\include\graphics\window\depend\tb_window_manager_depend.h" />
+    <ClInclude Include="..\..\..\include\graphics\window\depend\win32\tb_window_manager_win32.h" />
+    <ClInclude Include="..\..\..\include\graphics\window\depend\win32\tb_window_win32.h" />
+    <ClInclude Include="..\..\..\include\graphics\window\tb_window.h" />
+    <ClInclude Include="..\..\..\include\graphics\window\tb_window_manager.h" />
+    <ClInclude Include="..\..\..\src\graphics\font\tb_font_types_ascii.hpp" />
+    <ClInclude Include="..\..\..\src\graphics\font\tb_font_types_sjis.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

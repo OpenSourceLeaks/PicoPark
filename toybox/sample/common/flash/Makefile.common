@@ -1,0 +1,66 @@
+include ../../../../common/flash/Makefile.setting
+
+CFLAGS:=-Werror -Wno-write-strings -Wno-trigraphs -Wno-invalid-offsetof  -jvmopt=-Xmx1G
+
+CXX="$(FLASCC)/usr/bin/g++"
+OBJ_DIR=$(BUILD_TARGET)/obj
+OBJS=$(addprefix $(OBJ_DIR)/,$(notdir $(SRCS:.cpp=.o)))
+DEP_DIR=$(BUILD_TARGET)/depend
+DEPS=$(addprefix $(DEP_DIR)/,$(notdir $(SRCS:.cpp=.d)))
+
+ifneq (,$(LOCAL_INCLUDES))
+    INCLUDES=-I$(TBSDK_DIR)/include -I$(TBSDK_DIR)/sdk/AGAL/include $(addprefix -I,$(LOCAL_INCLUDES))
+else
+    INCLUDES=-I$(TBSDK_DIR)/include -I$(TBSDK_DIR)/sdk/AGAL/include
+endif
+LIBPATH=-L$(TBSDK_DIR)/lib/flash -L$(TBSDK_DIR)/sdk/AGAL/lib -L$(TBSDK_DIR)/sample/render/simple3d/test_lib
+VPATH=$(dir $(SRCS))
+
+# リリースビルド用
+all:
+	make $(TARGET) SWFNAME=$(TARGET).swf CFLAGS_OPT=-O4 BUILD_TARGET=release
+
+# デバッグビルド用
+.PHONY: debug
+debug:
+	make $(TARGET) SWFNAME=$(TARGET)_d.swf CFLAGS_OPT="-g -O0" BUILD_TARGET=debug LIBS="$(LIBS_DEBUG)"
+
+$(TARGET):check $(OBJ_DIR) $(DEP_DIR) $(OBJS)
+	$(CXX) $(CFLAGS) $(CFLAGS_OPT) -fllvm-llc-opt=-ascopt=-import -fllvm-llc-opt=-ascopt=$(call nativepath,$(TBSDK_DIR)/sdk/AGAL/lib/AGAL.abc) \
+	$(INCLUDES) $(LIBPATH) $(OBJS) $(ABCS) $(TBSDK_DIR)/sdk/AGAL/lib/AGAL.abc \
+	-symbol-abc=Console.abc -swf-size=$(SWF_SIZE) -emit-swf -o $(SWFNAME) $(LIBS) -lAGAL -lAS3++ -lFlash++
+
+-include $(DEPS)
+
+check:
+	@echo -------- build [$(TARGET)]-------- 
+	@if [ -d $(FLASCC)/usr/bin ] ; then true ; \
+	else echo "Couldn't locate FLASCC sdk directory, please invoke make with \"make FLASCC=/path/to/FLASCC/sdk ...\"" ; exit 1 ; \
+	fi
+
+	@if [ -d "$(FLEX)/bin" ] ; then true ; \
+	else echo "Couldn't locate Flex sdk directory, please invoke make with \"make FLEX=/path/to/flex  ...\"" ; exit 1 ; \
+	fi
+
+# objフォルダ作成
+$(OBJ_DIR):
+	-mkdir $(BUILD_TARGET)
+	mkdir $(OBJ_DIR)
+
+# dependフォルダ作成
+$(DEP_DIR):
+	-mkdir $(BUILD_TARGET)
+	mkdir $(DEP_DIR)
+
+# コンパイル & 依存ファイル出力
+$(OBJ_DIR)/%.o:%.cpp
+	$(CXX) $(CFLAGS) $(CFLAGS_OPT) $(INCLUDES) -c -MMD -MP -MF $(addprefix $(DEP_DIR)/,$(notdir $(<:.cpp=.d)))  $< -o $@
+	
+#デバッグビル土曜
+
+# 不要なもの削除
+clean:
+	rm -f release$(OBJ_DIR)/*
+	rm -f release$(DEP_DIR)/*
+	rm -f debug$(OBJ_DIR)/*
+	rm -f debug$(DEP_DIR)/*

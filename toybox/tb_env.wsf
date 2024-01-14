@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="Shift_JIS"?>
+<!-- toyboxライブラリに必要な環境変数の設定 -->
+<job>
+    <script language="JScript">
+        <![CDATA[
+        var envKind = /*"SYSTEM"*/"USER";
+        
+        var wsh = WScript.CreateObject("WScript.Shell");
+        var fso = WScript.CreateObject("Scripting.FileSystemObject");
+        
+        var toyboxRoot = "TBSDK_DIR"
+        var toyboxPath    = wsh.CurrentDirectory;
+        
+        wsh.Environment(envKind).item(toyboxRoot) = toyboxPath
+        
+        WScript.Echo("環境変数 " + toyboxRoot  + " を \"" + toyboxPath  + "\" にセットしました。");
+        WScript.Echo("環境変数を更新しました。再起動してください");
+        ]]>
+    </script>
+</job>

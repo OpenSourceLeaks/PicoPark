@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{0579696b-06d5-4b3b-9da8-670cc096f14d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\seq">
+      <UniqueIdentifier>{2362f660-d806-401a-9c12-44e0141080be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common">
+      <UniqueIdentifier>{3a04efe0-3b47-4241-a43d-84639b90cb80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\ui">
+      <UniqueIdentifier>{ba7a7189-923e-4fb4-9972-d229c9d9c4b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common\ui">
+      <UniqueIdentifier>{d53cc72a-084f-4d49-b4a9-05870e21ea31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\common\util">
+      <UniqueIdentifier>{af9146ed-cefd-478b-b68e-bbf128014994}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\fwd.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sequence\seq_manager.cpp">
+      <Filter>src\seq</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\common\cmn_util.cpp">
+      <Filter>src\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ui\ui_message_window.cpp">
+      <Filter>src\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ui\ui_select_box.cpp">
+      <Filter>src\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ui\ui_select_window.cpp">
+      <Filter>src\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ui\ui_player_window.cpp">
+      <Filter>src\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\common\ui\ui_pause_window.cpp">
+      <Filter>src\common\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ui\ui_manager.cpp">
+      <Filter>src\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ui\ui_input.cpp">
+      <Filter>src\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ui\ui_button.cpp">
+      <Filter>src\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\ui\ui_arrow_button.cpp">
+      <Filter>src\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\root.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\sequence\seq_main.cpp">
+      <Filter>src\seq</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\fwd.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\root.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\sequence\seq_manager.h">
+      <Filter>src\seq</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\sequence\seq_base.h">
+      <Filter>src\seq</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\sequence\seq_types.h">
+      <Filter>src\seq</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\common\cmn_def.h">
+      <Filter>src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\common\cmn_util.h">
+      <Filter>src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\common\cmn_global_data.h">
+      <Filter>src\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ui\ui_message_window.h">
+      <Filter>src\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ui\ui_select_box.h">
+      <Filter>src\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ui\ui_select_window.h">
+      <Filter>src\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ui\ui_player_window.h">
+      <Filter>src\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\common\ui\ui_pause_window.h">
+      <Filter>src\common\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ui\ui_manager.h">
+      <Filter>src\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ui\ui_input.h">
+      <Filter>src\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ui\ui_button.h">
+      <Filter>src\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\ui\ui_arrow_button.h">
+      <Filter>src\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\common\util\cmn_sprite_util.h">
+      <Filter>src\common\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\sequence\seq_main.h">
+      <Filter>src\seq</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

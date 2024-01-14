@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\input\tb_virtual_input_manager.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\input\depend\win32\tb_pad_directinput.cpp">
+      <Filter>src\depend\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\input\depend\win32\tb_pad_win32.cpp">
+      <Filter>src\depend\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\input\depend\win32\tb_pad_xinput.cpp">
+      <Filter>src\depend\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\input\depend\win32\tb_keyboard_win32.cpp">
+      <Filter>src\depend\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\input\depend\win32\tb_mouse_win32.cpp">
+      <Filter>src\depend\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\input\tb_input_setting.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\tb_fwd.cpp" />
+    <ClCompile Include="..\..\..\src\input\depend\win32\tb_touch_win32.cpp">
+      <Filter>src\depend\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\input\tb_keyboard_common.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\include\input\tb_keyboard.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\input\tb_mouse.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\input\tb_pad.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\input\tb_pad_types.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\input\tb_virtual_input.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\input\tb_virtual_input_manager.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\input\depend\tb_keyboard_depend.h">
+      <Filter>include\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\input\depend\tb_mouse_depend.h">
+      <Filter>include\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\input\depend\tb_pad_depend.h">
+      <Filter>include\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\input\depend\win32\tb_pad_directinput.h">
+      <Filter>include\depend\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\input\depend\win32\tb_pad_win32.h">
+      <Filter>include\depend\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\input\depend\win32\tb_pad_xinput.h">
+      <Filter>include\depend\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\input\depend\win32\tb_keyboard_win32.h">
+      <Filter>include\depend\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\input\depend\win32\tb_mouse_win32.h">
+      <Filter>include\depend\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\input\tb_input_setting.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\input\depend\win32\tb_pad_types_win32.h">
+      <Filter>include\depend\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\input\tb_bit_input.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\input\tb_touch.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\input\depend\tb_touch_depend.h">
+      <Filter>include\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\input\depend\win32\tb_touch_win32.h">
+      <Filter>include\depend\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\input\depend\manual\tb_pad_manual.h">
+      <Filter>include\depend\manual</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\input\depend\manual\tb_touch_manual.h">
+      <Filter>include\depend\manual</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\input\depend\manual\tb_keyboard_manual.h">
+      <Filter>include\depend\manual</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\input\depend\manual\tb_mouse_manual.h">
+      <Filter>include\depend\manual</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{0579696b-06d5-4b3b-9da8-670cc096f14d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{600d9ecc-7947-4c0f-851f-a503052f4695}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\depend">
+      <UniqueIdentifier>{d70f055b-c9ca-4332-b85c-23b44e34630e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\depend">
+      <UniqueIdentifier>{0d4aa37b-0511-49d0-9754-2ce11eea90c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\depend\win32">
+      <UniqueIdentifier>{629a8acf-fa1f-427c-9a5b-3936c3bf0dff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\depend\win32">
+      <UniqueIdentifier>{3db5712a-b048-4081-9cab-79769465756a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\depend\manual">
+      <UniqueIdentifier>{165bea70-5849-4aec-99f6-eee622b61187}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

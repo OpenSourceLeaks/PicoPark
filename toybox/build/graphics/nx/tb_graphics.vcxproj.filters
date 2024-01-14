@@ -1,0 +1,766 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ビルド">
+      <UniqueIdentifier>{F1DF9757-14C3-43FA-8525-6665FEDE7BA5}</UniqueIdentifier>
+      <Extensions>props</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\graphics">
+      <UniqueIdentifier>{91a17b37-d9ba-40f7-abdf-795e36176199}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\graphics">
+      <UniqueIdentifier>{7e36b587-057e-4c3e-83a6-05f82ca1e1dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\graphics\animation">
+      <UniqueIdentifier>{8d659959-bf61-48d1-86ac-cb2fb5d4826f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\graphics\camera">
+      <UniqueIdentifier>{00ffbe39-f058-48e9-a9f5-07b97cf8aa29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\graphics\display">
+      <UniqueIdentifier>{febda334-8d27-4dbf-9b7b-9f828205df6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\graphics\font">
+      <UniqueIdentifier>{14bf68b0-f5ff-4b99-97e4-6b3c3e829831}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\graphics\image">
+      <UniqueIdentifier>{e6a8770d-76da-4566-bbf5-ef98c1e547a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\graphics\light">
+      <UniqueIdentifier>{0baf4afa-38d1-4dee-b38e-0d6f40d2134f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\graphics\material">
+      <UniqueIdentifier>{d49867df-0236-4160-a01f-668e4edb8d9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\graphics\math">
+      <UniqueIdentifier>{8a35db63-dfbd-479a-8dcc-e6c9b23b2b37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\graphics\model">
+      <UniqueIdentifier>{6162b28a-9633-45bd-8231-21c99e315726}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\graphics\motion">
+      <UniqueIdentifier>{d1f2dd25-8398-4644-9ba8-654fc29e77f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\graphics\particle">
+      <UniqueIdentifier>{632ceb0c-42e5-4bcd-96f0-74a2e993c505}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\graphics\render">
+      <UniqueIdentifier>{08bcfbc3-2649-4ff9-8f8f-4b2d73173852}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\graphics\resource">
+      <UniqueIdentifier>{d9181ab7-5ac3-4186-a6cf-7d0483453aa5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\graphics\scene">
+      <UniqueIdentifier>{a2ef0079-d68c-4292-8b20-ffdac4890a36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\graphics\skeleton">
+      <UniqueIdentifier>{05f47cd3-b52a-40a1-95b3-9c6336d695c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\graphics\sprite">
+      <UniqueIdentifier>{21084ca6-922b-482f-b0c8-911caea2df37}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\graphics\util">
+      <UniqueIdentifier>{1018f4e5-4f18-47d8-bd0a-cb80698d7c55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\graphics\window">
+      <UniqueIdentifier>{2f2085fe-666b-413d-8b15-5f4c539fa6b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\graphics\display\depend">
+      <UniqueIdentifier>{170d6a5f-6e75-4c5e-913d-f185583b6d8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\graphics\render\3dapi">
+      <UniqueIdentifier>{47df98c3-6f09-4cb6-bf55-8558ec84bb5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\graphics\render\3dapi\depend">
+      <UniqueIdentifier>{c7271368-565e-40a7-bb2c-433ad1b1e472}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\graphics\render">
+      <UniqueIdentifier>{45115822-cf2c-45c7-8f5c-0950ef19759a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\graphics\render\3dapi\depend\gfx">
+      <UniqueIdentifier>{f8309f7b-5348-45ce-8f47-cc7f056d7e47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\graphics\render\3dapi">
+      <UniqueIdentifier>{f768c315-4e0e-470f-94ce-5429508ee526}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\graphics\render\3dapi\depend">
+      <UniqueIdentifier>{5d1e61d2-1394-483e-b841-d59fea618018}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\graphics\render\3dapi\depend\gfx">
+      <UniqueIdentifier>{7b5843ea-77e2-4703-8fac-381b5fb4f76a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\graphics\window\depend">
+      <UniqueIdentifier>{56ffe959-a5f2-43c6-964a-bc5f07516b9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\graphics\window\depend\nx">
+      <UniqueIdentifier>{6ac91757-39e1-4b49-8ba6-e857a7cfa8be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\graphics\window">
+      <UniqueIdentifier>{7c4cd98f-1651-43b9-aa89-b8a17af3f93a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\graphics\window\depend">
+      <UniqueIdentifier>{eae74c05-4d29-4d7f-9432-612339f0f5d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\graphics\window\depend\nx">
+      <UniqueIdentifier>{f94504b8-91f6-4e64-aaba-2c0402e7ed29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\graphics\display\depend\fixed">
+      <UniqueIdentifier>{3f046c2a-55eb-488f-b574-2af2f7a23d0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\graphics\display">
+      <UniqueIdentifier>{295db446-6372-4972-8bae-c761c3c1d1b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\graphics\font">
+      <UniqueIdentifier>{1d7d5fd3-4d34-4c3f-a211-742d0a5c636d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\graphics\image">
+      <UniqueIdentifier>{e5b21c6b-d162-4108-a1d0-13cd8b42ba8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\graphics\light">
+      <UniqueIdentifier>{9de9687b-b147-4def-b9a5-f879d5e73afa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\graphics\material">
+      <UniqueIdentifier>{b34272c6-4953-4bfb-9f8e-195d999e5a78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\graphics\math">
+      <UniqueIdentifier>{fbac009e-42bc-4e96-9363-b6f1c5be1722}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\graphics\model">
+      <UniqueIdentifier>{43e365bb-bf13-47a5-9e09-f772766bb06f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\graphics\motion">
+      <UniqueIdentifier>{fed3f837-6db8-4554-89e0-f85fdac6d92f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\graphics\resource">
+      <UniqueIdentifier>{ee6788f4-c84e-40c5-808f-a42857c11eb8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\graphics\scene">
+      <UniqueIdentifier>{dedf9f35-bc8d-468f-9294-47ebb1ef3827}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\graphics\skeleton">
+      <UniqueIdentifier>{d1f96599-900d-4fd5-a83d-b132065f116b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\graphics\sprite">
+      <UniqueIdentifier>{e54cc2ce-7c70-4b46-9d34-0b43ce0acb70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\graphics\util">
+      <UniqueIdentifier>{923ebc19-c07d-49fe-bb30-13f440c7d580}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\graphics\display\depend">
+      <UniqueIdentifier>{fdeccbbe-c975-450f-8814-f1bdada138ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\graphics\display\depend\fixed">
+      <UniqueIdentifier>{8c7ece19-0bdb-4f1b-98a9-5de33989b28a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\include\tb_fwd.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\tb_pch.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\tb_render_device_depend.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\tb_render_system_depend.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\tb_render_target_depend.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\tb_render_view_depend.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\tb_shader_manager_depend.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\tb_shader_program_depend.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\tb_texture_depend.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\tb_texture_sampler_depend.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\tb_vertex_buffer_depend.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\tb_vertex_format_depend.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\tb_color_depend.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\tb_depth_stencil_depend.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\tb_fixed_light_depend.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\tb_fixed_material_depend.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\tb_fixed_shader_depend.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\tb_index_buffer_depend.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\tb_shader_program.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\tb_shader_types.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\tb_texture.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\tb_texture_sampler.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\tb_vertex_buffer.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\tb_vertex_format.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\tb_3dapi.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\tb_3dapi_types.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\tb_3dapi_util.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\tb_color.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\tb_color_op.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\tb_depth_stencil.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\tb_fixed_light.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\tb_fixed_material.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\tb_fixed_shader.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\tb_index_buffer.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\tb_render_device.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\tb_render_device_cache.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\tb_render_parameter.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\tb_render_system.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\tb_render_target.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\tb_render_view.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\tb_shader_manager.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\gfx\tb_index_buffer_gfx.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi\depend\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\gfx\tb_render_device_gfx.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi\depend\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\gfx\tb_render_system_gfx.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi\depend\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\gfx\tb_render_target_gfx.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi\depend\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\gfx\tb_render_util_gfx.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi\depend\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\gfx\tb_render_view_gfx.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi\depend\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\gfx\tb_texture_gfx.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi\depend\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\gfx\tb_texture_sampler_gfx.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi\depend\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\gfx\tb_vertex_buffer_gfx.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi\depend\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\gfx\tb_vertex_format_gfx.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi\depend\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\gfx\tb_depth_stencil_gfx.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi\depend\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\gfx\tb_fixed_shader_gfx.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi\depend\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\display\tb_display_manager.h">
+      <Filter>ヘッダー ファイル\graphics\display</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\display\tb_display_types.h">
+      <Filter>ヘッダー ファイル\graphics\display</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\display\depend\tb_display_manager_depend.h">
+      <Filter>ヘッダー ファイル\graphics\display\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\window\tb_window.h">
+      <Filter>ヘッダー ファイル\graphics\window</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\window\tb_window_manager.h">
+      <Filter>ヘッダー ファイル\graphics\window</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\window\depend\tb_window_depend.h">
+      <Filter>ヘッダー ファイル\graphics\window\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\window\depend\tb_window_depend_types.h">
+      <Filter>ヘッダー ファイル\graphics\window\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\window\depend\tb_window_manager_depend.h">
+      <Filter>ヘッダー ファイル\graphics\window\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\window\depend\nx\tb_window_nx.h">
+      <Filter>ヘッダー ファイル\graphics\window\depend\nx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\window\depend\nx\tb_window_manager_nx.h">
+      <Filter>ヘッダー ファイル\graphics\window\depend\nx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\display\depend\fixed\tb_display_manager_fixed.h">
+      <Filter>ヘッダー ファイル\graphics\display\depend\fixed</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\gfx\tb_gpu_buffer_gfx.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi\depend\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\gfx\tb_shader_manager_gfx.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi\depend\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\gfx\tb_shader_program_gfx.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi\depend\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\tb_constant_buffer.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\tb_constant_buffer_depend.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\gfx\tb_constant_buffer_gfx.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi\depend\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\tb_depth_stencil_state.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\tb_blend_state.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\tb_rasterizer_state.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\tb_blend_state_depend.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\tb_depth_stencil_state_depend.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\gfx\tb_rasterizer_state_gfx.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi\depend\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\gfx\tb_blend_state_gfx.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi\depend\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\gfx\tb_depth_stencil_state_gfx.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi\depend\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\tb_viewport_scissor_state.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\tb_viewport_scissor_state_depend.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\gfx\tb_viewport_scissor_state_gfx.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi\depend\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\tb_rasterizer_state_depend.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\tb_draw_3d.h">
+      <Filter>ヘッダー ファイル\graphics\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\tb_fade.h">
+      <Filter>ヘッダー ファイル\graphics\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\tb_render_command_buffer.h">
+      <Filter>ヘッダー ファイル\graphics\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\tb_render_command_types.h">
+      <Filter>ヘッダー ファイル\graphics\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\tb_render_pass.h">
+      <Filter>ヘッダー ファイル\graphics\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\tb_render_pass_manager.h">
+      <Filter>ヘッダー ファイル\graphics\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\tb_draw_2d.h">
+      <Filter>ヘッダー ファイル\graphics\render</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\animation\tb_graphics_animation_types.h">
+      <Filter>ヘッダー ファイル\graphics\animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\camera\tb_camera_manager.h">
+      <Filter>ヘッダー ファイル\graphics\camera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\camera\tb_camera.h">
+      <Filter>ヘッダー ファイル\graphics\camera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\font\tb_font_info_ttf.h">
+      <Filter>ヘッダー ファイル\graphics\font</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\font\tb_font_types.h">
+      <Filter>ヘッダー ファイル\graphics\font</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\font\tb_font.h">
+      <Filter>ヘッダー ファイル\graphics\font</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\font\tb_font_buffer_2d.h">
+      <Filter>ヘッダー ファイル\graphics\font</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\image\tb_image.h">
+      <Filter>ヘッダー ファイル\graphics\image</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\image\tb_image_bmp.h">
+      <Filter>ヘッダー ファイル\graphics\image</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\image\tb_image_tga.h">
+      <Filter>ヘッダー ファイル\graphics\image</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\image\tb_image_types.h">
+      <Filter>ヘッダー ファイル\graphics\image</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\light\tb_light_manager.h">
+      <Filter>ヘッダー ファイル\graphics\light</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\light\tb_light.h">
+      <Filter>ヘッダー ファイル\graphics\light</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\material\tb_material.h">
+      <Filter>ヘッダー ファイル\graphics\material</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\material\tb_material_pmx.h">
+      <Filter>ヘッダー ファイル\graphics\material</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\math\tb_gr_matrix_util.h">
+      <Filter>ヘッダー ファイル\graphics\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\model\tb_model_data_pmx.h">
+      <Filter>ヘッダー ファイル\graphics\model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\model\tb_mesh.h">
+      <Filter>ヘッダー ファイル\graphics\model</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\motion\tb_motion_vmd.h">
+      <Filter>ヘッダー ファイル\graphics\motion</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\motion\tb_motion_data_vmd.h">
+      <Filter>ヘッダー ファイル\graphics\motion</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\resource\tb_resource_motion_vmd.h">
+      <Filter>ヘッダー ファイル\graphics\resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\resource\tb_resource_texture.h">
+      <Filter>ヘッダー ファイル\graphics\resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\resource\tb_resource_model_pmx.h">
+      <Filter>ヘッダー ファイル\graphics\resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\scene\tb_render_scene_node.h">
+      <Filter>ヘッダー ファイル\graphics\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\scene\tb_render_scene_view.h">
+      <Filter>ヘッダー ファイル\graphics\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\scene\tb_render_object_mmd.h">
+      <Filter>ヘッダー ファイル\graphics\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\scene\tb_render_scene.h">
+      <Filter>ヘッダー ファイル\graphics\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\scene\tb_render_scene_camera.h">
+      <Filter>ヘッダー ファイル\graphics\scene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\skeleton\tb_skeleton_pmx.h">
+      <Filter>ヘッダー ファイル\graphics\skeleton</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\sprite\tb_sprite_node_tree.h">
+      <Filter>ヘッダー ファイル\graphics\sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\sprite\tb_sprite_scene.h">
+      <Filter>ヘッダー ファイル\graphics\sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\sprite\tb_sprite_scene_hooker.h">
+      <Filter>ヘッダー ファイル\graphics\sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\sprite\tb_sprite_types.h">
+      <Filter>ヘッダー ファイル\graphics\sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\sprite\tb_elastic_sprite.h">
+      <Filter>ヘッダー ファイル\graphics\sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\sprite\tb_sprite.h">
+      <Filter>ヘッダー ファイル\graphics\sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\sprite\tb_sprite_all.h">
+      <Filter>ヘッダー ファイル\graphics\sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\sprite\tb_sprite_anim.h">
+      <Filter>ヘッダー ファイル\graphics\sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\sprite\tb_sprite_material.h">
+      <Filter>ヘッダー ファイル\graphics\sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\sprite\tb_sprite_node_anim_tree.h">
+      <Filter>ヘッダー ファイル\graphics\sprite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\graphics\font\tb_font_types_ascii.hpp">
+      <Filter>ソース ファイル\graphics\font</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\graphics\font\tb_font_types_sjis.hpp">
+      <Filter>ソース ファイル\graphics\font</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\tb_render_state_preset.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\gfx\tb_descriptor_pool_gfx.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi\depend\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\render\3dapi\depend\gfx\tb_memory_pool_gfx.h">
+      <Filter>ヘッダー ファイル\graphics\render\3dapi\depend\gfx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\graphics\util\tb_gr_util.h">
+      <Filter>ヘッダー ファイル\graphics\util</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\tb_fwd.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\render\tb_draw_2d.cpp">
+      <Filter>ソース ファイル\graphics\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\render\tb_draw_3d.cpp">
+      <Filter>ソース ファイル\graphics\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\render\tb_fade.cpp">
+      <Filter>ソース ファイル\graphics\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\render\tb_render_command_buffer.cpp">
+      <Filter>ソース ファイル\graphics\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\render\tb_render_command_buffer_flush.cpp">
+      <Filter>ソース ファイル\graphics\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\render\tb_render_pass.cpp">
+      <Filter>ソース ファイル\graphics\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\render\tb_render_pass_manager.cpp">
+      <Filter>ソース ファイル\graphics\render</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\render\3dapi\depend\gfx\tb_render_system_gfx.cpp">
+      <Filter>ソース ファイル\graphics\render\3dapi\depend\gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\window\tb_window_manager_common.cpp">
+      <Filter>ソース ファイル\graphics\window</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\window\depend\nx\tb_window_manager_nx.cpp">
+      <Filter>ソース ファイル\graphics\window\depend\nx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\window\depend\nx\tb_window_nx.cpp">
+      <Filter>ソース ファイル\graphics\window\depend\nx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\render\3dapi\depend\gfx\tb_render_device_gfx.cpp">
+      <Filter>ソース ファイル\graphics\render\3dapi\depend\gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\render\3dapi\depend\gfx\tb_vertex_format_gfx.cpp">
+      <Filter>ソース ファイル\graphics\render\3dapi\depend\gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\render\3dapi\depend\gfx\tb_vertex_buffer_gfx.cpp">
+      <Filter>ソース ファイル\graphics\render\3dapi\depend\gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\render\3dapi\depend\gfx\tb_gpu_buffer_gfx.cpp">
+      <Filter>ソース ファイル\graphics\render\3dapi\depend\gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\render\3dapi\depend\gfx\tb_index_buffer_gfx.cpp">
+      <Filter>ソース ファイル\graphics\render\3dapi\depend\gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\render\3dapi\depend\gfx\tb_fixed_shader_gfx_sim.cpp">
+      <Filter>ソース ファイル\graphics\render\3dapi\depend\gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\render\3dapi\depend\gfx\tb_render_target_gfx.cpp">
+      <Filter>ソース ファイル\graphics\render\3dapi\depend\gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\render\3dapi\depend\gfx\tb_render_view_gfx.cpp">
+      <Filter>ソース ファイル\graphics\render\3dapi\depend\gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\render\3dapi\depend\gfx\tb_shader_manager_gfx.cpp">
+      <Filter>ソース ファイル\graphics\render\3dapi\depend\gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\render\3dapi\depend\gfx\tb_shader_program_gfx.cpp">
+      <Filter>ソース ファイル\graphics\render\3dapi\depend\gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\render\3dapi\depend\gfx\tb_texture_gfx.cpp">
+      <Filter>ソース ファイル\graphics\render\3dapi\depend\gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\render\3dapi\depend\gfx\tb_texture_sampler_gfx.cpp">
+      <Filter>ソース ファイル\graphics\render\3dapi\depend\gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\render\3dapi\depend\gfx\tb_depth_stencil_gfx.cpp">
+      <Filter>ソース ファイル\graphics\render\3dapi\depend\gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\render\3dapi\depend\gfx\tb_constant_buffer_gfx.cpp">
+      <Filter>ソース ファイル\graphics\render\3dapi\depend\gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\render\3dapi\depend\gfx\tb_blend_state_gfx.cpp">
+      <Filter>ソース ファイル\graphics\render\3dapi\depend\gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\render\3dapi\depend\gfx\tb_depth_stencil_state_gfx.cpp">
+      <Filter>ソース ファイル\graphics\render\3dapi\depend\gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\render\3dapi\depend\gfx\tb_viewport_scissor_state_gfx.cpp">
+      <Filter>ソース ファイル\graphics\render\3dapi\depend\gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\render\3dapi\depend\gfx\tb_rasterizer_state_gfx.cpp">
+      <Filter>ソース ファイル\graphics\render\3dapi\depend\gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\render\3dapi\tb_color.cpp">
+      <Filter>ソース ファイル\graphics\render\3dapi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\render\3dapi\tb_render_device_common.cpp">
+      <Filter>ソース ファイル\graphics\render\3dapi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\render\3dapi\tb_shader_manager_common.cpp">
+      <Filter>ソース ファイル\graphics\render\3dapi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\render\3dapi\tb_texture_common.cpp">
+      <Filter>ソース ファイル\graphics\render\3dapi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\display\depend\fixed\tb_display_manager_fixed.cpp">
+      <Filter>ソース ファイル\graphics\display\depend\fixed</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\font\tb_font_buffer_2d.cpp">
+      <Filter>ソース ファイル\graphics\font</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\font\tb_font.cpp">
+      <Filter>ソース ファイル\graphics\font</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\image\tb_image_bmp.cpp">
+      <Filter>ソース ファイル\graphics\image</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\image\tb_image_tga.cpp">
+      <Filter>ソース ファイル\graphics\image</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\image\tb_image.cpp">
+      <Filter>ソース ファイル\graphics\image</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\light\tb_light.cpp">
+      <Filter>ソース ファイル\graphics\light</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\material\tb_material.cpp">
+      <Filter>ソース ファイル\graphics\material</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\material\tb_material_pmx.cpp">
+      <Filter>ソース ファイル\graphics\material</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\math\tb_gr_matrix_util.cpp">
+      <Filter>ソース ファイル\graphics\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\model\tb_mesh.cpp">
+      <Filter>ソース ファイル\graphics\model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\model\tb_model_data_pmx.cpp">
+      <Filter>ソース ファイル\graphics\model</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\motion\tb_motion_data_vmd.cpp">
+      <Filter>ソース ファイル\graphics\motion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\motion\tb_motion_vmd.cpp">
+      <Filter>ソース ファイル\graphics\motion</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\resource\tb_resource_texture.cpp">
+      <Filter>ソース ファイル\graphics\resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\resource\tb_resource_model_pmx.cpp">
+      <Filter>ソース ファイル\graphics\resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\scene\tb_render_object_mmd.cpp">
+      <Filter>ソース ファイル\graphics\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\scene\tb_render_scene.cpp">
+      <Filter>ソース ファイル\graphics\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\scene\tb_render_scene_node.cpp">
+      <Filter>ソース ファイル\graphics\scene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\sprite\tb_sprite_node_anim_tree.cpp">
+      <Filter>ソース ファイル\graphics\sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\sprite\tb_sprite_scene.cpp">
+      <Filter>ソース ファイル\graphics\sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\sprite\tb_sprite_scene_hooker.cpp">
+      <Filter>ソース ファイル\graphics\sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\sprite\tb_elastic_sprite.cpp">
+      <Filter>ソース ファイル\graphics\sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\sprite\tb_sprite.cpp">
+      <Filter>ソース ファイル\graphics\sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\sprite\tb_sprite_material.cpp">
+      <Filter>ソース ファイル\graphics\sprite</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\util\tb_screen_shot.cpp">
+      <Filter>ソース ファイル\graphics\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\render\3dapi\depend\tb_fixed_light_default.cpp">
+      <Filter>ソース ファイル\graphics\render\3dapi\depend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\render\3dapi\depend\tb_fixed_material_default.cpp">
+      <Filter>ソース ファイル\graphics\render\3dapi\depend</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\render\3dapi\depend\gfx\tb_descriptor_pool_gfx.cpp">
+      <Filter>ソース ファイル\graphics\render\3dapi\depend\gfx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\graphics\render\3dapi\tb_render_state_preset.cpp">
+      <Filter>ソース ファイル\graphics\render\3dapi</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

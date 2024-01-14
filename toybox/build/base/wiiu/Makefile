@@ -1,0 +1,56 @@
+TARGET=tb_base
+SRCS=\
+    $(TBSDK_DIR)/src/base/actor/tb_actor.cpp \
+    $(TBSDK_DIR)/src/base/actor/tb_actor_scene.cpp \
+    $(TBSDK_DIR)/src/base/crypt/tb_crc32.cpp \
+    $(TBSDK_DIR)/src/base/io/tb_file.cpp \
+    $(TBSDK_DIR)/src/base/io/tb_file_impl.cpp \
+    $(TBSDK_DIR)/src/base/io/tb_file_manager.cpp \
+    $(TBSDK_DIR)/src/base/io/tb_file_util.cpp \
+    $(TBSDK_DIR)/src/base/io/tb_log.cpp \
+    $(TBSDK_DIR)/src/base/io/tb_print.cpp \
+    $(TBSDK_DIR)/src/base/io/archive/tb_archive.cpp \
+    $(TBSDK_DIR)/src/base/io/archive/tb_archive_exporter.cpp \
+    $(TBSDK_DIR)/src/base/io/archive/tb_file_archive.cpp \
+    $(TBSDK_DIR)/src/base/io/archive/tb_file_mapper_archive.cpp \
+    $(TBSDK_DIR)/src/base/io/depend/wiiu/tb_file_wiiu.cpp \
+    $(TBSDK_DIR)/src/base/io/depend/wiiu/tb_file_mapper_wiiu.cpp \
+    $(TBSDK_DIR)/src/base/io/resource/tb_resource.cpp \
+    $(TBSDK_DIR)/src/base/io/resource/tb_resource_manager.cpp \
+    $(TBSDK_DIR)/src/base/io/stream/tb_const_memory_stream.cpp \
+    $(TBSDK_DIR)/src/base/io/stream/tb_memory_stream.cpp \
+    $(TBSDK_DIR)/src/base/io/stream/tb_file_stream.cpp \
+    $(TBSDK_DIR)/src/base/io/stream/tb_stream_binary_reader.cpp \
+    $(TBSDK_DIR)/src/base/io/stream/tb_stream_binary_writer.cpp \
+    $(TBSDK_DIR)/src/base/io/stream/tb_stream_text_reader.cpp \
+    $(TBSDK_DIR)/src/base/io/stream/tb_stream_text_writer.cpp \
+    $(TBSDK_DIR)/src/base/math/tb_geometry_util.cpp \
+    $(TBSDK_DIR)/src/base/math/tb_math_helper.cpp \
+    $(TBSDK_DIR)/src/base/math/tb_matrix.cpp \
+    $(TBSDK_DIR)/src/base/math/tb_quaternion.cpp \
+    $(TBSDK_DIR)/src/base/math/tb_random.cpp \
+    $(TBSDK_DIR)/src/base/math/tb_vector2.cpp \
+    $(TBSDK_DIR)/src/base/math/tb_vector3.cpp \
+    $(TBSDK_DIR)/src/base/math/tb_vector4.cpp \
+    $(TBSDK_DIR)/src/base/memory/tb_fixed_allocator.cpp \
+    $(TBSDK_DIR)/src/base/memory/tb_heap.cpp \
+    $(TBSDK_DIR)/src/base/memory/tb_memory.cpp \
+    $(TBSDK_DIR)/src/base/memory/tb_new_delete.cpp \
+    $(TBSDK_DIR)/src/base/string/encoding/tb_string_encoding.cpp \
+    $(TBSDK_DIR)/src/base/string/encoding/tb_string_encoding_sjis.cpp \
+    $(TBSDK_DIR)/src/base/string/tb_static_string.cpp \
+    $(TBSDK_DIR)/src/base/string/tb_string_converter.cpp \
+    $(TBSDK_DIR)/src/base/system/tb_assert.cpp \
+    $(TBSDK_DIR)/src/base/system/depend/tb_console_default.cpp \
+    $(TBSDK_DIR)/src/base/task/tb_sequence_task.cpp \
+    $(TBSDK_DIR)/src/base/task/tb_task.cpp \
+    $(TBSDK_DIR)/src/base/task/tb_task_manager.cpp \
+    $(TBSDK_DIR)/src/base/time/tb_tick_common.cpp \
+    $(TBSDK_DIR)/src/base/time/depend/wiiu/tb_tick_wiiu.cpp \
+    $(TBSDK_DIR)/src/base/time/depend/wiiu/tb_time_wiiu.cpp \
+    $(TBSDK_DIR)/src/base/thread/depend/wiiu/tb_mutex_wiiu.cpp \
+    $(TBSDK_DIR)/src/base/thread/depend/wiiu/tb_thread_wiiu.cpp \
+    $(TBSDK_DIR)/src/base/thread/depend/wiiu/tb_thread_condition_wiiu.cpp \
+    $(TBSDK_DIR)/src/base/util/tb_async_func.cpp \
+
+include ../../common/wiiu/Makefile.tblib

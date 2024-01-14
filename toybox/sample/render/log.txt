@@ -1,0 +1,16 @@
+[FILE] Open Success : ../resource\system/font/font_ascii.tga
+[FILE] Open Success : ../resource\model/miku/miku.pmx
+[FILE] Open Success : ../resource\model/miku/kao.tga
+[FILE] Open Success : ../resource\model/miku/toon_H.bmp
+[FILE] Open Success : ../resource\model/miku/kami.tga
+[FILE] Open Success : ../resource\model/miku/toon_g.bmp
+[FILE] Open Success : ../resource\model/miku/huku.tga
+[FILE] Open Success : ../resource\model/miku/toon_uwg.bmp
+[FILE] Open Success : ../resource\model/miku/hyzo.tga
+[FILE] Open Success : ../resource\motion/tonton/miku.vmd
+[FILE] Open Failed : ../resource/shader/glsl\pmx.vert
+[ASSERT]--
+file:C:\Users\teco\Desktop\Portal\dev\workspace\base\toybox\include\base/io/tb_file_impl.h
+line:62
+func:toybox::TbFileImpl::Read
+message:!"Invalid Call"

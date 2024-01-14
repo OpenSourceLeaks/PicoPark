@@ -1,0 +1,114 @@
+﻿/*!
+ * アクション用定義
+ * @author teco
+ * @since 2012.05.25
+ */
+
+#ifndef _INCLUDED_SIDE_ACTION_TYPES_H_
+#define _INCLUDED_SIDE_ACTION_TYPES_H_
+
+#define SIDE_ACTION_GRAVITY (0.65f)
+#define SIDE_ACTION_GRAVITY_WEAK (0.5f)
+#define SIDE_ACTION_GRAVITY_MAX (0.65f*30.0f)
+
+#include <crayon/collision/cr_action_collision.h>
+
+const TbFloat32 SIDE_ACTION_JUMP_VELO = -5.1f;
+const TbUint32  SIDE_ACTION_COLLISION_U32_DISABLE_INERTIA = 0;
+
+// レイヤー
+enum ActionActorLayer
+{
+    SIDE_ACTION_ACTOR_LAYER_PRE , 
+    SIDE_ACTION_ACTOR_LAYER_PLAYER ,
+    SIDE_ACTION_ACTOR_LAYER_POST  ,
+    SIDE_ACTION_ACTOR_LAYER_POST2 ,
+    SIDE_ACTION_ACTOR_LAYER_MAX
+};
+
+enum SideActionCollisionLayer
+{
+    SIDE_ACTION_COLLISION_LAYER_OTHER = CrActionCollision::LAYER_DEFAULT ,
+    SIDE_ACTION_COLLISION_LAYER_PLAYER , 
+    SIDE_ACTION_COLLISION_LAYER_PLAYER_OBJECT,
+    SIDE_ACTION_COLLISION_LAYER_PLAYER_SUB ,
+    SIDE_ACTION_COLLISION_LAYER_TO_PLAYER , 
+    SIDE_ACTION_COLLISION_LAYER_OBJECT , 
+    SIDE_ACTION_COLLISION_LAYER_OBJECT_2 , // SIDE_ACTION_COLLISION_LAYER_OBJECT_2同士は衝突しないSIDE_ACTION_COLLISION_LAYER_OBJECT
+    SIDE_ACTION_COLLISION_LAYER_ENEMY  ,
+    SIDE_ACTION_COLLISION_LAYER_KEY    ,
+    SIDE_ACTION_COLLISION_LAYER_KEY_TARGET    ,
+    SIDE_ACTION_COLLISION_LAYER_GOAL   ,
+};
+
+enum
+{
+    SIDE_ACTION_COLLISION_ATTR_NOT_MOVE = TB_BIT(0)
+};
+
+enum SideActionPhysicsLayer
+{
+    SIDE_ACTION_PHYSICS_LAYER_NORMAL , // 通常
+    SIDE_ACTION_PHYSICS_LAYER_AREA   , // エリア
+};
+
+struct SideActionEventPlayerParam
+{
+    SideActionEventPlayerParam()
+        : playerIndex(0)
+        , paramF32(0.0f)
+        , paramU32(0U)
+    {}
+    TbUint32         playerIndex;
+    TbFloat32        paramF32;
+    TbUint32         paramU32;
+    TbStaticString32 paramStr;
+};
+
+// イベント
+enum SideActionEvent
+{
+    SIDE_ACTION_EVENT_JUMP             , // ジャンプ
+    SIDE_ACTION_EVENT_JUMP_FROM_SWITCH , // ジャンプ(スイッチから)
+    SIDE_ACTION_EVENT_JUMP_OBJECT      , // プレイヤーはジャンプしない
+    SIDE_ACTION_EVENT_DEAD        , // 死亡
+    SIDE_ACTION_EVENT_GAMEOVER    , // ゲームオーバー
+    SIDE_ACTION_EVENT_WARP        , // 瞬間移動
+    SIDE_ACTION_EVENT_WARP_INIT_POS , // 瞬間移動
+    SIDE_ACTION_EVENT_SWITCH_ON   , // スイッチオン
+    SIDE_ACTION_EVENT_SWITCH_OFF  , // スイッチオフ
+    SIDE_ACTION_EVENT_KEYBOX_ON   , // 鍵箱
+    SIDE_ACTION_EVENT_ANGLE       , // 角度
+    SIDE_ACTION_EVENT_ACTIVATE    , // アクティブ化
+    SIDE_ACTION_EVENT_SET_VISIBLE , // 可視化
+    SIDE_ACTION_EVENT_PLAYER_PARAM, // プレイヤーパラメータ
+    SIDE_ACTION_EVENT_REGISTER    , // 登録
+    SIDE_ACTION_EVENT_UNREGISTER  , // 登録解除
+    SIDE_ACTION_EVENT_ALIVE       , // 生存通知
+    SIDE_ACTION_EVENT_ALIVE_CONFIRM ,// 生存確認
+    SIDE_ACTION_EVENT_RETURN      , // 復帰
+    SIDE_ACTION_EVENT_LEVEL_UP    , // レベルアップ
+    SIDE_ACTION_EVENT_LEVEL_DOWN  , // レベルダウン
+    SIDE_ACTION_EVENT_RESET_JUMP  , // ジャンプリセット
+    SIDE_ACTION_EVENT_KEY_END     , // 鍵の役目終了
+    SIDE_ACTION_EVENT_RESULT      , // 結果
+    SIDE_ACTION_EVENT_SLEEP       , // 睡眠
+    SIDE_ACTION_EVENT_WAKEUP      , // 起こす
+    SIDE_ACTION_EVENT_SUSPEND     , // 停止
+    SIDE_ACTION_EVENT_RESUME      , // 停止からの復帰
+    SIDE_ACTION_EVENT_CATCHED     , // キャッチされている
+    SIDE_ACTION_EVENT_GET_PLAYERINDEX ,
+    SIDE_ACTION_EVENT_GET_COUNT   ,
+    SIDE_ACTION_EVENT_SCALE       , // スケーリング
+    SIDE_ACTION_EVENT_SPEED_UP    , // 速度アップ
+    SIDE_ACTION_EVENT_SPEED_SET   , // 速度設定
+    SIDE_ACTION_EVENT_DAMAGE      , // ダメージ
+    SIDE_ACTION_EVENT_RECOVER     , // 回復
+    SIDE_ACTION_EVENT_COUNT_UP    , // カウントアップ
+    SIDE_ACTION_EVENT_IMMORTAL    , // 無敵
+    SIDE_ACTION_EVENT_SET_COLOR   , // 色設定
+    SIDE_ACTION_EVENT_ENABLE_MOVE ,
+    SIDE_ACTION_EVENT_SPEACIAL    , // 特殊
+};
+
+#endif

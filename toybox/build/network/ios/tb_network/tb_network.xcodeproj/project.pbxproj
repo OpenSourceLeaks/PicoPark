@@ -1,0 +1,358 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		26688F701C48010300F4A2DF /* tb_network_manager_std.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26688F6F1C48010300F4A2DF /* tb_network_manager_std.cpp */; };
+		266977F71C475751007FED7B /* tb_client_socket_std.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 266977F61C475751007FED7B /* tb_client_socket_std.cpp */; };
+		266977FB1C475934007FED7B /* tb_socket_std.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 266977FA1C475934007FED7B /* tb_socket_std.cpp */; };
+		266977FD1C475944007FED7B /* tb_server_socket_std.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 266977FC1C475944007FED7B /* tb_server_socket_std.cpp */; };
+		266977FF1C475A35007FED7B /* tb_datagram_socket_std.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 266977FE1C475A35007FED7B /* tb_datagram_socket_std.cpp */; };
+		269347C61C5CACD700B4AD2D /* tb_network_util_std.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 269347C51C5CACD700B4AD2D /* tb_network_util_std.cpp */; };
+		26B8BE4C1C46AAC400A5DBCD /* tb_packet_recv_buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26B8BE491C46AAC400A5DBCD /* tb_packet_recv_buffer.cpp */; };
+		26B8BE4D1C46AAC400A5DBCD /* tb_packet_send_buffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26B8BE4A1C46AAC400A5DBCD /* tb_packet_send_buffer.cpp */; };
+		26B8BE4E1C46AAC400A5DBCD /* tb_packet_util.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26B8BE4B1C46AAC400A5DBCD /* tb_packet_util.cpp */; };
+		26B8BE581C46AAEF00A5DBCD /* tb_accept_socket_std.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26B8BE511C46AAEF00A5DBCD /* tb_accept_socket_std.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		26B8BDF81C46A83600A5DBCD /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		26688F6F1C48010300F4A2DF /* tb_network_manager_std.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tb_network_manager_std.cpp; path = ../../../../../src/network/depend/std/tb_network_manager_std.cpp; sourceTree = "<group>"; };
+		266977F61C475751007FED7B /* tb_client_socket_std.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tb_client_socket_std.cpp; path = ../../../../../src/network/depend/std/tb_client_socket_std.cpp; sourceTree = "<group>"; };
+		266977FA1C475934007FED7B /* tb_socket_std.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tb_socket_std.cpp; path = ../../../../../src/network/depend/std/tb_socket_std.cpp; sourceTree = "<group>"; };
+		266977FC1C475944007FED7B /* tb_server_socket_std.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tb_server_socket_std.cpp; path = ../../../../../src/network/depend/std/tb_server_socket_std.cpp; sourceTree = "<group>"; };
+		266977FE1C475A35007FED7B /* tb_datagram_socket_std.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tb_datagram_socket_std.cpp; path = ../../../../../src/network/depend/std/tb_datagram_socket_std.cpp; sourceTree = "<group>"; };
+		269347C51C5CACD700B4AD2D /* tb_network_util_std.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tb_network_util_std.cpp; path = ../../../../../src/network/depend/std/tb_network_util_std.cpp; sourceTree = "<group>"; };
+		26B8BDFA1C46A83600A5DBCD /* libtb_network.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libtb_network.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		26B8BE171C46A87D00A5DBCD /* network */ = {isa = PBXFileReference; lastKnownFileType = folder; name = network; path = ../../../../../include/network; sourceTree = "<group>"; };
+		26B8BE181C46A8C800A5DBCD /* tb_network-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "tb_network-Prefix.pch"; sourceTree = "<group>"; };
+		26B8BE491C46AAC400A5DBCD /* tb_packet_recv_buffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tb_packet_recv_buffer.cpp; path = ../../../../../src/network/tb_packet_recv_buffer.cpp; sourceTree = "<group>"; };
+		26B8BE4A1C46AAC400A5DBCD /* tb_packet_send_buffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tb_packet_send_buffer.cpp; path = ../../../../../src/network/tb_packet_send_buffer.cpp; sourceTree = "<group>"; };
+		26B8BE4B1C46AAC400A5DBCD /* tb_packet_util.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tb_packet_util.cpp; path = ../../../../../src/network/tb_packet_util.cpp; sourceTree = "<group>"; };
+		26B8BE511C46AAEF00A5DBCD /* tb_accept_socket_std.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tb_accept_socket_std.cpp; path = ../../../../../src/network/depend/std/tb_accept_socket_std.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		26B8BDF71C46A83600A5DBCD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		26B8BDF11C46A83600A5DBCD = {
+			isa = PBXGroup;
+			children = (
+				26B8BDFC1C46A83600A5DBCD /* tb_network */,
+				26B8BDFB1C46A83600A5DBCD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		26B8BDFB1C46A83600A5DBCD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				26B8BDFA1C46A83600A5DBCD /* libtb_network.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		26B8BDFC1C46A83600A5DBCD /* tb_network */ = {
+			isa = PBXGroup;
+			children = (
+				26B8BE161C46A87400A5DBCD /* include */,
+				26B8BE151C46A85600A5DBCD /* src */,
+				26B8BE141C46A84A00A5DBCD /* pch */,
+			);
+			path = tb_network;
+			sourceTree = "<group>";
+		};
+		26B8BE141C46A84A00A5DBCD /* pch */ = {
+			isa = PBXGroup;
+			children = (
+				26B8BE181C46A8C800A5DBCD /* tb_network-Prefix.pch */,
+			);
+			name = pch;
+			sourceTree = "<group>";
+		};
+		26B8BE151C46A85600A5DBCD /* src */ = {
+			isa = PBXGroup;
+			children = (
+				26B8BE401C46A9C300A5DBCD /* network */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		26B8BE161C46A87400A5DBCD /* include */ = {
+			isa = PBXGroup;
+			children = (
+				26B8BE171C46A87D00A5DBCD /* network */,
+			);
+			name = include;
+			sourceTree = "<group>";
+		};
+		26B8BE401C46A9C300A5DBCD /* network */ = {
+			isa = PBXGroup;
+			children = (
+				26B8BE4F1C46AACD00A5DBCD /* depend */,
+				26B8BE491C46AAC400A5DBCD /* tb_packet_recv_buffer.cpp */,
+				26B8BE4A1C46AAC400A5DBCD /* tb_packet_send_buffer.cpp */,
+				26B8BE4B1C46AAC400A5DBCD /* tb_packet_util.cpp */,
+			);
+			name = network;
+			sourceTree = "<group>";
+		};
+		26B8BE4F1C46AACD00A5DBCD /* depend */ = {
+			isa = PBXGroup;
+			children = (
+				26B8BE501C46AAE700A5DBCD /* std */,
+			);
+			name = depend;
+			sourceTree = "<group>";
+		};
+		26B8BE501C46AAE700A5DBCD /* std */ = {
+			isa = PBXGroup;
+			children = (
+				269347C51C5CACD700B4AD2D /* tb_network_util_std.cpp */,
+				266977FE1C475A35007FED7B /* tb_datagram_socket_std.cpp */,
+				266977FC1C475944007FED7B /* tb_server_socket_std.cpp */,
+				26688F6F1C48010300F4A2DF /* tb_network_manager_std.cpp */,
+				266977FA1C475934007FED7B /* tb_socket_std.cpp */,
+				266977F61C475751007FED7B /* tb_client_socket_std.cpp */,
+				26B8BE511C46AAEF00A5DBCD /* tb_accept_socket_std.cpp */,
+			);
+			name = std;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		26B8BDF91C46A83600A5DBCD /* tb_network */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26B8BE0E1C46A83600A5DBCD /* Build configuration list for PBXNativeTarget "tb_network" */;
+			buildPhases = (
+				26B8BDF61C46A83600A5DBCD /* Sources */,
+				26B8BDF71C46A83600A5DBCD /* Frameworks */,
+				26B8BDF81C46A83600A5DBCD /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tb_network;
+			productName = tb_network;
+			productReference = 26B8BDFA1C46A83600A5DBCD /* libtb_network.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		26B8BDF21C46A83600A5DBCD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = tecopark;
+				TargetAttributes = {
+					26B8BDF91C46A83600A5DBCD = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = 26B8BDF51C46A83600A5DBCD /* Build configuration list for PBXProject "tb_network" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 26B8BDF11C46A83600A5DBCD;
+			productRefGroup = 26B8BDFB1C46A83600A5DBCD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				26B8BDF91C46A83600A5DBCD /* tb_network */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		26B8BDF61C46A83600A5DBCD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				266977FB1C475934007FED7B /* tb_socket_std.cpp in Sources */,
+				26B8BE581C46AAEF00A5DBCD /* tb_accept_socket_std.cpp in Sources */,
+				269347C61C5CACD700B4AD2D /* tb_network_util_std.cpp in Sources */,
+				266977F71C475751007FED7B /* tb_client_socket_std.cpp in Sources */,
+				26B8BE4C1C46AAC400A5DBCD /* tb_packet_recv_buffer.cpp in Sources */,
+				26B8BE4D1C46AAC400A5DBCD /* tb_packet_send_buffer.cpp in Sources */,
+				26B8BE4E1C46AAC400A5DBCD /* tb_packet_util.cpp in Sources */,
+				266977FF1C475A35007FED7B /* tb_datagram_socket_std.cpp in Sources */,
+				26688F701C48010300F4A2DF /* tb_network_manager_std.cpp in Sources */,
+				266977FD1C475944007FED7B /* tb_server_socket_std.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		26B8BE0C1C46A83600A5DBCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "tb_network/tb_network-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/miyakeshunsuke/Desktop/Portal/Dev/workspace/base/toybox/include,
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-fembed-bitcode",
+				);
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		26B8BE0D1C46A83600A5DBCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "tb_network/tb_network-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/miyakeshunsuke/Desktop/Portal/Dev/workspace/base/toybox/include,
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CPLUSPLUSFLAGS = (
+					"$(OTHER_CFLAGS)",
+					"-fembed-bitcode",
+				);
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		26B8BE0F1C46A83600A5DBCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		26B8BE101C46A83600A5DBCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		26B8BDF51C46A83600A5DBCD /* Build configuration list for PBXProject "tb_network" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26B8BE0C1C46A83600A5DBCD /* Debug */,
+				26B8BE0D1C46A83600A5DBCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26B8BE0E1C46A83600A5DBCD /* Build configuration list for PBXNativeTarget "tb_network" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26B8BE0F1C46A83600A5DBCD /* Debug */,
+				26B8BE101C46A83600A5DBCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 26B8BDF21C46A83600A5DBCD /* Project object */;
+}

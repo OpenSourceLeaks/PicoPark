@@ -1,0 +1,38 @@
+﻿<?xml version="1.0"?>
+<Meta>
+    <Core>
+        <Name>Application</Name>
+        <ApplicationId>0x01004b9000490000</ApplicationId>
+        <Is64BitInstruction>False</Is64BitInstruction>
+        <ProcessAddressSpace>AddressSpace32Bit</ProcessAddressSpace>
+    </Core>
+
+    <!-- 設定が必要なアプリケーション管理データの項目をコメントアウトしてください。 -->
+    <Application>
+        <Title>
+            <Language>AmericanEnglish</Language>
+            <Name>Name</Name>
+            <Publisher>Publisher</Publisher>
+        </Title>
+        <DisplayVersion>1.0.0</DisplayVersion>
+        <!-- <StartupUserAccount>None</StartupUserAccount> -->
+        <!-- <TouchScreenUsage>Supported</TouchScreenUsage> -->
+        <!-- <ParentalControl>FreeCommunication</ParentalControl> -->
+        <SupportedLanguage>AmericanEnglish</SupportedLanguage>
+        <!-- <PresenceGroupId>0x01004b9000490000</PresenceGroupId> -->
+        <!-- <Screenshot>Deny</Screenshot> -->
+        <!--
+        <Rating>
+            <Organization>CERO</Organization>
+            <Age>18</Age>
+        </Rating>
+        -->
+        <!-- <DataLossConfirmation>None</DataLossConfirmation> -->
+        <UserAccountSaveDataSize>0x0000000000400000</UserAccountSaveDataSize>
+        <UserAccountSaveDataJournalSize>0x0000000000100000</UserAccountSaveDataJournalSize>
+        <!-- <ApplicationErrorCodeCategory>ABC12</ApplicationErrorCodeCategory> -->
+        <!-- <LogoType>LicensedByNintendo</LogoType> -->
+        <!-- <LocalCommunicationId>0x01004b9000490000</LocalCommunicationId> -->
+        <!-- <Attribute>Demo</Attribute> -->
+    </Application>
+</Meta>

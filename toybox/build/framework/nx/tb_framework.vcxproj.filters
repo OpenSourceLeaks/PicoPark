@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ビルド">
+      <UniqueIdentifier>{F1DF9757-14C3-43FA-8525-6665FEDE7BA5}</UniqueIdentifier>
+      <Extensions>props</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\framework">
+      <UniqueIdentifier>{5278c5b7-e964-4b55-a1b5-6f810a2f901b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\framework">
+      <UniqueIdentifier>{45e43d92-898c-4641-bd66-30329d8693bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\framework\debug">
+      <UniqueIdentifier>{cc3e400f-b857-4a6d-a709-5096793ffaaa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\framework\depend">
+      <UniqueIdentifier>{c844254c-a31b-4540-9de9-3f92ffa5edf1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\framework\impl">
+      <UniqueIdentifier>{6bb7689f-1127-4518-8710-a1f2401532c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\framework\sub">
+      <UniqueIdentifier>{5ff0ef85-e661-4e20-95af-d733dc51a582}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\framework\depend\nx">
+      <UniqueIdentifier>{c590836d-663d-461e-9d8d-6bcb36f73cd0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\framework\debug\menu">
+      <UniqueIdentifier>{999cc060-a9ec-4c6e-b0e2-9028b7c1bb6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\framework\debug\viewer">
+      <UniqueIdentifier>{d6d0a1c6-3167-46ec-85b9-47761ee28d94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\framework\debug">
+      <UniqueIdentifier>{a6fec01d-ae00-454b-a01b-731dc17a3c26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\framework\depend">
+      <UniqueIdentifier>{3e16be2f-782e-4357-bd68-986fdba91d7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\framework\impl">
+      <UniqueIdentifier>{977d754b-311f-41a8-84d2-3ddaa0618e94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\framework\sub">
+      <UniqueIdentifier>{3c8bf4e6-73b7-4994-8453-002c981433b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\framework\debug\menu">
+      <UniqueIdentifier>{8c706a50-dff2-4f3b-8557-983fe4d0f8e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\framework\debug\viewer">
+      <UniqueIdentifier>{fef6f48f-7b21-4d8b-9238-c7c19690b08e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\include\tb_fwd.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\tb_pch.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\framework\depend\tb_framework_impl_depend.h">
+      <Filter>ソース ファイル\framework\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\framework\depend\nx\tb_framework_impl_nx.h">
+      <Filter>ソース ファイル\framework\depend\nx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\framework\tb_framework.h">
+      <Filter>ヘッダー ファイル\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\framework\tb_framework_types.h">
+      <Filter>ヘッダー ファイル\framework</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\framework\sub\tb_framework_simple.h">
+      <Filter>ヘッダー ファイル\framework\sub</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\framework\impl\tb_framework_impl.h">
+      <Filter>ヘッダー ファイル\framework\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\framework\impl\tb_framework_impl_common.h">
+      <Filter>ヘッダー ファイル\framework\impl</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\framework\debug\viewer\tb_allocator_view.h">
+      <Filter>ヘッダー ファイル\framework\debug\viewer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\framework\debug\viewer\tb_allocator_viewer.h">
+      <Filter>ヘッダー ファイル\framework\debug\viewer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\framework\debug\viewer\tb_fixed_allocator_view.h">
+      <Filter>ヘッダー ファイル\framework\debug\viewer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\framework\debug\viewer\tb_heap_allocator_view.h">
+      <Filter>ヘッダー ファイル\framework\debug\viewer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\framework\debug\menu\tb_debug_menu_item_bool.h">
+      <Filter>ヘッダー ファイル\framework\debug\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\framework\debug\menu\tb_debug_menu_item_button.h">
+      <Filter>ヘッダー ファイル\framework\debug\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\framework\debug\menu\tb_debug_menu_item_color.h">
+      <Filter>ヘッダー ファイル\framework\debug\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\framework\debug\menu\tb_debug_menu_item_float.h">
+      <Filter>ヘッダー ファイル\framework\debug\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\framework\debug\menu\tb_debug_menu_item_integer.h">
+      <Filter>ヘッダー ファイル\framework\debug\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\framework\debug\menu\tb_debug_menu_item_vec.h">
+      <Filter>ヘッダー ファイル\framework\debug\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\framework\debug\menu\tb_debug_menu_manager.h">
+      <Filter>ヘッダー ファイル\framework\debug\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\framework\debug\menu\tb_debug_menu_types.h">
+      <Filter>ヘッダー ファイル\framework\debug\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\framework\debug\menu\tb_debug_menu_util.h">
+      <Filter>ヘッダー ファイル\framework\debug\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\framework\debug\menu\tb_debug_menu.h">
+      <Filter>ヘッダー ファイル\framework\debug\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\framework\debug\menu\tb_debug_menu_all.h">
+      <Filter>ヘッダー ファイル\framework\debug\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\framework\debug\menu\tb_debug_menu_controller.h">
+      <Filter>ヘッダー ファイル\framework\debug\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\framework\debug\menu\tb_debug_menu_item.h">
+      <Filter>ヘッダー ファイル\framework\debug\menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\framework\debug\menu\tb_debug_menu_item_alias.h">
+      <Filter>ヘッダー ファイル\framework\debug\menu</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\tb_fwd.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\framework\tb_framework.cpp">
+      <Filter>ソース ファイル\framework</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\framework\sub\tb_framework_simple.cpp">
+      <Filter>ソース ファイル\framework\sub</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\framework\impl\tb_framework_impl.cpp">
+      <Filter>ソース ファイル\framework\impl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\framework\debug\menu\tb_debug_menu_item_bool.cpp">
+      <Filter>ソース ファイル\framework\debug\menu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\framework\debug\menu\tb_debug_menu_item_button.cpp">
+      <Filter>ソース ファイル\framework\debug\menu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\framework\debug\menu\tb_debug_menu_item_color.cpp">
+      <Filter>ソース ファイル\framework\debug\menu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\framework\debug\menu\tb_debug_menu_item_float.cpp">
+      <Filter>ソース ファイル\framework\debug\menu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\framework\debug\menu\tb_debug_menu_item_vec.cpp">
+      <Filter>ソース ファイル\framework\debug\menu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\framework\debug\menu\tb_debug_menu_manager.cpp">
+      <Filter>ソース ファイル\framework\debug\menu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\framework\debug\menu\tb_debug_menu.cpp">
+      <Filter>ソース ファイル\framework\debug\menu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\framework\debug\menu\tb_debug_menu_item.cpp">
+      <Filter>ソース ファイル\framework\debug\menu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\framework\debug\menu\tb_debug_menu_item_alias.cpp">
+      <Filter>ソース ファイル\framework\debug\menu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\framework\debug\viewer\tb_heap_allocator_view.cpp">
+      <Filter>ソース ファイル\framework\debug\viewer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\framework\debug\viewer\tb_allocator_viewer.cpp">
+      <Filter>ソース ファイル\framework\debug\viewer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\framework\debug\viewer\tb_fixed_allocator_view.cpp">
+      <Filter>ソース ファイル\framework\debug\viewer</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2013 for Windows Desktop
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "template", "template.vcxproj", "{9825C546-2726-441F-92C1-7C26718D0F2B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		DebugDX9|Win32 = DebugDX9|Win32
+		DebugGL|Win32 = DebugGL|Win32
+		OptimizeDX9|Win32 = OptimizeDX9|Win32
+		ReleaseDX9|Win32 = ReleaseDX9|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9825C546-2726-441F-92C1-7C26718D0F2B}.DebugDX9|Win32.ActiveCfg = DebugDX9|Win32
+		{9825C546-2726-441F-92C1-7C26718D0F2B}.DebugDX9|Win32.Build.0 = DebugDX9|Win32
+		{9825C546-2726-441F-92C1-7C26718D0F2B}.DebugGL|Win32.ActiveCfg = DebugGL|Win32
+		{9825C546-2726-441F-92C1-7C26718D0F2B}.DebugGL|Win32.Build.0 = DebugGL|Win32
+		{9825C546-2726-441F-92C1-7C26718D0F2B}.OptimizeDX9|Win32.ActiveCfg = OptimizeDX9|Win32
+		{9825C546-2726-441F-92C1-7C26718D0F2B}.OptimizeDX9|Win32.Build.0 = OptimizeDX9|Win32
+		{9825C546-2726-441F-92C1-7C26718D0F2B}.ReleaseDX9|Win32.ActiveCfg = ReleaseDX9|Win32
+		{9825C546-2726-441F-92C1-7C26718D0F2B}.ReleaseDX9|Win32.Build.0 = ReleaseDX9|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\nui\depend\kinect\tb_nui_manager_kinect.cpp">
+      <Filter>src\depend\kinect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\nui\depend\kinect\tb_nui_image_frame_kinect.cpp">
+      <Filter>src\depend\kinect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\nui\depend\kinect\tb_nui_depth_frame_kinect.cpp">
+      <Filter>src\depend\kinect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\tb_fwd.cpp" />
+    <ClCompile Include="..\..\..\src\nui\depend\kinect2\tb_nui_manager_kinect2.cpp">
+      <Filter>src\depend\kinect2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\nui\depend\kinect2\tb_nui_depth_frame_kinect2.cpp">
+      <Filter>src\depend\kinect2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\nui\depend\kinect\tb_nui_color_frame_kinect.cpp">
+      <Filter>src\depend\kinect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\nui\depend\kinect2\tb_nui_color_frame_kinect2.cpp">
+      <Filter>src\depend\kinect2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\nui\tb_nui_simple_manager.cpp">
+      <Filter>src\depend</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\include\nui\tb_nui_types.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\nui\tb_nui_depth_frame.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\nui\tb_nui_manager.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\nui\depend\tb_nui_manager_depend.h">
+      <Filter>include\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\nui\depend\kinect\tb_nui_manager_kinect.h">
+      <Filter>include\depend\kinect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\nui\tb_nui.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\nui\tb_nui_util.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\nui\depend\kinect2\tb_nui_manager_kinect2.h">
+      <Filter>include\depend\kinect2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\nui\depend\tb_nui_color_frame_depend.h">
+      <Filter>include\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\nui\depend\tb_nui_depth_frame_depend.h">
+      <Filter>include\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\nui\tb_nui_color_frame.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\nui\depend\kinect2\tb_nui_color_frame_kinect2.h">
+      <Filter>include\depend\kinect2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\nui\depend\kinect2\tb_nui_depth_frame_kinect2.h">
+      <Filter>include\depend\kinect2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\nui\depend\kinect\tb_nui_image_frame.h">
+      <Filter>include\depend\kinect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\nui\tb_nui_simple_manager.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{0579696b-06d5-4b3b-9da8-670cc096f14d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{600d9ecc-7947-4c0f-851f-a503052f4695}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\depend">
+      <UniqueIdentifier>{d70f055b-c9ca-4332-b85c-23b44e34630e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\depend\kinect">
+      <UniqueIdentifier>{629a8acf-fa1f-427c-9a5b-3936c3bf0dff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\depend">
+      <UniqueIdentifier>{0d4aa37b-0511-49d0-9754-2ce11eea90c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\depend\kinect">
+      <UniqueIdentifier>{3db5712a-b048-4081-9cab-79769465756a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\depend\kinect2">
+      <UniqueIdentifier>{3066b320-a856-41ec-adc5-1b7ff7d234c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\depend\kinect2">
+      <UniqueIdentifier>{fd4f9ae0-6778-4a04-a973-d3eb83e571c9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

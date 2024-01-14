@@ -1,0 +1,1051 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\base\util\tb_async_func.cpp">
+      <Filter>src\base\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\base\time\depend\win32\tb_tick_win32.cpp">
+      <Filter>src\base\time\depend\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\base\thread\depend\win32\tb_thread_win32.cpp">
+      <Filter>src\base\thread\depend\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\base\system\tb_assert.cpp">
+      <Filter>src\base\system</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\base\string\tb_string_converter.cpp">
+      <Filter>src\base\string</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\base\math\tb_random.cpp">
+      <Filter>src\base\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\base\io\tb_print.cpp">
+      <Filter>src\base\io</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\base\math\tb_vector4.cpp">
+      <Filter>src\base\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\base\math\tb_matrix.cpp">
+      <Filter>src\base\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\base\math\tb_quaternion.cpp">
+      <Filter>src\base\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\base\math\tb_math_helper.cpp">
+      <Filter>src\base\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\base\crypt\tb_crc32.cpp">
+      <Filter>src\base\crypt</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\base\string\encoding\tb_string_encoding_sjis.cpp">
+      <Filter>src\base\string\encoding</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\base\string\encoding\tb_string_encoding.cpp">
+      <Filter>src\base\string\encoding</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\base\memory\tb_memory.cpp">
+      <Filter>src\base\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\base\memory\tb_heap.cpp">
+      <Filter>src\base\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\base\io\stream\tb_memory_stream.cpp">
+      <Filter>src\base\io\stream</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\base\io\stream\tb_stream_binary_reader.cpp">
+      <Filter>src\base\io\stream</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\base\io\stream\tb_stream_binary_writer.cpp">
+      <Filter>src\base\io\stream</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\base\io\stream\tb_stream_text_reader.cpp">
+      <Filter>src\base\io\stream</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\base\io\stream\tb_stream_text_writer.cpp">
+      <Filter>src\base\io\stream</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\base\io\stream\tb_const_memory_stream.cpp">
+      <Filter>src\base\io\stream</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\tb_fwd.cpp" />
+    <ClCompile Include="..\..\..\src\base\thread\depend\win32\tb_mutex_win32.cpp">
+      <Filter>src\base\thread\depend\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\base\thread\depend\win32\tb_thread_condition_win32.cpp">
+      <Filter>src\base\thread\depend\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\base\memory\tb_fixed_allocator.cpp">
+      <Filter>src\base\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\base\memory\tb_new_delete.cpp">
+      <Filter>src\base\memory</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\base\time\tb_tick_common.cpp">
+      <Filter>src\base\time</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\base\time\depend\std\tb_time_std.cpp">
+      <Filter>src\base\time\depend\std</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\base\math\tb_vector2.cpp">
+      <Filter>src\base\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\base\system\depend\win32\tb_console_win32.cpp">
+      <Filter>src\base\system\depend\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\base\system\depend\win32\tb_processor_win32.cpp">
+      <Filter>src\base\system\depend\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\base\thread\tb_thread_pool_job.cpp">
+      <Filter>src\base\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\base\thread\tb_thread_pool.cpp">
+      <Filter>src\base\thread</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\base\task\tb_sequence_task.cpp">
+      <Filter>src\base\task</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\base\task\tb_task_manager.cpp">
+      <Filter>src\base\task</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\base\task\tb_task.cpp">
+      <Filter>src\base\task</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\base\io\tb_file_manager.cpp">
+      <Filter>src\base\io</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\base\io\resource\tb_resource_manager.cpp">
+      <Filter>src\base\io\resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\base\io\depend\win32\tb_file_win32.cpp">
+      <Filter>src\base\io\depend\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\base\io\depend\std\tb_file_std.cpp">
+      <Filter>src\base\io\depend\std</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\base\io\stream\tb_file_stream.cpp">
+      <Filter>src\base\io\stream</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\base\actor\tb_actor_scene.cpp">
+      <Filter>src\base\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\base\actor\tb_actor.cpp">
+      <Filter>src\base\actor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\base\math\tb_geometry_util.cpp">
+      <Filter>src\base\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\base\io\tb_file_impl.cpp">
+      <Filter>src\base\io</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\base\io\tb_file_util.cpp">
+      <Filter>src\base\io</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\base\io\tb_file.cpp">
+      <Filter>src\base\io</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\base\io\resource\tb_resource.cpp">
+      <Filter>src\base\io\resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\base\math\tb_vector3.cpp">
+      <Filter>src\base\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\base\string\tb_static_string.cpp">
+      <Filter>src\base\string</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\base\io\archive\tb_archive.cpp">
+      <Filter>src\base\io\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\base\io\archive\tb_archive_exporter.cpp">
+      <Filter>src\base\io\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\base\io\depend\win32\tb_file_mapper_win32.cpp">
+      <Filter>src\base\io\depend\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\base\io\archive\tb_file_archive.cpp">
+      <Filter>src\base\io\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\base\io\archive\tb_file_mapper_archive.cpp">
+      <Filter>src\base\io\archive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\base\io\tb_log.cpp">
+      <Filter>src\base\io</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\base\io\depend\std\tb_file_mapper_std.cpp">
+      <Filter>src\base\io\depend\std</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\base\system\depend\win32\tb_stack_trace_win32.cpp">
+      <Filter>src\base\system\depend\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\base\save\depend\default\tb_save_file_default.cpp">
+      <Filter>src\base\save\depend\default</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\base\system\depend\win32\tb_process_win32.cpp">
+      <Filter>src\base\system\depend\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\base\performance\tb_performance_manager.cpp">
+      <Filter>src\base\performance</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\base\system\depend\win32\tb_system_setting_win32.cpp">
+      <Filter>src\base\system\depend\win32</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{0579696b-06d5-4b3b-9da8-670cc096f14d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{600d9ecc-7947-4c0f-851f-a503052f4695}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\base">
+      <UniqueIdentifier>{eac1ecfd-0b2d-4b4d-ab87-6c5256c531d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\base">
+      <UniqueIdentifier>{7394f200-1173-4dc8-aa83-6bd82e42c42c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\base\io">
+      <UniqueIdentifier>{878a2cfa-fae7-47c0-9390-f4b8da016565}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\base\math">
+      <UniqueIdentifier>{5eef1725-8933-4963-b0b9-d084b42ac85f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\base\system">
+      <UniqueIdentifier>{06894e97-b4de-4542-a376-21ba9cd7fb20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\base\time">
+      <UniqueIdentifier>{b53725d0-a687-4d6d-8cf4-87043732bc46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\base\algorithm">
+      <UniqueIdentifier>{0f0adbf3-c5b4-4632-b580-f76232e593e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\base\io">
+      <UniqueIdentifier>{dcae4a6c-b799-400e-bf2b-56d1a9f76d53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\base\math">
+      <UniqueIdentifier>{4e361636-8b62-441b-80b5-3afbe292b650}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\base\time">
+      <UniqueIdentifier>{f983ac74-fa94-4843-af48-674c8abb4e68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\base\thread">
+      <UniqueIdentifier>{a758bfd9-8d9f-4ab5-a6ac-886ee61800e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\base\util">
+      <UniqueIdentifier>{ce5a592d-7b4d-4f84-b6d2-eadc03a9a026}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\base\time\depend">
+      <UniqueIdentifier>{6befa631-715b-403b-b670-eee53f21cea7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\base\time\depend\win32">
+      <UniqueIdentifier>{2f441e07-f8c0-4d7c-a881-58e29ada16bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\base\thread\depend">
+      <UniqueIdentifier>{a65ce6a8-4294-4273-83c9-498ab65dc19c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\base\thread\depend\win32">
+      <UniqueIdentifier>{920a17d8-4d4f-499f-9db8-7e9aa2229250}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\base\string">
+      <UniqueIdentifier>{611279f0-45cf-4975-8e4e-7f604fd77a06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\base\animation">
+      <UniqueIdentifier>{c0fc77da-2598-4ecb-8ee7-01df785e9a7b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\base\math\animation">
+      <UniqueIdentifier>{2cfe019d-de02-4d8f-91bb-c231b2bcb0be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\base\crypt">
+      <UniqueIdentifier>{7d9f83bd-627c-4330-b9de-85f5c69356b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\base\container">
+      <UniqueIdentifier>{9cae4fdc-cfe1-4fa8-835d-ef728ddc3f32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\base\string\encoding">
+      <UniqueIdentifier>{1e845d87-af74-4393-9a49-8512372d5f68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\base\math\depend">
+      <UniqueIdentifier>{29ba5d7a-2c56-4fe4-9ee3-4ea32ebc38e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\base\memory">
+      <UniqueIdentifier>{b3fde881-1fa0-42d1-83a0-85826a6d3b98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\base\memory">
+      <UniqueIdentifier>{a6b046e1-30ae-46ea-bb03-30752e2da56c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\base\io\stream">
+      <UniqueIdentifier>{3a41c0fe-5cdb-4a78-bfe8-4a72b533a128}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\base\io\stream">
+      <UniqueIdentifier>{8be3612a-3d76-4cee-bb1f-8eff2ab64908}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\base\preprocessor">
+      <UniqueIdentifier>{2f03c4e7-d574-4bd7-9b46-d13f4ad50ad4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\base\preprocessor\logical">
+      <UniqueIdentifier>{7004e2b6-6c88-45bf-9274-5743267669f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\base\preprocessor\repetition">
+      <UniqueIdentifier>{170eb909-853a-4a69-941f-94ece9cb0512}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\base\preprocessor\control">
+      <UniqueIdentifier>{cb692cd6-6d5f-4787-991b-c285848c2c95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\base\preprocessor\punctuation">
+      <UniqueIdentifier>{d78530ba-f015-4857-9eca-33b2c5e0b57f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\base\time\depend\std">
+      <UniqueIdentifier>{f650915e-bf05-4290-9ddb-20475382ff2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\base\system\depend">
+      <UniqueIdentifier>{97302733-bb1b-4efa-a406-727d06e4ffc6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\base\system\depend\win32">
+      <UniqueIdentifier>{4c6fb352-9104-47dd-abb3-19f2df45b1dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\base\system">
+      <UniqueIdentifier>{c59c45d6-5789-4560-9c43-470161779e90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\base\system\depend">
+      <UniqueIdentifier>{5836ed00-73f3-474e-91c2-ffd538545089}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\base\system\depend\win32">
+      <UniqueIdentifier>{5f721d7d-3532-4f03-84ec-781747195b39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\base\util">
+      <UniqueIdentifier>{c51b1e15-4bca-4147-9ef8-681bed7236d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\base\util\bind">
+      <UniqueIdentifier>{8d1948c2-c834-49c1-8c30-9c774ff4652e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\base\util\factory">
+      <UniqueIdentifier>{5452b5d0-137d-482f-a660-db3e9eb0cdc1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\base\util\function">
+      <UniqueIdentifier>{2cb7fced-d9ac-427c-be92-a9c338cb3ba6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\base\util\enum">
+      <UniqueIdentifier>{96f4013d-6213-4df2-ab7e-570c8445e46c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\base\util\type_traits">
+      <UniqueIdentifier>{da259631-f448-4dfb-9a41-d03cb99ca68f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\base\task">
+      <UniqueIdentifier>{82d2ffff-7353-4c22-8d6c-2d0530f3178d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\base\actor">
+      <UniqueIdentifier>{89007a7e-2152-4810-8328-a2c6c5afc3f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\base\io\depend">
+      <UniqueIdentifier>{2aa9ed6c-5268-4acb-bb3c-eacdc4292a28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\base\io\resource">
+      <UniqueIdentifier>{654470e2-1353-458d-a2bd-0bd7df0af366}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\base\task">
+      <UniqueIdentifier>{14c401a0-2c6d-4838-bdb9-febd3bc5b606}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\base\io\resource">
+      <UniqueIdentifier>{6dbb492d-34e5-4703-ae10-a797b79a551f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\base\io\depend">
+      <UniqueIdentifier>{c2caf58e-95e3-4e57-bad9-a7b2aea7cf84}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\base\io\depend\win32">
+      <UniqueIdentifier>{dc30b609-8f5b-42ad-b7b0-64cf3f359e50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\base\io\depend\std">
+      <UniqueIdentifier>{0f06a1ba-3764-4634-8622-a88106f97bfc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\base\io\depend\win32">
+      <UniqueIdentifier>{b4f2b4b0-f660-4d9f-bd1b-4fd12ebc0eb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\base\io\depend\std">
+      <UniqueIdentifier>{5f406a11-86b0-44c7-a69b-2e4fae1049b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\base\actor">
+      <UniqueIdentifier>{84806ade-11a3-4594-ab1c-87bd9c9f5c13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\base\string">
+      <UniqueIdentifier>{c67e05d6-50e4-4ed3-b7f8-b18d3b9f9400}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\base\string\encoding">
+      <UniqueIdentifier>{fa1ddd3e-3036-4c4c-b348-75c0f8789ba9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\base\save">
+      <UniqueIdentifier>{206369e1-664c-4f92-888a-9fbd1fe1af48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\base\algorithm">
+      <UniqueIdentifier>{19412c8c-9cc1-4517-8199-319519b9d7fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\base\compress">
+      <UniqueIdentifier>{1271459c-46a5-4722-be4e-d7123976a0f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\base\io\archive">
+      <UniqueIdentifier>{3a273690-049d-4404-8ce7-cb2882c49323}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\base\io\archive">
+      <UniqueIdentifier>{d23ace14-f638-4a1b-9867-82e4099e2803}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\base\crypt">
+      <UniqueIdentifier>{387982d3-1213-4e4d-93a2-d0e879130b57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\base\save">
+      <UniqueIdentifier>{b4a7d6a6-ee15-44d2-ab8d-93e48f656fde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\base\thread">
+      <UniqueIdentifier>{840a12e1-40b9-49b6-9d3e-04420ab98cff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\base\thread\depend">
+      <UniqueIdentifier>{084cbec3-f1a3-4ddf-adda-9273ccc30735}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\base\thread\depend\win32">
+      <UniqueIdentifier>{145aadf3-2e83-4d01-8a72-efc8bcf44dd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\base\performance">
+      <UniqueIdentifier>{b2f4a899-42b3-4f30-ab31-a2ce9afcfdc3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\base\performance\depend">
+      <UniqueIdentifier>{a4a7f4fc-9cb5-4b2c-9a5e-cbbb24bace68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\base\save\depend">
+      <UniqueIdentifier>{9b7e1f8d-5a15-4de4-bb1a-e386bc299584}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\base\save\depend\default">
+      <UniqueIdentifier>{37a40ec0-fffe-4236-94bb-96ba33f413d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\base\performance">
+      <UniqueIdentifier>{1583a140-a15f-4292-9783-62f11be5c91a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\include\base\algorithm\tb_search.h">
+      <Filter>include\base\algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\algorithm\tb_sort.h">
+      <Filter>include\base\algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\io\tb_print.h">
+      <Filter>include\base\io</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\string\tb_string_converter.h">
+      <Filter>include\base\string</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\string\tb_string_inl.h">
+      <Filter>include\base\string</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\string\tb_string_util.h">
+      <Filter>include\base\string</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\string\tb_static_string.h">
+      <Filter>include\base\string</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\string\tb_static_string_inl.h">
+      <Filter>include\base\string</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\string\tb_string.h">
+      <Filter>include\base\string</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\system\tb_result.h">
+      <Filter>include\base\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\system\tb_target_types.h">
+      <Filter>include\base\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\system\tb_assert.h">
+      <Filter>include\base\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\system\tb_bit_array.h">
+      <Filter>include\base\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\system\tb_debug.h">
+      <Filter>include\base\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\thread\tb_thread.h">
+      <Filter>include\base\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\thread\tb_thread_types.h">
+      <Filter>include\base\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\thread\depend\tb_thread_depend.h">
+      <Filter>include\base\thread\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\thread\depend\win32\tb_thread_win32.h">
+      <Filter>include\base\thread\depend\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\time\tb_time.h">
+      <Filter>include\base\time</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\time\tb_tick.h">
+      <Filter>include\base\time</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\util\tb_ref_counter.h">
+      <Filter>include\base\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\util\tb_scope_finalizer.h">
+      <Filter>include\base\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\util\tb_singleton.h">
+      <Filter>include\base\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\util\tb_type_heap.h">
+      <Filter>include\base\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\util\tb_async_func.h">
+      <Filter>include\base\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\util\tb_factory.h">
+      <Filter>include\base\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\util\tb_function.h">
+      <Filter>include\base\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\system\tb_console.h">
+      <Filter>include\base\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\math\tb_matrix.h">
+      <Filter>include\base\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\math\tb_quaternion.h">
+      <Filter>include\base\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\math\tb_random.h">
+      <Filter>include\base\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\math\tb_vector2.h">
+      <Filter>include\base\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\math\tb_vector4.h">
+      <Filter>include\base\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\math\tb_math_helper.h">
+      <Filter>include\base\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\math\tb_math_util.h">
+      <Filter>include\base\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\math\tb_math_util_inl.h">
+      <Filter>include\base\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\system\tb_base_types.h">
+      <Filter>include\base\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\util\tb_type_id.h">
+      <Filter>include\base\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\animation\tb_animation_key_frame.h">
+      <Filter>include\base\animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\animation\tb_animation_key_frame_inl.h">
+      <Filter>include\base\animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\animation\tb_animation_types.h">
+      <Filter>include\base\animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\math\tb_math_animation_types.h">
+      <Filter>include\base\math\animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\animation\tb_animation_key_frame_data.h">
+      <Filter>include\base\animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\animation\tb_animation_key_frame_data_inl.h">
+      <Filter>include\base\animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\crypt\tb_crc32.h">
+      <Filter>include\base\crypt</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\container\tb_pool.h">
+      <Filter>include\base\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\container\tb_pool_inl.h">
+      <Filter>include\base\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\container\tb_static_array.h">
+      <Filter>include\base\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\container\tb_static_array_inl.h">
+      <Filter>include\base\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\container\tb_node_tree.h">
+      <Filter>include\base\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\container\tb_node_tree_inl.h">
+      <Filter>include\base\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\container\tb_array.h">
+      <Filter>include\base\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\util\tb_enum.h">
+      <Filter>include\base\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\container\tb_static_deque_inl.h">
+      <Filter>include\base\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\container\tb_static_deque.h">
+      <Filter>include\base\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\string\tb_string_encoding_all.h">
+      <Filter>include\base\string</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\string\encoding\tb_string_encoding_sjis.h">
+      <Filter>include\base\string\encoding</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\string\encoding\tb_string_encoding.h">
+      <Filter>include\base\string\encoding</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\io\tb_io_types.h">
+      <Filter>include\base\io</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\memory\tb_heap.h">
+      <Filter>include\base\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\memory\tb_memory.h">
+      <Filter>include\base\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\memory\tb_fixed_allocator.h">
+      <Filter>include\base\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\memory\tb_heap_allocator.h">
+      <Filter>include\base\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\io\stream\tb_const_memory_stream.h">
+      <Filter>include\base\io\stream</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\io\stream\tb_memory_stream.h">
+      <Filter>include\base\io\stream</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\io\stream\tb_stream.h">
+      <Filter>include\base\io\stream</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\io\stream\tb_stream_binary_reader.h">
+      <Filter>include\base\io\stream</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\io\stream\tb_stream_binary_writer.h">
+      <Filter>include\base\io\stream</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\io\stream\tb_stream_text_reader.h">
+      <Filter>include\base\io\stream</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\io\stream\tb_stream_text_writer.h">
+      <Filter>include\base\io\stream</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\preprocessor\tb_pp_define.h">
+      <Filter>include\base\preprocessor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\preprocessor\tb_pp_cat.h">
+      <Filter>include\base\preprocessor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\preprocessor\repetition\tb_pp_repeat.h">
+      <Filter>include\base\preprocessor\repetition</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\preprocessor\punctuation\tb_pp_comma_if.h">
+      <Filter>include\base\preprocessor\punctuation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\preprocessor\control\tb_pp_iif.h">
+      <Filter>include\base\preprocessor\control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\preprocessor\control\tb_pp_if.h">
+      <Filter>include\base\preprocessor\control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\preprocessor\logical\tb_pp_bool.h">
+      <Filter>include\base\preprocessor\logical</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\preprocessor\repetition\tb_pp_enum_params.h">
+      <Filter>include\base\preprocessor\repetition</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\preprocessor\repetition\tb_pp_enum_binary_params.h">
+      <Filter>include\base\preprocessor\repetition</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\preprocessor\logical\tb_pp_not.h">
+      <Filter>include\base\preprocessor\logical</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\util\tb_ref.h">
+      <Filter>include\base\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\algorithm\tb_algorithm_misc.h">
+      <Filter>include\base\algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\util\factory\tb_factory_arg1.h">
+      <Filter>include\base\util\factory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\util\factory\tb_factory_arg2.h">
+      <Filter>include\base\util\factory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\util\function\tb_static_function_inl.h">
+      <Filter>include\base\util\function</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\util\function\tb_function_inl.h">
+      <Filter>include\base\util\function</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\util\enum\tb_enum_inl.h">
+      <Filter>include\base\util\enum</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\tb_fwd.h" />
+    <ClInclude Include="..\..\..\include\base\util\bind\tb_bind_list2.h">
+      <Filter>include\base\util\bind</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\util\bind\tb_bind_placeholders.h">
+      <Filter>include\base\util\bind</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\util\bind\tb_bind_impl.h">
+      <Filter>include\base\util\bind</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\util\bind\tb_bind_list0.h">
+      <Filter>include\base\util\bind</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\util\bind\tb_bind_list1.h">
+      <Filter>include\base\util\bind</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\util\tb_bind.h">
+      <Filter>include\base\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\util\bind\tb_bind_list6.h">
+      <Filter>include\base\util\bind</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\util\bind\tb_bind_list7.h">
+      <Filter>include\base\util\bind</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\util\bind\tb_bind_list8.h">
+      <Filter>include\base\util\bind</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\util\bind\tb_bind_list9.h">
+      <Filter>include\base\util\bind</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\util\bind\tb_bind_list3.h">
+      <Filter>include\base\util\bind</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\util\bind\tb_bind_list4.h">
+      <Filter>include\base\util\bind</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\util\bind\tb_bind_list5.h">
+      <Filter>include\base\util\bind</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\util\bind\tb_bind_mem_func.h">
+      <Filter>include\base\util\bind</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\util\bind\tb_bind_mem_func_inl.h">
+      <Filter>include\base\util\bind</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\util\bind\tb_bind_for_member.h">
+      <Filter>include\base\util\bind</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\util\bind\tb_bind_for_object.h">
+      <Filter>include\base\util\bind</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\util\bind\tb_bind_for_global.h">
+      <Filter>include\base\util\bind</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\thread\tb_mutex.h">
+      <Filter>include\base\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\thread\tb_scoped_lock.h">
+      <Filter>include\base\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\thread\tb_thread_condition.h">
+      <Filter>include\base\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\thread\depend\win32\tb_mutex_win32.h">
+      <Filter>include\base\thread\depend\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\thread\depend\tb_mutex_depend.h">
+      <Filter>include\base\thread\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\thread\depend\win32\tb_thread_condition_win32.h">
+      <Filter>include\base\thread\depend\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\thread\depend\tb_thread_condition_depend.h">
+      <Filter>include\base\thread\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\container\tb_deque_inl.h">
+      <Filter>include\base\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\container\tb_deque.h">
+      <Filter>include\base\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\tb_pch.h" />
+    <ClInclude Include="..\..\..\include\base\thread\tb_thread_pool.h">
+      <Filter>include\base\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\thread\tb_thread_pool_job.h">
+      <Filter>include\base\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\algorithm\tb_endian.h">
+      <Filter>include\base\algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\util\tb_unique_id.h">
+      <Filter>include\base\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\container\tb_queue.h">
+      <Filter>include\base\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\container\tb_queue_inl.h">
+      <Filter>include\base\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\container\tb_static_queue.h">
+      <Filter>include\base\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\container\tb_static_queue_inl.h">
+      <Filter>include\base\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\util\tb_dynamic_cast.h">
+      <Filter>include\base\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\util\tb_depend_cast.h">
+      <Filter>include\base\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\util\type_traits\tb_type_remove_pointer.h">
+      <Filter>include\base\util\type_traits</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\memory\tb_allocator.h">
+      <Filter>include\base\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\memory\tb_new_delete.h">
+      <Filter>include\base\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\memory\tb_allocatable.h">
+      <Filter>include\base\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\string\encoding\tb_string_encoding_utf8.h">
+      <Filter>include\base\string\encoding</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\string\encoding\tb_string_encoding_utf16.h">
+      <Filter>include\base\string\encoding</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\memory\tb_allocator_holder.h">
+      <Filter>include\base\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\memory\tb_template_allocator_std.h">
+      <Filter>include\base\memory</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\container\tb_array_inl.h">
+      <Filter>include\base\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\container\tb_array_iterator.h">
+      <Filter>include\base\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\container\tb_assoc_array.h">
+      <Filter>include\base\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\container\tb_str_assoc_array.h">
+      <Filter>include\base\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\container\tb_key_value.h">
+      <Filter>include\base\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\string\tb_string_util_inl.h">
+      <Filter>include\base\string</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\preprocessor\tb_pp_tuple.h">
+      <Filter>include\base\preprocessor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\system\tb_system_util.h">
+      <Filter>include\base\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\math\tb_polygon.h">
+      <Filter>include\base\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\util\tb_scoped_ptr.h">
+      <Filter>include\base\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\math\tb_geometry.h">
+      <Filter>include\base\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\system\tb_atomic_op.h">
+      <Filter>include\base\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\system\tb_atomic.h">
+      <Filter>include\base\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\system\depend\win32\tb_atomic_op_win32.h">
+      <Filter>include\base\system\depend\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\system\depend\tb_atomic_op_depend.h">
+      <Filter>include\base\system\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\thread\tb_func_thread.h">
+      <Filter>include\base\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\thread\tb_thread_group.h">
+      <Filter>include\base\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\system\tb_processor.h">
+      <Filter>include\base\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\thread\tb_thread_pool_func_job.h">
+      <Filter>include\base\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\util\tb_holder_singleton.h">
+      <Filter>include\base\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\util\tb_iterator_traits.h">
+      <Filter>include\base\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\util\tb_template_util.h">
+      <Filter>include\base\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\util\tb_type_traits.h">
+      <Filter>include\base\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\util\tb_scoped_ref_counter.h">
+      <Filter>include\base\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\task\tb_task.h">
+      <Filter>include\base\task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\task\tb_task_manager.h">
+      <Filter>include\base\task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\task\tb_task_types.h">
+      <Filter>include\base\task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\task\tb_sequence_task.h">
+      <Filter>include\base\task</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\io\tb_file.h">
+      <Filter>include\base\io</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\io\tb_file_all.h">
+      <Filter>include\base\io</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\io\tb_file_manager.h">
+      <Filter>include\base\io</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\io\tb_file_types.h">
+      <Filter>include\base\io</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\io\resource\tb_resource_all.h">
+      <Filter>include\base\io\resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\io\resource\tb_resource_manager.h">
+      <Filter>include\base\io\resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\io\resource\tb_resource_manager_inl.h">
+      <Filter>include\base\io\resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\io\resource\tb_resource_types.h">
+      <Filter>include\base\io\resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\io\depend\win32\tb_file_win32.h">
+      <Filter>include\base\io\depend\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\io\depend\std\tb_file_std.h">
+      <Filter>include\base\io\depend\std</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\io\stream\tb_file_stream.h">
+      <Filter>include\base\io\stream</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\actor\tb_actor_scene.h">
+      <Filter>include\base\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\actor\tb_actor.h">
+      <Filter>include\base\actor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\io\tb_file_util.h">
+      <Filter>include\base\io</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\io\tb_path.h">
+      <Filter>include\base\io</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\string\tb_raw_string.h">
+      <Filter>include\base\string</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\math\tb_geometry_util.h">
+      <Filter>include\base\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\io\tb_file_impl.h">
+      <Filter>include\base\io</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\io\resource\tb_resource.h">
+      <Filter>include\base\io\resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\io\resource\tb_resource_data.h">
+      <Filter>include\base\io\resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\io\resource\tb_resource_handle.h">
+      <Filter>include\base\io\resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\math\tb_vector3.h">
+      <Filter>include\base\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\container\tb_static_set.h">
+      <Filter>include\base\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\math\tb_curve.h">
+      <Filter>include\base\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\io\tb_path_inl.h">
+      <Filter>include\base\io</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\string\tb_string_types.h">
+      <Filter>include\base\string</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\util\tb_binary_write_buffer.h">
+      <Filter>include\base\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\io\tb_file_util_private.h">
+      <Filter>include\base\io</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\io\tb_file_mapper.h">
+      <Filter>include\base\io</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\io\archive\tb_file_archive.h">
+      <Filter>include\base\io\archive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\io\archive\tb_file_mapper_archive.h">
+      <Filter>include\base\io\archive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\io\archive\tb_archive_exporter.h">
+      <Filter>include\base\io\archive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\io\archive\tb_archive_types.h">
+      <Filter>include\base\io\archive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\io\archive\tb_archive.h">
+      <Filter>include\base\io\archive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\io\depend\win32\tb_file_mapper_win32.h">
+      <Filter>include\base\io\depend\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\io\depend\tb_file_mapper_depend.h">
+      <Filter>include\base\io\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\system\tb_stack_trace.h">
+      <Filter>include\base\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\thread\tb_wait_notify_thread.h">
+      <Filter>include\base\thread</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\system\depend\win32\tb_com_win32.h">
+      <Filter>include\base\system\depend\win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\io\tb_log.h">
+      <Filter>include\base\io</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\string\tb_string_code_page.h" />
+    <ClInclude Include="..\..\..\include\base\container\tb_sorted_array.h">
+      <Filter>include\base\container</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\time\tb_frame_rate_control.h">
+      <Filter>include\base\time</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\system\tb_base_types_util.h">
+      <Filter>include\base\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\performance\depend\tb_profiler_depend.h">
+      <Filter>include\base\performance\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\performance\tb_profiler.h">
+      <Filter>include\base\performance</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\save\tb_save_file.h">
+      <Filter>include\base\save</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\system\tb_process.h">
+      <Filter>include\base\system</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\performance\tb_performance_manager.h">
+      <Filter>include\base\performance</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\base\system\tb_system_setting.h">
+      <Filter>include\base\system</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

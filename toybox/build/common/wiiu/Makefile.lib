@@ -1,0 +1,25 @@
+ifeq ($(TBSDK_DIR_CYG), )
+    TBSDK_DIR_CYG=$(shell cygpath -u $(TBSDK_DIR))
+endif
+include $(TBSDK_DIR_CYG)/build/common/wiiu/Makefile.common
+
+ifeq (,$(LIB_DIR))
+    LIB_DIR               := $(BIN_DIR)
+endif
+
+ifeq ($(BUILD_TARGET),DEBUG)
+    LIB_PATH   = $(LIB_DIR)/lib$(TARGET)_d.a
+else
+    LIB_PATH   = $(LIB_DIR)/lib$(TARGET).a
+endif
+
+######################################
+# ビルドルール
+######################################
+
+# コンパイル
+$(TARGET): $(OBJ_DIR) $(BIN_DIR) $(OBJS) $(LIB_DIR)
+	$(AR) -archive $(shell echo '-o $(LIB_PATH) $(OBJS)' | $(PATH_CYGWIN_TO_DOS))
+
+# $(LIB_DIR):
+#	-mkdir $(LIB_DIR)

@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ビルド">
+      <UniqueIdentifier>{F1DF9757-14C3-43FA-8525-6665FEDE7BA5}</UniqueIdentifier>
+      <Extensions>props</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\physics2d">
+      <UniqueIdentifier>{f2a01326-9fef-4b42-8e90-9789589cef06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\physics2d">
+      <UniqueIdentifier>{4332d486-d794-4ef2-9b30-5ea433345591}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\physics2d\depend">
+      <UniqueIdentifier>{6935ff1d-65df-4e1a-9ca1-14da15ec22e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\physics2d\depend\box2d">
+      <UniqueIdentifier>{fba72c87-bc96-4723-819d-8a7d00255dec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\physics2d\depend">
+      <UniqueIdentifier>{9695537a-1988-49f7-a7e7-f273db11d9e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\physics2d\depend\box2d">
+      <UniqueIdentifier>{5f1a76f4-6fe4-445e-8754-a791ec7f8c15}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\include\tb_fwd.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\tb_pch.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\physics\tb_physics_body_2d.h">
+      <Filter>ヘッダー ファイル\physics2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\physics\tb_physics_joint_2d.h">
+      <Filter>ヘッダー ファイル\physics2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\physics\tb_physics_scene_2d.h">
+      <Filter>ヘッダー ファイル\physics2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\physics\tb_physics_shape_2d.h">
+      <Filter>ヘッダー ファイル\physics2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\physics\tb_physics_types.h">
+      <Filter>ヘッダー ファイル\physics2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\physics\tb_physics_2d_all.h">
+      <Filter>ヘッダー ファイル\physics2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\physics\depend\tb_physics_body_2d_depend.h">
+      <Filter>ヘッダー ファイル\physics2d\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\physics\depend\tb_physics_joint_2d_depend.h">
+      <Filter>ヘッダー ファイル\physics2d\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\physics\depend\tb_physics_scene_2d_depend.h">
+      <Filter>ヘッダー ファイル\physics2d\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\physics\depend\tb_physics_shape_2d_depend.h">
+      <Filter>ヘッダー ファイル\physics2d\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\physics\depend\box2d\tb_physics_joint_2d_box2d.h">
+      <Filter>ヘッダー ファイル\physics2d\depend\box2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\physics\depend\box2d\tb_physics_scene_2d_box2d.h">
+      <Filter>ヘッダー ファイル\physics2d\depend\box2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\physics\depend\box2d\tb_physics_shape_2d_box2d.h">
+      <Filter>ヘッダー ファイル\physics2d\depend\box2d</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\physics\depend\box2d\tb_physics_body_2d_box2d.h">
+      <Filter>ヘッダー ファイル\physics2d\depend\box2d</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\tb_fwd.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\physics\depend\box2d\tb_physics_shape_2d_box2d.cpp">
+      <Filter>ソース ファイル\physics2d\depend\box2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\physics\depend\box2d\tb_physics_body_2d_box2d.cpp">
+      <Filter>ソース ファイル\physics2d\depend\box2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\physics\depend\box2d\tb_physics_box2d.cpp">
+      <Filter>ソース ファイル\physics2d\depend\box2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\physics\depend\box2d\tb_physics_joint_2d_box2d.cpp">
+      <Filter>ソース ファイル\physics2d\depend\box2d</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\physics\depend\box2d\tb_physics_scene_2d_box2d.cpp">
+      <Filter>ソース ファイル\physics2d\depend\box2d</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

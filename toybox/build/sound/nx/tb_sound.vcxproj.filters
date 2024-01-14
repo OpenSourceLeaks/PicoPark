@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ビルド">
+      <UniqueIdentifier>{F1DF9757-14C3-43FA-8525-6665FEDE7BA5}</UniqueIdentifier>
+      <Extensions>props</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\sound">
+      <UniqueIdentifier>{4418fadd-844b-49b7-9a23-19fb3f9ccaf3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\sound">
+      <UniqueIdentifier>{4b84df09-87ca-415f-be03-3e88e4e49381}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\sound\resource">
+      <UniqueIdentifier>{a3d7c2fa-54af-4a0a-8399-78f01554c90c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\sound\depend">
+      <UniqueIdentifier>{ecc0f297-2dd1-4823-8f1b-713fb2ae38dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\sound\depend">
+      <UniqueIdentifier>{c1343d54-5906-4cc6-bc6f-44802d66e9cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\sound\depend\nx">
+      <UniqueIdentifier>{106f0a57-29c9-48a5-94c2-a6b17f9c2ddd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\sound\depend\nx">
+      <UniqueIdentifier>{938493c2-5cb8-4799-afea-1360cf786d89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\sound\resource">
+      <UniqueIdentifier>{51970f0f-e08d-4bcf-961c-7760c789cf2b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\include\tb_fwd.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\tb_pch.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\sound\tb_sound.h">
+      <Filter>ヘッダー ファイル\sound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\sound\tb_sound_listener.h">
+      <Filter>ヘッダー ファイル\sound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\sound\depend\tb_sound_listener_depend.h">
+      <Filter>ヘッダー ファイル\sound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\sound\tb_sound_manager.h">
+      <Filter>ヘッダー ファイル\sound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\sound\resource\tb_sound_resource.h">
+      <Filter>ヘッダー ファイル\sound\resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\sound\resource\tb_sound_resource_wav.h">
+      <Filter>ヘッダー ファイル\sound\resource</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\sound\tb_sound_source_shape.h">
+      <Filter>ヘッダー ファイル\sound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\sound\tb_sound_stream_buffer.h">
+      <Filter>ヘッダー ファイル\sound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\sound\tb_sound_source.h">
+      <Filter>ヘッダー ファイル\sound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\sound\tb_sound_types.h">
+      <Filter>ヘッダー ファイル\sound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\sound\depend\tb_sound_types_depend.h">
+      <Filter>ヘッダー ファイル\sound\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\sound\depend\tb_sound_manager_depend.h">
+      <Filter>ヘッダー ファイル\sound\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\sound\depend\tb_sound_source_depend.h">
+      <Filter>ヘッダー ファイル\sound\depend</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\sound\depend\nx\tb_sound_types_nx.h">
+      <Filter>ヘッダー ファイル\sound\depend\nx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\sound\depend\nx\tb_sound_util_nx.h">
+      <Filter>ヘッダー ファイル\sound\depend\nx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\sound\depend\nx\tb_sound_manager_nx.h">
+      <Filter>ヘッダー ファイル\sound\depend\nx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\sound\depend\nx\tb_sound_source_nx.h">
+      <Filter>ヘッダー ファイル\sound\depend\nx</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\sound\tb_sound_source_fade.h">
+      <Filter>ヘッダー ファイル\sound</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\sound\tb_sound_source_handle.h">
+      <Filter>ヘッダー ファイル\sound</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\tb_fwd.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\sound\depend\nx\tb_sound_source_nx.cpp">
+      <Filter>ソース ファイル\sound\depend\nx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\sound\depend\nx\tb_sound_manager_nx.cpp">
+      <Filter>ソース ファイル\sound\depend\nx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\sound\depend\nx\tb_sound_listener_nx.cpp">
+      <Filter>ソース ファイル\sound\depend\nx</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\sound\tb_sound_manager_common.cpp">
+      <Filter>ソース ファイル\sound</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\sound\tb_sound_source_common.cpp">
+      <Filter>ソース ファイル\sound</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\sound\tb_sound_stream_buffer.cpp">
+      <Filter>ソース ファイル\sound</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\sound\resource\tb_sound_resource_ogg.cpp">
+      <Filter>ソース ファイル\sound\resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\sound\resource\tb_sound_resource_wav.cpp">
+      <Filter>ソース ファイル\sound\resource</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\sound\tb_sound_source_handle.cpp">
+      <Filter>ソース ファイル\sound</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

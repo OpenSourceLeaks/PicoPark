@@ -1,0 +1,1 @@
+[FILE] Open Failed : ../resource\system/font/font_ascii.tga

@@ -1,0 +1,48 @@
+CFLAGS:=-Wno-write-strings -Wno-trigraphs -Wno-invalid-offsetof -Wno-c++11-extensions -fno-exceptions
+
+CXX=emcc
+OBJ_DIR=$(BUILD_TARGET)\obj
+OBJS=$(addprefix $(OBJ_DIR)/,$(notdir $(SRCS:.cpp=.o)))
+DEP_DIR=$(BUILD_TARGET)\depend
+DEPS=$(addprefix $(DEP_DIR)/,$(notdir $(SRCS:.cpp=.d)))
+INCLUDES=-I$(TBSDK_DIR)/include
+ifneq (,$(LOCAL_INCLUDES))
+    INCLUDES+=$(addprefix -I,$(LOCAL_INCLUDES))
+endif
+
+VPATH=$(dir $(SRCS))
+
+# リリースビルド用
+all:
+	make $(TARGET) LIBNAME=lib$(TARGET).a CFLAGS_OPT=-O3 BUILD_TARGET=release
+
+# デバッグビルド用
+.PHONY: debug
+debug:
+	make $(TARGET) LIBNAME=lib$(TARGET)_d.a CFLAGS_OPT="-g -O0 -D_DEBUG" BUILD_TARGET=debug
+
+$(TARGET):$(OBJ_DIR) $(DEP_DIR) $(OBJS)
+	emar rcs $(OUTPUT_DIR)/$(LIBNAME) $(OBJS)
+
+-include $(DEPS)
+
+# objフォルダ作成
+$(OBJ_DIR):
+	-mkdir $(BUILD_TARGET)
+	-mkdir $(OBJ_DIR)
+
+# dependフォルダ作成
+$(DEP_DIR):
+	-mkdir $(BUILD_TARGET)
+	-mkdir $(DEP_DIR)
+
+# コンパイル & 依存ファイル出力
+$(OBJ_DIR)/%.o:%.cpp
+	$(CXX) $(CFLAGS) $(CFLAGS_OPT) $(INCLUDES) -c -MMD -MP -MF $(addprefix $(DEP_DIR)/,$(notdir $(<:.cpp=.d)))  $< -o $@
+
+# 不要なもの削除
+clean:
+	-rmdir /s /q release
+	-rmdir /s /q debug
+	-del /q $(OUTPUT_DIR)\lib$(TARGET).a
+	-del /q $(OUTPUT_DIR)\lib$(TARGET)_d.a

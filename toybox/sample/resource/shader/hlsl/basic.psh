@@ -1,0 +1,7 @@
+#include "basic.h"
+
+float4 main( VsOut input ) : COLOR
+{
+//    return input.color;
+      return float4(0.0f, 1.0f,1.0f,1.0f);
+}

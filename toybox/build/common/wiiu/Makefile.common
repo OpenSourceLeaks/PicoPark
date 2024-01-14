@@ -1,0 +1,155 @@
+######################################
+# マクロ的
+######################################
+
+PATH_CYGWIN_TO_DOS := sed 's_/cygdrive/\([a-zA-Z]\+\)/_\U\1:/_g'
+
+#####################################
+# パス
+######################################
+SYSTEM_ROOT               := $(CAFE_ROOT)/system
+SYSTEM_ROOT_DOS           := $(shell cygpath -m $(SYSTEM_ROOT))
+SYSTEM_INCLUDE_DIR        := $(SYSTEM_ROOT)/include
+SYSTEM_INCLUDE_DIR_DOS    := $(shell cygpath -m $(SYSTEM_INCLUDE_DIR))
+SYSTEM_BIN_ROOT           := $(SYSTEM_ROOT)/bin
+SYSTEM_LIB_DIR            := $(SYSTEM_ROOT)/lib
+SYSTEM_TOOL_DIR           := $(SYSTEM_BIN_ROOT)/tool
+SYSTEM_LIB_TARGET_DIR     := $(SYSTEM_LIB_DIR)/$(TOOLCHAIN)/$(PLATFORM)/$(BUILD_TARGET)
+
+OBJ_DIR                   := $(BUILD_TARGET)/obj
+BIN_DIR                   := $(BUILD_TARGET)/bin
+
+###############################################################################
+#  ライブラリ & インクルード
+###############################################################################
+
+COMMON_DYNAMIC_LIBNAMES   := nsyshid nlibcurl nsysnet nn_nets2 nsysccr nsysuvd gx2 avm tcl tve dc snd_core snd_user uvc uvd camera h264 dmae nn_acp nn_save vpad vpadbase proc_ui nn_ac padscore
+COMMON_LIBNAMES           := pad gfd mtx demo gx2ut nn_util nn_crypto
+
+COMMON_DYNAMIC_LIBS        = $(addprefix $(SYSTEM_LIB_TARGET_DIR)/,$(addsuffix .a, $(COMMON_DYNAMIC_LIBNAMES)))
+COMMON_LIBS                = $(addprefix $(SYSTEM_LIB_TARGET_DIR)/,$(addsuffix .a, $(COMMON_LIBNAMES)))
+CORE_DYNAMIC_LIBS          = $(SYSTEM_LIB_TARGET_DIR)/coredyn.a
+
+INCLUDES                  := -I. -I$(SYSTEM_INCLUDE_DIR_DOS)
+ifneq (,$(LOCAL_INCLUDES))
+    INCLUDES+=$(addprefix -I,$(LOCAL_INCLUDES))
+endif
+
+###############################################################################
+#  出力
+###############################################################################
+
+SRCS_CYG   =$(shell cygpath -u $(SRCS))
+ifeq (TRUE,$(USE_C))
+    OBJS       +=  $(addprefix $(OBJ_DIR)/,$(notdir $(SRCS_CYG:.c=.o)))
+else
+    OBJS       :=  $(addprefix $(OBJ_DIR)/,$(notdir $(SRCS_CYG:.cpp=.o)))
+endif
+ELF_PATH   = $(BIN_DIR)/$(TARGET).elf
+MAP_PATH   = $(BIN_DIR)/$(TARGET).map
+RPL_A_PATH = $(BIN_DIR)/$(TARGET).a
+RPX_PATH   = $(BIN_DIR)/$(TARGET).rpx
+
+###############################################################################
+#  CPU
+###############################################################################
+ifeq ($(PROCESSOR_ARCHITECTURE),AMD64)
+TOOL_USED_ON_ARCH  := 64
+else
+ifeq ($(PROCESSOR_ARCHITEW6432),AMD64)
+# cygwin is lying to us
+TOOL_USED_ON_ARCH  := 64
+else
+TOOL_USED_ON_ARCH  := 32
+endif
+endif
+
+######################################
+# 呼び出した時に確定する値
+# $@ は $(TARGET)が入る想定
+######################################
+
+EXPORT_OBJECT ?= $(OBJ_DIR)/$(basename $(notdir $@))_rpl_export.o
+
+######################################
+# コンパイラ & ツール
+######################################
+CXX         :=  $(GHS_ROOT)/cxppc.exe
+LD          :=  $(GHS_ROOT)/cxppc.exe
+AR          :=  $(GHS_ROOT)/ccppc.exe
+LIBRARIAN   :=  $(GHS_ROOT)/ax.exe
+
+PREPRPL     = $(SYSTEM_TOOL_DIR)/preprpl$(TOOL_USED_ON_ARCH)
+MAKERPL     = $(SYSTEM_TOOL_DIR)/makerpl$(TOOL_USED_ON_ARCH)
+DUMPRPL     = $(SYSTEM_TOOL_DIR)/dumprpl
+
+######################################
+# RPX_LCF_FILE(リンカ定義ファイル）
+######################################
+RPX_LCF_FILE     ?= $(SYSTEM_INCLUDE_DIR)/cafe/eppc.Cafe.ld
+RPL_LCF_FILE ?= $(SYSTEM_INCLUDE_DIR)/cafe/eppc.Cafe.rpl.ld
+
+######################################
+# フラグ
+# -c                     コンパイルはするけどリンクはしないよ
+# -Ogeneral              サイズ増加なしででの速度最適化
+# -G                     デバッグ情報生成
+# -sda=none              モール・データ域を使わない
+# -only_explicit_reg_use 明示的にSIMDレジスタ使う
+# -no_exceptions         例外なし
+# -relprog_cafe          Cafe OSに適したプログラムを出力
+# -delete                未使用なものははリンクしない
+# -e                     開始アドレスを指定
+######################################
+CFLAGS := -DNDEV=1 -DCAFE=2 -DPLATFOR=CAFE -DEPPC -DCOS_SECURITY_ENABLED=1 -DIOS_DEBUG_STARTUP_STATE=FALSE
+CFLAGS += -c --no_commons -c99 -kanji=shiftjis -only_explicit_reg_use --no_exceptions --g++ --link_once_templates -cpu=espresso -sda=none
+ifeq (DEBUG,$(BUILD_TARGET))
+    CFLAGS += -D_DEBUG
+endif
+CFLAGS_OPT := -Ogeneral -G
+
+ifneq (,$(LOCAL_CFLAGS))
+    CFLAGS+=$(LOCAL_CFLAGS)
+endif
+
+LDFLAGS     := -relprog_cafe -lnk=-nosegments_always_executable -nostartfile -Mn -Mu
+LDFLAGS     += --no_exceptions --g++ --link_once_templates -cpu=espresso -sda=none
+LDFLAGS     += -e _start  -delete
+LCFFLAGS    := $(RPX_LCF_FILE)
+
+######################################
+# ビルドルール
+######################################
+
+VPATH=$(dir $(SRCS_CYG))
+
+# リリースビルド
+all:
+	make $(TARGET) BUILD_TARGET=NDEBUG
+
+# デバッグビルド
+.PHONY: DEBUG
+DEBUG:
+	make $(TARGET) BUILD_TARGET=DEBUG
+
+# デバッグビルド
+.PHONY: debug
+debug:
+	make $(TARGET) BUILD_TARGET=DEBUG
+
+ifeq (TRUE,$(USE_C))
+$(OBJ_DIR)/%.o:%.c
+else
+$(OBJ_DIR)/%.o:%.cpp
+endif
+	$(CXX) $(shell echo '$(CFLAGS) $(CFLAGS_OPT) -dbg_source_root $(SYSTEM_ROOT_DOS) $(INCLUDES) $< -o $@ -MD' | $(PATH_CYGWIN_TO_DOS))
+
+$(BIN_DIR):
+	-mkdir -p $(BIN_DIR)
+
+$(OBJ_DIR):
+	-mkdir -p $(OBJ_DIR)
+
+clean:
+	-rm -rf NDEBUG
+	-rm -rf DEBUG

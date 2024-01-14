@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "font", "bake_font.vcxproj", "{9825C546-2726-441F-92C1-7C26718D0F2B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		DebugDX9|Win32 = DebugDX9|Win32
+		DebugGL|Win32 = DebugGL|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9825C546-2726-441F-92C1-7C26718D0F2B}.DebugDX9|Win32.ActiveCfg = DebugDX9|Win32
+		{9825C546-2726-441F-92C1-7C26718D0F2B}.DebugDX9|Win32.Build.0 = DebugDX9|Win32
+		{9825C546-2726-441F-92C1-7C26718D0F2B}.DebugGL|Win32.ActiveCfg = DebugGL|Win32
+		{9825C546-2726-441F-92C1-7C26718D0F2B}.DebugGL|Win32.Build.0 = DebugGL|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

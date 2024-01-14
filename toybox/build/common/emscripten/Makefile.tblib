@@ -1,0 +1,5 @@
+TBSDK_SRC_DIR=$(TBSDK_DIR)/src
+OUTPUT_DIR=$(TBSDK_DIR)\lib\emscripten
+COMMON_DIR=$(TBSDK_DIR)/build/common/emscripten
+
+include $(COMMON_DIR)/Makefile.lib
